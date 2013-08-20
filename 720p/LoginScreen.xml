@@ -2,7 +2,6 @@
 <window  id="29">
 	<defaultcontrol always="true">52</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<backgroundcolor>0</backgroundcolor>
 	<controls>
 
 	 <control type="image">
