@@ -2,7 +2,6 @@
 <window >
 	<defaultcontrol always="true">10</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-  <backgroundcolor>0</backgroundcolor>
   <onload condition="[System.HasAddon(script.extendedinfo) + stringcompare(Skin.String(QuickNavWidgetMoviesType),4)]">RunScript(script.extendedinfo,info=incinemas)</onload>
   <onload condition="[System.HasAddon(script.extendedinfo) + stringcompare(Skin.String(QuickNavWidgetMoviesType),5)]">RunScript(script.extendedinfo,info=trendingmovies)</onload>
   <onload condition="[System.HasAddon(script.extendedinfo) + stringcompare(Skin.String(QuickNavWidgetTVShowsType),4)]">RunScript(script.extendedinfo,info=trendingshows)</onload>

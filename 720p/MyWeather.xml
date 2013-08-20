@@ -2,7 +2,6 @@
 <window  id="2600">
 	<defaultcontrol always="true">50</defaultcontrol>
   <allowoverlay>no</allowoverlay>
-  <backgroundcolor>0</backgroundcolor>
 	<onload condition="SubString(Window(Weather).Property(Current.ConditionIcon),na) | [IsEmpty(Window(Weather).Property(Current.Condition)) | IsEmpty(Window(Weather).Property(Location))] + IsEmpty(Control.GetLabel(3))">ActivateWindow(1110)</onload>
 	<onload condition="IsEmpty(Skin.String(WeatherUnderground))">Skin.SetString(WeatherUnderground,1)</onload>
 	<controls>

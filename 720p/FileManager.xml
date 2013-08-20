@@ -2,7 +2,6 @@
 <window  id="3">
 	<defaultcontrol>20</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<backgroundcolor>0</backgroundcolor>
 	<controls>
 		<include>BackgroundItems</include>
 
