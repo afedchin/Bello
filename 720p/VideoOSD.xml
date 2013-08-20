@@ -62,6 +62,16 @@
 					<onclick>PlayerControl(Next)</onclick>
 					<visible>VideoPlayer.Content(LiveTV)</visible>
 				</control>		    
+				<control type="button" id="110">
+					<width>55</width>
+					<height>55</height>
+					<label>-</label>
+					<font>-</font>
+					<texturefocus>osd/stereoscopic_fo.png</texturefocus>
+					<texturenofocus>osd/stereoscopic_nf.png</texturenofocus>
+					<onclick>StereoMode</onclick>
+					<visible>VideoPlayer.IsStereoscopic</visible>
+				</control>		    
 				<control type="button" id="101">
 					<width>55</width>
 					<height>55</height>
