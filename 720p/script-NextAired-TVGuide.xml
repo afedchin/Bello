@@ -1,5 +1,4 @@
 <window>
-  <backgroundcolor>0</backgroundcolor>
 	<onload>ClearProperty(TVGuide.MondayList,Home)</onload>
 	<onload>ClearProperty(TVGuide.TuesdayList,Home)</onload>
 	<onload>ClearProperty(TVGuide.WednesdayList,Home)</onload>

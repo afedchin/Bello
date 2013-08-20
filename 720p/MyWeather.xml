@@ -2,7 +2,6 @@
 	<defaultcontrol always="true">50</defaultcontrol>
 	<onload condition="IsEmpty(Skin.String(WeatherUnderground))">Skin.SetString(WeatherUnderground,1)</onload>
   <allowoverlay>no</allowoverlay>
-  <backgroundcolor>0</backgroundcolor>
 	<controls>
 		<include>BackgroundContent</include>
 		<include>HomeBackground</include>

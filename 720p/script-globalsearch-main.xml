@@ -1,7 +1,6 @@
 <window type="dialog">
 	<defaultcontrol>9000</defaultcontrol>
   <allowoverlay>no</allowoverlay>
-  <backgroundcolor>0</backgroundcolor>
 	<controls>
 
 		<control type="group" id="100">
