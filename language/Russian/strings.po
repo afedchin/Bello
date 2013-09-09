@@ -26,7 +26,7 @@ msgstr "ТВ-гид"
 
 msgctxt "#31002"
 msgid "TV Shows"
-msgstr "ТВ шоу"
+msgstr "Сериалы"
 
 msgctxt "#31003"
 msgid "Aired"
@@ -250,7 +250,7 @@ msgstr "Убрать кнопку Фильмы"
 
 msgctxt "#31107"
 msgid "Hide TV Shows Button"
-msgstr "Убрать кнопку ТВ шоу"
+msgstr "Убрать кнопку Сериалы"
 
 msgctxt "#31108"
 msgid "Hide Music Button"
@@ -302,7 +302,7 @@ msgstr "Убрать подменю Фильмов"
 
 msgctxt "#31121"
 msgid "Hide TV Shows Submenu"
-msgstr "Убрать подменю ТВ шоу"
+msgstr "Убрать подменю Сериалов"
 
 msgctxt "#31122"
 msgid "Hide Music Submenu"
@@ -386,35 +386,35 @@ msgstr "Дополнение субтитров"
 
 msgctxt "#31143"
 msgid "Enable NextAired Info on TV Shows [COLOR=55white](Requires Next Aired Add-on)[/COLOR]"
-msgstr "Информация о следующей серии ТВ шоу [COLOR=55white](Требуется дополнение Next Aired)[/COLOR]"
+msgstr "Информация о следующей серии сериала [COLOR=55white](Требуется дополнение Next Aired)[/COLOR]"
 
 msgctxt "#31144"
 msgid "Enable Music Theme on TV Shows [COLOR=55white](Requires TV Tunes Add-on)[/COLOR]"
-msgstr "Мелодии заставок ТВ шоу [COLOR=55white](Требуется дополнение TV Tunes)[/COLOR]"
+msgstr "Мелодии заставок сериалов [COLOR=55white](Требуется дополнение TV Tunes)[/COLOR]"
 
 msgctxt "#31145"
 msgid "Download music themes for all TV Shows"
-msgstr "Скачать мелодии заставок для всех ТВ шоу"
+msgstr "Скачать мелодии заставок для всех сериалов"
 
 msgctxt "#31146"
 msgid "Download [COLOR=selected]logo.png[/COLOR] for all TV Shows"
-msgstr "Скачать [COLOR=selected]logo.png[/COLOR] для всех ТВ шоу"
+msgstr "Скачать [COLOR=selected]logo.png[/COLOR] для всех сериалов"
 
 msgctxt "#31147"
 msgid "Download [COLOR=selected]clearart.png[/COLOR] for all TV Shows"
-msgstr "Скачать [COLOR=selected]clearart.png[/COLOR] для всех ТВ шоу"
+msgstr "Скачать [COLOR=selected]clearart.png[/COLOR] для всех сериалов"
 
 msgctxt "#31148"
 msgid "Download [COLOR=selected]landscape.jpg[/COLOR] for all TV Shows"
-msgstr "Скачать [COLOR=selected]landscape.jpg[/COLOR] для всех ТВ шоу"
+msgstr "Скачать [COLOR=selected]landscape.jpg[/COLOR] для всех сериалов"
 
 msgctxt "#31149"
 msgid "Download [COLOR=selected]banner.jpg[/COLOR] for all TV Shows"
-msgstr "Скачать [COLOR=selected]banner.jpg[/COLOR] для всех ТВ шоу"
+msgstr "Скачать [COLOR=selected]banner.jpg[/COLOR] для всех сериалов"
 
 msgctxt "#31150"
 msgid "Download [COLOR=selected]poster.jpg[/COLOR] for all TV Shows"
-msgstr "Скачать [COLOR=selected]poster.jpg[/COLOR] для всех ТВ шоу"
+msgstr "Скачать [COLOR=selected]poster.jpg[/COLOR] для всех сериалов"
 
 msgctxt "#31151"
 msgid "Show RSS feed in whole skin"
@@ -470,7 +470,7 @@ msgstr "Мои Фильмы"
 
 msgctxt "#31201"
 msgid "My TV Shows"
-msgstr "Мои ТВ шоу"
+msgstr "Мои Сериалы"
 
 msgctxt "#31202"
 msgid "My Music"
@@ -498,7 +498,7 @@ msgstr "Все не законченные фильмы"
 
 msgctxt "#31209"
 msgid "Browse all shows in progress"
-msgstr "Все не законченные ТВ шоу"
+msgstr "Все не законченные сериалы"
 
 msgctxt "#31210"
 msgid "Browse all music in progress"
@@ -510,7 +510,7 @@ msgstr "Все фильмы в вашей медиатеке"
 
 msgctxt "#31212"
 msgid "Browse all shows in your library"
-msgstr "Все ТВ шоу в вашей медиатеке"
+msgstr "Все сериалы в вашей медиатеке"
 
 msgctxt "#31213"
 msgid "Browse all music in your library"
@@ -614,11 +614,11 @@ msgstr "Сегодня нет новых серий"
 
 msgctxt "#31239"
 msgid "Shows Listed"
-msgstr "ТВ шоу в списке"
+msgstr "Сериалов в списке"
 
 msgctxt "#31240"
 msgid "Shows Airing Today"
-msgstr "Шоу сегодня в эфире"
+msgstr "Сериал сегодня в эфире"
 
 msgctxt "#31241"
 msgid "Recently Added Movies"
@@ -626,7 +626,7 @@ msgstr "Недавно добавленные фильмы"
 
 msgctxt "#31242"
 msgid "Recently Added TV Shows"
-msgstr "Недавно добавленные ТВ шоу"
+msgstr "Недавно добавленные сериалы"
 
 msgctxt "#31243"
 msgid "Recently Added Music"
@@ -638,7 +638,7 @@ msgstr "Новые фильмы"
 
 msgctxt "#31245"
 msgid "New TV Shows"
-msgstr "Новые ТВ шоу"
+msgstr "Новые сериалы"
 
 msgctxt "#31246"
 msgid "New Music"
@@ -650,7 +650,7 @@ msgstr "Случайные Фильмы"
 
 msgctxt "#31248"
 msgid "Random TV Shows"
-msgstr "Случайные ТВ шоу"
+msgstr "Случайные сериалы"
 
 msgctxt "#31249"
 msgid "Random Music"
@@ -662,7 +662,7 @@ msgstr "Все фильмы"
 
 msgctxt "#31251"
 msgid "All TV Shows"
-msgstr "Все ТВ шоу"
+msgstr "Все сериалы"
 
 msgctxt "#31252"
 msgid "All Music"
