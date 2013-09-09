@@ -7,7 +7,6 @@
 	<controls>
 		<control type="button" id="10">
 			<description>trigger</description>
-	    <onfocus condition="system.getbool(input.enablemouse)">ActivateWindow(1110)</onfocus>
 			<onfocus>ReplaceWindow(Home)</onfocus>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
