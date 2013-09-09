@@ -909,7 +909,7 @@
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>1280</width>
-				<height>143</height>
+				<height>153</height>
 				<texture background="true">osd/tile.png</texture>
 			  <colordiffuse>D9FFFFFF</colordiffuse>
 			</control>
@@ -925,33 +925,33 @@
 					<aligny>top</aligny>
 					<textcolor>grey</textcolor>
 				  <shadowcolor>22000000</shadowcolor>
-					<font>FontSize_18B</font>
+					<font>FontSize_14B</font>
 					<scroll>false</scroll>
 					<label>-</label>
 				</control>
 				<control type="label" id="11">
 					<description>row 2 label</description>
-					<posy>29</posy>
+					<posy>42</posy>
 					<width>1240</width>
 					<height>45</height>
 					<align>left</align>
 					<aligny>top</aligny>
 					<textcolor>grey</textcolor>
 				  <shadowcolor>22000000</shadowcolor>
-					<font>FontSize_18B</font>
+					<font>FontSize_14B</font>
 					<scroll>false</scroll>
 					<label>-</label>
 				</control>
 				<control type="label" id="12">
 					<description>row 3 label</description>
-					<posy>55</posy>
+					<posy>84</posy>
 					<width>1240</width>
-					<height>80</height>
+					<height>45</height>
 					<align>left</align>
 					<aligny>top</aligny>
 					<textcolor>grey</textcolor>
 				  <shadowcolor>22000000</shadowcolor>
-					<font>FontSize_18B</font>
+					<font>FontSize_14B</font>
 					<scroll>false</scroll>
 					<label>-</label>
 				</control>
