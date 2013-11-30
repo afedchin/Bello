@@ -333,8 +333,8 @@
 						<texture>rating/$INFO[Player.StarRating]</texture>
 					</control>
 					<control type="fadelabel" id="1">
-						<posx>0</posx>
-						<posy>510r</posy>
+						<left>0</left>
+						<top>185r</top>
 						<width>380</width>
 						<height>40</height>
 						<font>FontSize_20</font>
@@ -395,8 +395,8 @@
 						<texture>rating/$INFO[Player.StarRating]</texture>
 					</control>
 					<control type="fadelabel" id="1">
-						<posx>0</posx>
-						<posy>510r</posy>
+						<left>0</left>
+						<top>185r</top>
 						<width>380</width>
 						<height>40</height>
 						<font>FontSize_18</font>
@@ -488,9 +488,9 @@
 						<shadowcolor>55000000</shadowcolor>
 					</control>
 					<control type="fadelabel" id="1">
-						<posx>0</posx>
-						<posy>510r</posy>
-						<width>380</width>
+						<left>0</left>
+						<top>185r</top>
+						<width>4500</width>
 						<height>40</height>
 						<font>FontSize_20</font>
 						<align>left</align>
@@ -515,8 +515,8 @@
 	        <visible>[IsEmpty(Window(VideoOSD).Property(ShowPlot)) | IsEmpty(VideoPlayer.Plot)]</visible>
 				  <animation effect="slide" start="0,0" end="110,0" condition="![VideoPlayer.Content(Movies) | VideoPlayer.Content(Episodes)]">Conditional</animation>
 					<control type="label" id="1">
-						<posx>543</posx>
-						<posy>509r</posy>
+						<right>543</right>
+						<top>185r</top>
 						<width>155</width>
 						<height>40</height>
 						<font>FontSize_18</font>
