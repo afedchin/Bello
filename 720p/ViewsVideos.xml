@@ -614,7 +614,17 @@
 				    <colordiffuse>55ffffff</colordiffuse>
 				    <aspectratio align="center" aligny="center">keep</aspectratio>
 						<texture>$INFO[ListItem.VideoResolution,flags/def/,.png]</texture>
-						<visible>Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos) | Window.IsVisible(VideoPlaylist)</visible>
+						<visible>!SubString(ListItem.Filename,.3D.) + [Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos) | Window.IsVisible(VideoPlaylist)]</visible>
+					</control>
+					<control type="image">
+						<posx>550</posx>
+						<posy>11</posy>
+						<width>33</width>
+						<height>22</height>
+						<colordiffuse>55ffffff</colordiffuse>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<texture>flags/def/3d.png</texture>
+						<visible>SubString(ListItem.Filename,.3D.) + [Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos) | Window.IsVisible(VideoPlaylist)]</visible>
 					</control>
 					<control type="image">
 						<posx>543</posx>
@@ -745,7 +755,17 @@
 					    <colordiffuse>ffcccccc</colordiffuse>
 					    <aspectratio align="center" aligny="center">keep</aspectratio>
 							<texture>$INFO[ListItem.VideoResolution,flags/def/,.png]</texture>
-							<visible>Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos) | Window.IsVisible(VideoPlaylist)</visible>
+							<visible>!SubString(ListItem.Filename,.3D.) + [Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos) | Window.IsVisible(VideoPlaylist)]</visible>
+						</control>
+						<control type="image">
+							<posx>550</posx>
+							<posy>11</posy>
+							<width>33</width>
+							<height>22</height>
+							<colordiffuse>ffcccccc</colordiffuse>
+							<aspectratio align="center" aligny="center">keep</aspectratio>
+							<texture>flags/def/3d.png</texture>
+							<visible>SubString(ListItem.Filename,.3D.) + [Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos) | Window.IsVisible(VideoPlaylist)]</visible>
 						</control>
 						<control type="image">
 							<posx>543</posx>
@@ -947,7 +967,17 @@
 							    <colordiffuse>77white</colordiffuse>
 							    <aspectratio align="left" aligny="center">stretch</aspectratio>
 									<texture>$INFO[ListItem.VideoResolution,flags/def/,.png]</texture>
-									<visible>Container.Content(Movies) | Container.Content(Episodes)</visible>
+									<visible>!SubString(ListItem.Filename,.3D.) + [Container.Content(Movies) | Container.Content(Episodes)]</visible>
+								</control>
+								<control type="image">
+									<posy>0</posy>
+									<posy>0</posy>
+									<width>34</width>
+									<height>22</height>
+									<colordiffuse>77white</colordiffuse>
+									<aspectratio align="left" aligny="center">stretch</aspectratio>
+									<texture>flags/def/3d.png</texture>
+									<visible>SubString(ListItem.Filename,.3D.) + [Container.Content(Movies) | Container.Content(Episodes)]</visible>
 								</control>
 								<control type="image">
 									<posx>0</posx>
@@ -1237,7 +1267,17 @@
 							    <colordiffuse>77white</colordiffuse>
 							    <aspectratio align="left" aligny="center">stretch</aspectratio>
 									<texture background="true">$INFO[ListItem.VideoResolution,flags/def/,.png]</texture>
-									<visible>Container.Content(Movies) | Container.Content(Episodes)</visible>
+									<visible>!SubString(ListItem.Filename,.3D.) + [Container.Content(Movies) | Container.Content(Episodes)]</visible>
+								</control>
+								<control type="image">
+									<posx>0</posx>
+									<posy>0</posy>
+									<width>34</width>
+									<height>22</height>
+									<colordiffuse>77white</colordiffuse>
+									<aspectratio align="left" aligny="center">stretch</aspectratio>
+									<texture>flags/def/3d.png</texture>
+									<visible>SubString(ListItem.Filename,.3D.) + [Container.Content(Movies) | Container.Content(Episodes)]</visible>
 								</control>
 								<control type="image">
 									<posx>0</posx>
@@ -1501,7 +1541,17 @@
 			        <colordiffuse>ddwhite</colordiffuse>
 					    <aspectratio align="left" aligny="center">stretch</aspectratio>
 							<texture>$INFO[ListItem.VideoResolution,flags/def/,.png]</texture>
-							<visible>Container.Content(Movies) | Container.Content(Episodes)</visible>
+							<visible>!SubString(ListItem.Filename,.3D.) + [Container.Content(Movies) | Container.Content(Episodes)]</visible>
+						</control>
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>34</width>
+							<height>22</height>
+			        <colordiffuse>ddwhite</colordiffuse>
+					    <aspectratio align="left" aligny="center">stretch</aspectratio>
+							<texture>flags/def/3d.png</texture>
+							<visible>SubString(ListItem.Filename,.3D.) + [Container.Content(Movies) | Container.Content(Episodes)]</visible>
 						</control>
 						<control type="image">
 							<posx>0</posx>
@@ -1792,7 +1842,17 @@
 			        <colordiffuse>ddwhite</colordiffuse>
 					    <aspectratio align="left" aligny="center">stretch</aspectratio>
 							<texture>$INFO[ListItem.VideoResolution,flags/def/,.png]</texture>
-							<visible>Container.Content(Movies) | Container.Content(Episodes)</visible>
+							<visible>!SubString(ListItem.Filename,.3D.) + [Container.Content(Movies) | Container.Content(Episodes)]</visible>
+						</control>
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>34</width>
+							<height>22</height>
+			        <colordiffuse>ddwhite</colordiffuse>
+					    <aspectratio align="left" aligny="center">stretch</aspectratio>
+							<texture>flags/def/3d.png</texture>
+							<visible>SubString(ListItem.Filename,.3D.) + [Container.Content(Movies) | Container.Content(Episodes)]</visible>
 						</control>
 						<control type="image">
 							<posx>0</posx>
@@ -2602,7 +2662,17 @@
 				    <colordiffuse>white</colordiffuse>
 				    <aspectratio align="right" aligny="center">stretch</aspectratio>
 						<texture>$INFO[ListItem.VideoResolution,flags/def/,.png]</texture>
-						<visible>Container.Content(Movies) | Container.Content(Episodes)</visible>
+						<visible>!SubString(ListItem.Filename,.3D.) + [Container.Content(Movies) | Container.Content(Episodes)]</visible>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>34</width>
+						<height>22</height>
+				    <colordiffuse>white</colordiffuse>
+				    <aspectratio align="right" aligny="center">stretch</aspectratio>
+						<texture>flags/def/3d.png</texture>
+						<visible>SubString(ListItem.Filename,.3D.) + [Container.Content(Movies) | Container.Content(Episodes)]</visible>
 					</control>
 					<control type="image">
 						<posx>-5</posx>
@@ -2688,7 +2758,17 @@
 				    <colordiffuse>77white</colordiffuse>
 				    <aspectratio align="left" aligny="center">stretch</aspectratio>
 						<texture>$INFO[ListItem.VideoResolution,flags/def/,.png]</texture>
-						<visible>Container.Content(Movies) | Container.Content(Episodes)</visible>
+						<visible>!SubString(ListItem.Filename,.3D.) + [Container.Content(Movies) | Container.Content(Episodes)]</visible>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>34</width>
+						<height>22</height>
+				    <colordiffuse>77white</colordiffuse>
+				    <aspectratio align="left" aligny="center">stretch</aspectratio>
+						<texture>flags/def/3d.png</texture>
+						<visible>SubString(ListItem.Filename,.3D.) + [Container.Content(Movies) | Container.Content(Episodes)]</visible>
 					</control>
 					<control type="image">
 						<posx>0</posx>
@@ -3058,12 +3138,23 @@
 						    <colordiffuse>77white</colordiffuse>
 						    <aspectratio align="left" aligny="center">stretch</aspectratio>
 								<texture>$INFO[ListItem.VideoResolution,flags/def/,.png]</texture>
+								<visible>!SubString(ListItem.Filename,.3D.)</visible>
 							</control>
 							<control type="image">
 								<posx>0</posx>
 								<posy>0</posy>
-								<width>38</width>
+								<width>34</width>
 								<height>22</height>
+								<colordiffuse>77white</colordiffuse>
+								<aspectratio align="left" aligny="center">stretch</aspectratio>
+								<texture>flags/def/3d.png</texture>
+								<visible>SubString(ListItem.Filename,.3D.)</visible>
+							</control>
+							<control type="image">
+								<posx>0</posx>
+								<posy>0</posy>
+								<height>38</height>
+								<width>22</width>
 				        <colordiffuse>77white</colordiffuse>
 						    <aspectratio align="left" aligny="center">stretch</aspectratio>
 								<texture>flags/sets/sets.png</texture>
@@ -3272,6 +3363,17 @@
 						    <colordiffuse>77white</colordiffuse>
 						    <aspectratio align="left" aligny="center">stretch</aspectratio>
 								<texture>$INFO[ListItem.VideoResolution,flags/def/,.png]</texture>
+								<visible>!SubString(ListItem.Filename,.3D.)</visible>
+							</control>
+							<control type="image">
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>34</width>
+								<height>22</height>
+						    <colordiffuse>77white</colordiffuse>
+						    <aspectratio align="left" aligny="center">stretch</aspectratio>
+								<texture>flags/def/3d.png</texture>
+								<visible>SubString(ListItem.Filename,.3D.)</visible>
 							</control>
 							<control type="label">
 								<posx>45</posx>
@@ -3424,7 +3526,17 @@
 			    <colordiffuse>77white</colordiffuse>
 			    <aspectratio align="left" aligny="center">stretch</aspectratio>
 					<texture>$INFO[ListItem.VideoResolution,flags/def/,.png]</texture>
-					<visible>Container.Content(Movies) | Container.Content(Episodes)</visible>
+					<visible>!SubString(ListItem.Filename,.3D.) + [Container.Content(Movies) | Container.Content(Episodes)]</visible>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>34</width>
+					<height>22</height>
+			    <colordiffuse>77white</colordiffuse>
+			    <aspectratio align="left" aligny="center">stretch</aspectratio>
+					<texture>flags/def/3d.png</texture>
+					<visible>SubString(ListItem.Filename,.3D.) + [Container.Content(Movies) | Container.Content(Episodes)]</visible>
 				</control>
 				<control type="image">
 					<posx>0</posx>
