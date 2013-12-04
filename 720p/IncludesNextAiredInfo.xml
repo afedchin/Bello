@@ -1,6 +1,5 @@
 <includes>
-
-  <!-- TV Guide Layout -->
+	<!-- TV Guide Layout -->
 	<include name="TVGuideLayout">
 		<itemlayout width="160" height="84">
 			<control type="image">
@@ -44,7 +43,7 @@
 				<width>160</width>
 				<height>80</height>
 				<texture border="20">buttons/settings_fo.png</texture>
-	      <include>VisibleFadeEffect2</include>
+				<include>VisibleFadeEffect2</include>
 			</control>
 			<control type="image">
 				<description>Banner</description>
@@ -81,9 +80,7 @@
 			</control>
 		</focusedlayout>
 	</include>
-
-
-  <!-- TV Guide Art -->
+	<!-- TV Guide Art -->
 	<variable name="TVGuidePreviewThumb">
 		<value condition="Skin.String(PreviewThumb,1)">$VAR[TVGuideLandscape]</value>
 		<value condition="Skin.String(PreviewThumb,2)">$VAR[TVGuideFanart]</value>
@@ -134,9 +131,7 @@
 		<value condition="Control.HasFocus(205)">$INFO[Container(205).ListItem.Property(Network),flags/studio/,.png]</value>
 		<value condition="Control.HasFocus(206)">$INFO[Container(206).ListItem.Property(Network),flags/studio/,.png]</value>
 	</variable>
-	
-
-  <!-- TV Guide Labels -->	
+	<!-- TV Guide Labels -->	
 	<variable name="NextAiredLabel">
 		<value condition="Control.HasFocus(200)">$INFO[Container(200).ListItem.Label]</value>
 		<value condition="Control.HasFocus(201)">$INFO[Container(201).ListItem.Label]</value>
@@ -227,10 +222,8 @@
 		<value condition="Control.HasFocus(205)">$INFO[Container(205).ListItem.Property(NextDate)] $INFO[Container(205).NumItems,(, Shows)]</value>
 		<value condition="Control.HasFocus(206)">$INFO[Container(206).ListItem.Property(NextDate)] $INFO[Container(206).NumItems,(, Shows)]</value>
 	</variable>	
-
-
 </includes>
 
-				
-				
-				
+
+
+

@@ -5,16 +5,15 @@
 	<controls>
 		<include>BackgroundItems</include>
 		<include>AddonsViews</include>
-
-   <!-- ==================== -->
-   <!-- Top Options Controls -->
-   <!-- ==================== -->
-	 <control type="group"  id="9000">
+		<!-- ==================== -->
+		<!-- Top Options Controls -->
+		<!-- ==================== -->
+		<control type="group"  id="9000">
 			<posx>45</posx>
 			<posy>0</posy>
-		  <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus</visible>
-      <include>TopOptionsSlideAnimations</include>
-      <!-- Main Options -->
+			<visible allowhiddenfocus="true">ControlGroup(9000).HasFocus</visible>
+			<include>TopOptionsSlideAnimations</include>
+			<!-- Main Options -->
 			<control type="grouplist" id="9111">
 				<posx>6</posx>
 				<posy>12</posy>
@@ -30,52 +29,52 @@
 				<onback>50</onback>
 				<control type="button" id="2">
 					<description>View as</description>
-				  <label>-</label>
-				  <include>TopButton</include>
+					<label>-</label>
+					<include>TopButton</include>
 				</control>
 				<control type="button" id="95">
 					<description>Viewtype Options</description>
-				  <label>-</label>
+					<label>-</label>
 					<onclick>SetFocus(9222)</onclick>
-				  <include>TopButton</include>
-				  <visible>false</visible>
+					<include>TopButton</include>
+					<visible>false</visible>
 				</control>
 				<control type="button" id="3">
 					<description>Sort by</description>
 					<label>103</label>
-				  <include>TopButton</include>
+					<include>TopButton</include>
 				</control>
 				<control type="button" id="4">
 					<description>Sort asc</description>
 					<label>31007</label>
 					<altlabel>31006</altlabel>
 					<usealttexture>Container.SortDirection(Ascending)</usealttexture>
-				  <include>TopButton</include>
+					<include>TopButton</include>
 				</control>
 				<control type="radiobutton" id="5">
 					<description>Auto-Updates</description>
 					<label>24063</label>
-				  <include>TopButton</include>
+					<include>TopButton</include>
 					<textureradiofocus>-</textureradiofocus>
 					<textureradionofocus>-</textureradionofocus>
 				</control>
 				<control type="radiobutton" id="6">
 					<description>Notifications</description>
 					<label>25000</label>
-				  <include>TopButton</include>
+					<include>TopButton</include>
 				</control>
 			</control>
-      <!-- Main Options Labels -->
+			<!-- Main Options Labels -->
 			<control type="grouplist">
-		    <visible allowhiddenfocus="true">ControlGroup(9111).HasFocus + !Window.IsActive(ContextMenu) + !Window.IsActive(ShutdownMenu)</visible>
-	      <animation type="Visible"  reversible="false">
-	          <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
-	          <effect type="slide" start="0,-35" end="0,0" time="350" tween="cubic" easing="out" />
-	      </animation>
-	      <animation type="Hidden" reversible="false">
-	          <effect type="fade" start="100" end="0" time="500" tween="sine" easing="out" />
-	          <effect type="slide" start="0,0" end="0,-35" time="350" tween="sine" easing="out" />
-	      </animation>
+				<visible allowhiddenfocus="true">ControlGroup(9111).HasFocus + !Window.IsActive(ContextMenu) + !Window.IsActive(ShutdownMenu)</visible>
+				<animation type="Visible"  reversible="false">
+					<effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
+					<effect type="slide" start="0,-35" end="0,0" time="350" tween="cubic" easing="out" />
+				</animation>
+				<animation type="Hidden" reversible="false">
+					<effect type="fade" start="100" end="0" time="500" tween="sine" easing="out" />
+					<effect type="slide" start="0,0" end="0,-35" time="350" tween="sine" easing="out" />
+				</animation>
 				<posx>0</posx>
 				<posy>0</posy>
 				<height>55</height>
@@ -84,73 +83,72 @@
 				<align>left</align>
 				<orientation>horizontal</orientation>
 				<control type="label">
-				  <include>TopBigLabel</include>
-				  <label>$LOCALIZE[33063]:</label>
+					<include>TopBigLabel</include>
+					<label>$LOCALIZE[33063]:</label>
 				</control>
 				<control type="label">
 					<description>View as</description>
-				  <include>TopSmallLabel</include>
-          <label>$INFO[Control.GetLabel(2)]</label>
+					<include>TopSmallLabel</include>
+					<label>$INFO[Control.GetLabel(2)]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9111).HasFocus(2)" reversible="true">Conditional</animation>
-          <animation effect="zoom" start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9111).HasFocus(2)" reversible="true">Conditional</animation>
+					<animation effect="zoom" start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9111).HasFocus(2)" reversible="true">Conditional</animation>
 				</control>
 				<control type="label">
 					<description>Viewtype Options</description>
-				  <include>TopSmallLabel</include>
+					<include>TopSmallLabel</include>
 					<label>$LOCALIZE[31014]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="in" condition="!ControlGroup(9111).HasFocus(95)" reversible="true">Conditional</animation>
-          <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="in" center="auto" condition="!ControlGroup(9111).HasFocus(95)" reversible="true">Conditional</animation>
-				  <visible>false</visible>
+					<animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="in" center="auto" condition="!ControlGroup(9111).HasFocus(95)" reversible="true">Conditional</animation>
+					<visible>false</visible>
 				</control>
 				<control type="label">
 					<description>Short by</description>
-				  <include>TopSmallLabel</include>
+					<include>TopSmallLabel</include>
 					<label>$INFO[Control.GetLabel(3)]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="in" condition="!ControlGroup(9111).HasFocus(3)" reversible="true">Conditional</animation>
-          <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="in" center="auto" condition="!ControlGroup(9111).HasFocus(3)" reversible="true">Conditional</animation>
+					<animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="in" center="auto" condition="!ControlGroup(9111).HasFocus(3)" reversible="true">Conditional</animation>
 				</control>
 				<control type="label">
 					<description>Short asc</description>
-				  <include>TopSmallLabel</include>
+					<include>TopSmallLabel</include>
 					<label>$INFO[Control.GetLabel(4)]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="in" condition="!ControlGroup(9111).HasFocus(4)" reversible="true">Conditional</animation>
-          <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="in" center="auto" condition="!ControlGroup(9111).HasFocus(4)" reversible="true">Conditional</animation>
+					<animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="in" center="auto" condition="!ControlGroup(9111).HasFocus(4)" reversible="true">Conditional</animation>
 				</control>
 				<control type="label">
 					<description>Auto-Updates ON</description>
-				  <include>TopSmallLabel</include>
+					<include>TopSmallLabel</include>
 					<label>$LOCALIZE[24063]: $LOCALIZE[31011]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="in" condition="!ControlGroup(9111).HasFocus(5)" reversible="true">Conditional</animation>
-          <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="in" center="auto" condition="!ControlGroup(9111).HasFocus(5)" reversible="true">Conditional</animation>
-			    <visible>SubString(Control.GetLabel(5),*)</visible>
+					<animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="in" center="auto" condition="!ControlGroup(9111).HasFocus(5)" reversible="true">Conditional</animation>
+					<visible>SubString(Control.GetLabel(5),*)</visible>
 				</control>
 				<control type="label">
 					<description>Auto-Updates OFF</description>
-				  <include>TopSmallLabel</include>
+					<include>TopSmallLabel</include>
 					<label>$LOCALIZE[24063]: $LOCALIZE[31012]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="in" condition="!ControlGroup(9111).HasFocus(5)" reversible="true">Conditional</animation>
-          <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="in" center="auto" condition="!ControlGroup(9111).HasFocus(5)" reversible="true">Conditional</animation>
-			    <visible>!SubString(Control.GetLabel(5),*)</visible>
+					<animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="in" center="auto" condition="!ControlGroup(9111).HasFocus(5)" reversible="true">Conditional</animation>
+					<visible>!SubString(Control.GetLabel(5),*)</visible>
 				</control>
 				<control type="label">
 					<description>Notifications ON</description>
-				  <include>TopSmallLabel</include>
+					<include>TopSmallLabel</include>
 					<label>$LOCALIZE[25000]: $LOCALIZE[31011]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="in" condition="!ControlGroup(9111).HasFocus(6)" reversible="true">Conditional</animation>
-          <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="in" center="auto" condition="!ControlGroup(9111).HasFocus(6)" reversible="true">Conditional</animation>
-			    <visible>SubString(Control.GetLabel(6),*)</visible>
+					<animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="in" center="auto" condition="!ControlGroup(9111).HasFocus(6)" reversible="true">Conditional</animation>
+					<visible>SubString(Control.GetLabel(6),*)</visible>
 				</control>
 				<control type="label">
 					<description>Notifications OFF</description>
-				  <include>TopSmallLabel</include>
+					<include>TopSmallLabel</include>
 					<label>$LOCALIZE[25000]: $LOCALIZE[31012]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="in" condition="!ControlGroup(9111).HasFocus(6)" reversible="true">Conditional</animation>
-          <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="in" center="auto" condition="!ControlGroup(9111).HasFocus(6)" reversible="true">Conditional</animation>
-			    <visible>!SubString(Control.GetLabel(6),*)</visible>
+					<animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="in" center="auto" condition="!ControlGroup(9111).HasFocus(6)" reversible="true">Conditional</animation>
+					<visible>!SubString(Control.GetLabel(6),*)</visible>
 				</control>
 			</control>
-	
-      <!-- Viewtype Options -->
+			<!-- Viewtype Options -->
 			<control type="grouplist" id="9222">
 				<posx>6</posx>
 				<posy>12</posy>
@@ -166,22 +164,22 @@
 				<onback>9111</onback>
 				<control type="button" id="290">
 					<description>oooooo</description>
-				  <label>-</label>
+					<label>-</label>
 					<onclick>noop</onclick>
-				  <include>TopButton</include>
+					<include>TopButton</include>
 				</control>
 			</control>
-      <!-- Viewtype Options Labels -->
+			<!-- Viewtype Options Labels -->
 			<control type="grouplist">
-		    <visible allowhiddenfocus="true">ControlGroup(9222).HasFocus + !Window.IsActive(ContextMenu) + !Window.IsActive(ShutdownMenu)</visible>
-	      <animation type="Visible"  reversible="false">
-	          <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
-	          <effect type="slide" start="0,35" end="0,0" time="350" tween="cubic" easing="out" />
-	      </animation>
-	      <animation type="Hidden" reversible="false">
-	          <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
-	          <effect type="slide" start="0,0" end="0,35" time="350" tween="sine" easing="out" />
-	      </animation>
+				<visible allowhiddenfocus="true">ControlGroup(9222).HasFocus + !Window.IsActive(ContextMenu) + !Window.IsActive(ShutdownMenu)</visible>
+				<animation type="Visible"  reversible="false">
+					<effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
+					<effect type="slide" start="0,35" end="0,0" time="350" tween="cubic" easing="out" />
+				</animation>
+				<animation type="Hidden" reversible="false">
+					<effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
+					<effect type="slide" start="0,0" end="0,35" time="350" tween="sine" easing="out" />
+				</animation>
 				<posx>0</posx>
 				<posy>0</posy>
 				<height>55</height>
@@ -190,32 +188,29 @@
 				<align>left</align>
 				<orientation>horizontal</orientation>
 				<control type="label">
-				  <include>TopBigLabel</include>
-				  <label>$LOCALIZE[31014]:</label>
+					<include>TopBigLabel</include>
+					<label>$LOCALIZE[31014]:</label>
 				</control>
 				<control type="label">
 					<description>ooooo</description>
-				  <include>TopSmallLabel</include>
-          <label>$INFO[Control.GetLabel(290)]</label>
+					<include>TopSmallLabel</include>
+					<label>$INFO[Control.GetLabel(290)]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9222).HasFocus(290)" reversible="true">Conditional</animation>
-          <animation effect="zoom" start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9222).HasFocus(290)" reversible="true">Conditional</animation>
+					<animation effect="zoom" start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9222).HasFocus(290)" reversible="true">Conditional</animation>
 				</control>
 			</control>
-	 </control>		
-
-
-	 <include>CommonItems</include>
-   <include condition="Skin.HasSetting(EnableAddonsNotifications)">AddonsNotifications</include>
-
-   <!-- ================ -->
-   <!-- Top Content Info -->
-   <!-- ================ -->		
-	 <control type="group">
+		</control>		
+		<include>CommonItems</include>
+		<include condition="Skin.HasSetting(EnableAddonsNotifications)">AddonsNotifications</include>
+		<!-- ================ -->
+		<!-- Top Content Info -->
+		<!-- ================ -->		
+		<control type="group">
 			<posx>45</posx>
 			<posy>25</posy>
 			<visible>!ControlGroup(9000).HasFocus + !Window.IsActive(ContextMenu) + !Window.IsActive(ShutdownMenu) + !Window.IsActive(AddonInformation)</visible>
-		  <include>CommonSlideAnimations</include>
-		  <include>CommonWeatherAndClock</include>
+			<include>CommonSlideAnimations</include>
+			<include>CommonWeatherAndClock</include>
 			<control type="grouplist">
 				<posx>0</posx>
 				<posy>0</posy>
@@ -223,23 +218,22 @@
 				<align>left</align>
 				<itemgap>20</itemgap>
 				<orientation>horizontal</orientation>
-		    <include>CommonSlideAnimations</include>				
+				<include>CommonSlideAnimations</include>				
 				<control type="label">
-				  <include>TopBigLabel</include>
-				  <label>$LOCALIZE[24001]</label>
+					<include>TopBigLabel</include>
+					<label>$LOCALIZE[24001]</label>
 				</control>
 				<control type="label">
-				  <include>TopZoomedSmallLabel</include>
-				  <label>$INFO[Container.Property(RepoName)]</label>
-			    <visible>!IsEmpty(Container.Property(RepoName))</visible>
+					<include>TopZoomedSmallLabel</include>
+					<label>$INFO[Container.Property(RepoName)]</label>
+					<visible>!IsEmpty(Container.Property(RepoName))</visible>
 				</control>
 				<control type="label">
-				  <include>TopZoomedSmallLabel</include>
-				  <label>$INFO[Container.Property(AddonCategory)]</label>
-			    <visible>!IsEmpty(Container.Property(AddonCategory))</visible>
+					<include>TopZoomedSmallLabel</include>
+					<label>$INFO[Container.Property(AddonCategory)]</label>
+					<visible>!IsEmpty(Container.Property(AddonCategory))</visible>
 				</control>
 			</control>
-	  </control>
-
+		</control>
 	</controls>
 </window>

@@ -1,24 +1,23 @@
 <includes>
-
-  <include name="NextAiredNotifications">
+	<include name="NextAiredNotifications">
 		<control type="group">
-		  <posx>55</posx>
+			<posx>55</posx>
 			<posy>640</posy>
 			<visible>![Container.Content(Episodes) + Substring(Container.FolderPath,plugin://)]</visible>
-	    <include>NotificationsAnimations</include>
-		  <visible>!Window.IsActive(ShutdownMenu)</visible>
-		  <animation type="Conditional" reversible="false" condition="![Window.IsActive(InfoDialog) | Window.IsActive(extendedprogressdialog) | Library.IsScanningVideo]">
-	      <effect type="fade" start="0" end="100" time="400" delay="250" tween="sine" easing="in"  />
-	      <effect type="slide" start="0,-35" end="0,0" time="450" delay="250" tween="cubic" easing="out" />
-		  </animation>
-		  <animation type="Conditional" reversible="false" condition="Window.IsActive(InfoDialog) | Window.IsActive(extendedprogressdialog) | Library.IsScanningVideo">
-	      <effect type="fade" start="100" end="0" time="400" tween="sine" easing="out" />
-	      <effect type="slide" start="0,0" end="0,-35" time="450" tween="sine" easing="out" />
-		  </animation>
+			<include>NotificationsAnimations</include>
+			<visible>!Window.IsActive(ShutdownMenu)</visible>
+			<animation type="Conditional" reversible="false" condition="![Window.IsActive(InfoDialog) | Window.IsActive(extendedprogressdialog) | Library.IsScanningVideo]">
+				<effect type="fade" start="0" end="100" time="400" delay="250" tween="sine" easing="in"  />
+				<effect type="slide" start="0,-35" end="0,0" time="450" delay="250" tween="cubic" easing="out" />
+			</animation>
+			<animation type="Conditional" reversible="false" condition="Window.IsActive(InfoDialog) | Window.IsActive(extendedprogressdialog) | Library.IsScanningVideo">
+				<effect type="fade" start="100" end="0" time="400" tween="sine" easing="out" />
+				<effect type="slide" start="0,0" end="0,-35" time="450" tween="sine" easing="out" />
+			</animation>
 			<control type="group">
-	      <include>NotificationsAnimations</include>
-        <visible>[Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)]</visible>
-        <visible>!IsEmpty(Window(Home).Property(NextAired.NextDate))</visible>
+				<include>NotificationsAnimations</include>
+				<visible>[Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)]</visible>
+				<visible>!IsEmpty(Window(Home).Property(NextAired.NextDate))</visible>
 				<control type="grouplist">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -29,21 +28,21 @@
 					<itemgap>10</itemgap>
 					<orientation>horizontal</orientation>
 					<control type="group">
-					 <control type="image">
-						<posx>15</posx>
-						<posy>0</posy>
-						<width>55</width>
-						<height>55</height>
-						<aspectratio>stretch</aspectratio>
-					  <texture>icons/notification_time.png</texture>
-						<align>right</align>
-						<aligny>center</aligny>
-					 </control>
-				  </control>
+						<control type="image">
+							<posx>15</posx>
+							<posy>0</posy>
+							<width>55</width>
+							<height>55</height>
+							<aspectratio>stretch</aspectratio>
+							<texture>icons/notification_time.png</texture>
+							<align>right</align>
+							<aligny>center</aligny>
+						</control>
+					</control>
 					<control type="group">
-					  <posx>65r</posx>
+						<posx>65r</posx>
 						<control type="label">
-					    <description>First Line</description>
+							<description>First Line</description>
 							<posx>0</posx>
 							<posy>0</posy>
 							<height>36</height>
@@ -51,13 +50,13 @@
 							<font>NotificationsFont</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
-					    <align>right</align>
-					    <aligny>center</aligny>
+							<align>right</align>
+							<aligny>center</aligny>
 							<scroll>false</scroll>
-	            <label>$INFO[Window(Home).Property(NextAired.NextNumber),,. ]$INFO[Window(Home).Property(NextAired.NextTitle)]</label>
+							<label>$INFO[Window(Home).Property(NextAired.NextNumber),,. ]$INFO[Window(Home).Property(NextAired.NextTitle)]</label>
 						</control>
 						<control type="label">
-					    <description>Second Line</description>
+							<description>Second Line</description>
 							<posx>0</posx>
 							<posy>20</posy>
 							<height>36</height>
@@ -65,18 +64,18 @@
 							<font>NotificationsFont</font>
 							<textcolor>99white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
-					    <align>right</align>
-					    <aligny>center</aligny>
+							<align>right</align>
+							<aligny>center</aligny>
 							<scroll>false</scroll>
-	            <label>$INFO[Window(Home).Property(NextAired.NextDate),$LOCALIZE[31215] ]$INFO[Window(Home).Property(NextAired.AirTime), ]</label>
+							<label>$INFO[Window(Home).Property(NextAired.NextDate),$LOCALIZE[31215] ]$INFO[Window(Home).Property(NextAired.AirTime), ]</label>
 						</control>
 					</control>
-			  </control>
+				</control>
 			</control>
 			<control type="group">
-	      <include>NotificationsAnimations</include>
-        <visible>[Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)]</visible>
-        <visible>IsEmpty(Window(Home).Property(NextAired.NextDate)) + !IsEmpty(Window(Home).Property(NextAired.LatestTitle))</visible>
+				<include>NotificationsAnimations</include>
+				<visible>[Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)]</visible>
+				<visible>IsEmpty(Window(Home).Property(NextAired.NextDate)) + !IsEmpty(Window(Home).Property(NextAired.LatestTitle))</visible>
 				<control type="grouplist">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -87,33 +86,33 @@
 					<itemgap>10</itemgap>
 					<orientation>horizontal</orientation>
 					<control type="group">
-					 <control type="image">
-						<posx>15</posx>
-						<posy>0</posy>
-						<width>55</width>
-						<height>55</height>
-						<aspectratio>stretch</aspectratio>
-					  <texture>icons/notification_warning.png</texture>
-						<align>right</align>
-						<aligny>center</aligny>
-						<visible>!StringCompare(Window(Home).Property(NextAired.StatusID),1)</visible>
-					 </control>
-					 <control type="image">
-						<posx>15</posx>
-						<posy>0</posy>
-						<width>55</width>
-						<height>55</height>
-						<aspectratio>stretch</aspectratio>
-					  <texture>icons/notification_error.png</texture>
-						<align>right</align>
-						<aligny>center</aligny>
-						<visible>StringCompare(Window(Home).Property(NextAired.StatusID),1)</visible>
-					 </control>
-				  </control>
+						<control type="image">
+							<posx>15</posx>
+							<posy>0</posy>
+							<width>55</width>
+							<height>55</height>
+							<aspectratio>stretch</aspectratio>
+							<texture>icons/notification_warning.png</texture>
+							<align>right</align>
+							<aligny>center</aligny>
+							<visible>!StringCompare(Window(Home).Property(NextAired.StatusID),1)</visible>
+						</control>
+						<control type="image">
+							<posx>15</posx>
+							<posy>0</posy>
+							<width>55</width>
+							<height>55</height>
+							<aspectratio>stretch</aspectratio>
+							<texture>icons/notification_error.png</texture>
+							<align>right</align>
+							<aligny>center</aligny>
+							<visible>StringCompare(Window(Home).Property(NextAired.StatusID),1)</visible>
+						</control>
+					</control>
 					<control type="group">
-					  <posx>65r</posx>
+						<posx>65r</posx>
 						<control type="label">
-					    <description>First Line</description>
+							<description>First Line</description>
 							<posx>0</posx>
 							<posy>0</posy>
 							<height>36</height>
@@ -121,13 +120,13 @@
 							<font>NotificationsFont</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
-					    <align>right</align>
-					    <aligny>center</aligny>
+							<align>right</align>
+							<aligny>center</aligny>
 							<scroll>false</scroll>
-	            <label>$INFO[Window(Home).Property(NextAired.LatestNumber),,. ]$INFO[Window(Home).Property(NextAired.LatestTitle)]</label>
+							<label>$INFO[Window(Home).Property(NextAired.LatestNumber),,. ]$INFO[Window(Home).Property(NextAired.LatestTitle)]</label>
 						</control>
 						<control type="label">
-					    <description>Second Line</description>
+							<description>Second Line</description>
 							<posx>0</posx>
 							<posy>20</posy>
 							<height>36</height>
@@ -135,35 +134,33 @@
 							<font>NotificationsFont</font>
 							<textcolor>77white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
-					    <align>right</align>
-					    <aligny>center</aligny>
+							<align>right</align>
+							<aligny>center</aligny>
 							<scroll>false</scroll>
-	            <label>$INFO[Window(Home).Property(NextAired.Status)]$INFO[Window(Home).Property(NextAired.LatestDate), • $LOCALIZE[31216] ,]</label>
+							<label>$INFO[Window(Home).Property(NextAired.Status)]$INFO[Window(Home).Property(NextAired.LatestDate), • $LOCALIZE[31216] ,]</label>
 						</control>
 					</control>
-			  </control>
+				</control>
 			</control>
 		</control>
-  </include>
-
-
-  <include name="AddonsNotifications">
+	</include>
+	<include name="AddonsNotifications">
 		<control type="group">
-		  <posx>55</posx>
+			<posx>55</posx>
 			<posy>640</posy>
-	    <include>NotificationsAnimations</include>
-		  <visible>!Window.IsActive(ShutdownMenu)</visible>
-		  <animation type="Conditional" reversible="false" condition="![Window.IsActive(InfoDialog) | Window.IsActive(extendedprogressdialog)]">
-	      <effect type="fade" start="0" end="100" time="400" delay="250" tween="sine" easing="in"  />
-	      <effect type="slide" start="0,-35" end="0,0" time="450" delay="250" tween="cubic" easing="out" />
-		  </animation>
-		  <animation type="Conditional" reversible="false" condition="Window.IsActive(InfoDialog) | Window.IsActive(extendedprogressdialog)">
-	      <effect type="fade" start="100" end="0" time="400" tween="sine" easing="out" />
-	      <effect type="slide" start="0,0" end="0,-35" time="450" tween="sine" easing="out" />
-		  </animation>
+			<include>NotificationsAnimations</include>
+			<visible>!Window.IsActive(ShutdownMenu)</visible>
+			<animation type="Conditional" reversible="false" condition="![Window.IsActive(InfoDialog) | Window.IsActive(extendedprogressdialog)]">
+				<effect type="fade" start="0" end="100" time="400" delay="250" tween="sine" easing="in"  />
+				<effect type="slide" start="0,-35" end="0,0" time="450" delay="250" tween="cubic" easing="out" />
+			</animation>
+			<animation type="Conditional" reversible="false" condition="Window.IsActive(InfoDialog) | Window.IsActive(extendedprogressdialog)">
+				<effect type="fade" start="100" end="0" time="400" tween="sine" easing="out" />
+				<effect type="slide" start="0,0" end="0,-35" time="450" tween="sine" easing="out" />
+			</animation>
 			<control type="group">
-	      <include>NotificationsAnimations</include>
-        <visible>Container.Content(Addons)</visible>
+				<include>NotificationsAnimations</include>
+				<visible>Container.Content(Addons)</visible>
 				<visible>!IsEmpty(ListItem.Property(Addon.Broken))</visible>
 				<control type="grouplist">
 					<posx>0</posx>
@@ -175,21 +172,21 @@
 					<itemgap>10</itemgap>
 					<orientation>horizontal</orientation>
 					<control type="group">
-					 <control type="image">
-						<posx>15</posx>
-						<posy>0</posy>
-						<width>55</width>
-						<height>55</height>
-						<aspectratio>stretch</aspectratio>
-					  <texture>icons/notification_error.png</texture>
-						<align>right</align>
-						<aligny>center</aligny>
-					 </control>
-				  </control>
+						<control type="image">
+							<posx>15</posx>
+							<posy>0</posy>
+							<width>55</width>
+							<height>55</height>
+							<aspectratio>stretch</aspectratio>
+							<texture>icons/notification_error.png</texture>
+							<align>right</align>
+							<aligny>center</aligny>
+						</control>
+					</control>
 					<control type="group">
-					  <posx>65r</posx>
+						<posx>65r</posx>
 						<control type="label">
-					    <description>First Line</description>
+							<description>First Line</description>
 							<posx>0</posx>
 							<posy>0</posy>
 							<height>36</height>
@@ -197,13 +194,13 @@
 							<font>NotificationsFont</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
-					    <align>right</align>
-					    <aligny>center</aligny>
+							<align>right</align>
+							<aligny>center</aligny>
 							<scroll>false</scroll>
-	            <label>$INFO[ListItem.Label2]</label>
+							<label>$INFO[ListItem.Label2]</label>
 						</control>
 						<control type="label">
-					    <description>Second Line</description>
+							<description>Second Line</description>
 							<posx>0</posx>
 							<posy>20</posy>
 							<height>36</height>
@@ -211,17 +208,17 @@
 							<font>NotificationsFont</font>
 							<textcolor>77white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
-					    <align>right</align>
-					    <aligny>center</aligny>
+							<align>right</align>
+							<aligny>center</aligny>
 							<scroll>false</scroll>
-	            <label>$INFO[ListItem.Property(Addon.Broken)]</label>
+							<label>$INFO[ListItem.Property(Addon.Broken)]</label>
 						</control>
 					</control>
-			  </control>
+				</control>
 			</control>
 			<control type="group">
-	      <include>NotificationsAnimations</include>
-        <visible>Container.Content(Addons)</visible>
+				<include>NotificationsAnimations</include>
+				<visible>Container.Content(Addons)</visible>
 				<visible>!IsEmpty(ListItem.Property(Addon.Status)) + IsEmpty(ListItem.Property(Addon.Broken))</visible>
 				<control type="grouplist">
 					<posx>0</posx>
@@ -233,21 +230,21 @@
 					<itemgap>10</itemgap>
 					<orientation>horizontal</orientation>
 					<control type="group">
-					 <control type="image">
-						<posx>15</posx>
-						<posy>0</posy>
-						<width>55</width>
-						<height>55</height>
-						<aspectratio>stretch</aspectratio>
-					  <texture>icons/notification_info.png</texture>
-						<align>right</align>
-						<aligny>center</aligny>
-					 </control>
-				  </control>
+						<control type="image">
+							<posx>15</posx>
+							<posy>0</posy>
+							<width>55</width>
+							<height>55</height>
+							<aspectratio>stretch</aspectratio>
+							<texture>icons/notification_info.png</texture>
+							<align>right</align>
+							<aligny>center</aligny>
+						</control>
+					</control>
 					<control type="group">
-					  <posx>65r</posx>
+						<posx>65r</posx>
 						<control type="label">
-					    <description>First Line</description>
+							<description>First Line</description>
 							<posx>0</posx>
 							<posy>0</posy>
 							<height>36</height>
@@ -255,13 +252,13 @@
 							<font>NotificationsFont</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
-					    <align>right</align>
-					    <aligny>center</aligny>
+							<align>right</align>
+							<aligny>center</aligny>
 							<scroll>false</scroll>
-	            <label>$INFO[ListItem.Property(Addon.Status)]</label>
+							<label>$INFO[ListItem.Property(Addon.Status)]</label>
 						</control>
 						<control type="label">
-					    <description>Second Line</description>
+							<description>Second Line</description>
 							<posx>0</posx>
 							<posy>20</posy>
 							<height>36</height>
@@ -269,14 +266,14 @@
 							<font>NotificationsFont</font>
 							<textcolor>77white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
-					    <align>right</align>
-					    <aligny>center</aligny>
+							<align>right</align>
+							<aligny>center</aligny>
 							<scroll>false</scroll>
-	            <label>$INFO[ListItem.Property(Addon.Disclaimer)]</label>
-				      <visible>!IsEmpty(ListItem.Property(Addon.Disclaimer))</visible>
+							<label>$INFO[ListItem.Property(Addon.Disclaimer)]</label>
+							<visible>!IsEmpty(ListItem.Property(Addon.Disclaimer))</visible>
 						</control>
 						<control type="label">
-					    <description>Second Line</description>
+							<description>Second Line</description>
 							<posx>0</posx>
 							<posy>20</posy>
 							<height>36</height>
@@ -284,37 +281,35 @@
 							<font>NotificationsFont</font>
 							<textcolor>77white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
-					    <align>right</align>
-					    <aligny>center</aligny>
+							<align>right</align>
+							<aligny>center</aligny>
 							<scroll>false</scroll>
-	            <label>$LOCALIZE[24052] $LOCALIZE[416]</label>
-				      <visible>IsEmpty(ListItem.Property(Addon.Disclaimer))</visible>
+							<label>$LOCALIZE[24052] $LOCALIZE[416]</label>
+							<visible>IsEmpty(ListItem.Property(Addon.Disclaimer))</visible>
 						</control>
 					</control>
-			  </control>
+				</control>
 			</control>			
 		</control>
-  </include>
-
-
-  <include name="WeatherAlertsNotifications">
+	</include>
+	<include name="WeatherAlertsNotifications">
 		<control type="group">
-		  <posx>55</posx>
+			<posx>55</posx>
 			<posy>640</posy>
-	    <include>NotificationsAnimations</include>
-		  <visible>!Window.IsActive(ShutdownMenu)</visible>
-		  <animation type="Conditional" reversible="false" condition="![Window.IsActive(InfoDialog) | Window.IsActive(extendedprogressdialog)]">
-	      <effect type="fade" start="0" end="100" time="400" delay="250" tween="sine" easing="in"  />
-	      <effect type="slide" start="0,-35" end="0,0" time="450" delay="250" tween="cubic" easing="out" />
-		  </animation>
-		  <animation type="Conditional" reversible="false" condition="Window.IsActive(InfoDialog) | Window.IsActive(extendedprogressdialog)">
-	      <effect type="fade" start="100" end="0" time="400" tween="sine" easing="out" />
-	      <effect type="slide" start="0,0" end="0,-35" time="450" tween="sine" easing="out" />
-		  </animation>
+			<include>NotificationsAnimations</include>
+			<visible>!Window.IsActive(ShutdownMenu)</visible>
+			<animation type="Conditional" reversible="false" condition="![Window.IsActive(InfoDialog) | Window.IsActive(extendedprogressdialog)]">
+				<effect type="fade" start="0" end="100" time="400" delay="250" tween="sine" easing="in"  />
+				<effect type="slide" start="0,-35" end="0,0" time="450" delay="250" tween="cubic" easing="out" />
+			</animation>
+			<animation type="Conditional" reversible="false" condition="Window.IsActive(InfoDialog) | Window.IsActive(extendedprogressdialog)">
+				<effect type="fade" start="100" end="0" time="400" tween="sine" easing="out" />
+				<effect type="slide" start="0,0" end="0,-35" time="450" tween="sine" easing="out" />
+			</animation>
 			<control type="group">
-	      <include>NotificationsAnimations</include>
-        <visible>Window.IsVisible(Weather)</visible>
-			  <visible>!IsEmpty(Window.Property(Alerts.RSS)) + !IsEmpty(Window.Property(Current.Condition))</visible>
+				<include>NotificationsAnimations</include>
+				<visible>Window.IsVisible(Weather)</visible>
+				<visible>!IsEmpty(Window.Property(Alerts.RSS)) + !IsEmpty(Window.Property(Current.Condition))</visible>
 				<control type="grouplist">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -325,21 +320,21 @@
 					<itemgap>10</itemgap>
 					<orientation>horizontal</orientation>
 					<control type="group">
-					 <control type="image">
-						<posx>15</posx>
-						<posy>0</posy>
-						<width>55</width>
-						<height>55</height>
-						<aspectratio>stretch</aspectratio>
-					  <texture>icons/notification_warning.png</texture>
-						<align>right</align>
-						<aligny>center</aligny>
-					 </control>
-				  </control>
+						<control type="image">
+							<posx>15</posx>
+							<posy>0</posy>
+							<width>55</width>
+							<height>55</height>
+							<aspectratio>stretch</aspectratio>
+							<texture>icons/notification_warning.png</texture>
+							<align>right</align>
+							<aligny>center</aligny>
+						</control>
+					</control>
 					<control type="group">
-					  <posx>65r</posx>
+						<posx>65r</posx>
 						<control type="label">
-					    <description>First Line</description>
+							<description>First Line</description>
 							<posx>0</posx>
 							<posy>0</posy>
 							<height>36</height>
@@ -347,13 +342,13 @@
 							<font>NotificationsFont</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
-					    <align>right</align>
-					    <aligny>center</aligny>
+							<align>right</align>
+							<aligny>center</aligny>
 							<scroll>false</scroll>
-	            <label>$VAR[WeatherAlerts]</label>
+							<label>$VAR[WeatherAlerts]</label>
 						</control>
 						<control type="label">
-					    <description>Second Line</description>
+							<description>Second Line</description>
 							<posx>0</posx>
 							<posy>20</posy>
 							<height>36</height>
@@ -361,15 +356,14 @@
 							<font>NotificationsFont</font>
 							<textcolor>77white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
-					    <align>right</align>
-					    <aligny>center</aligny>
+							<align>right</align>
+							<aligny>center</aligny>
 							<scroll>false</scroll>
-	            <label>$INFO[Window.Property(Alerts)]</label>
+							<label>$INFO[Window.Property(Alerts)]</label>
 						</control>
 					</control>
-			  </control>
+				</control>
 			</control>
 		</control>
-  </include>
-
+	</include>
 </includes>

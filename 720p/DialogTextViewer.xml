@@ -2,10 +2,10 @@
 	<defaultcontrol>61</defaultcontrol>
 	<controls>
 		<control type="group">
-		  <include>DialogAnimation</include>
+			<include>DialogAnimation</include>
 			<control type="image">
 				<include>FullscreenDimensions</include>
-			  <texture background="true">dialogs/other/bg_textviewer.png</texture>
+				<texture background="true">dialogs/other/bg_textviewer.png</texture>
 			</control>
 			<control type="label" id="1">
 				<description>header label</description>
@@ -57,6 +57,5 @@
 				</control>
 			</control>
 		</control>
-
 	</controls>
 </window>

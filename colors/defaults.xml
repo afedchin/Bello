@@ -10,12 +10,14 @@
 	<color name="blue1">FF7ACAFE</color>
 	<color name="blue2">FF56AAE6</color>
 	<color name="blue3">FF44AAF3</color>
-	<color name="purple">FFA939FF</color>
+	<color name="purple">FF8E26E2</color>
 	<color name="purple1">FFBB19B9</color>
 	<color name="selected">FF56ADDA</color>
 	<color name="osdinfo">FFd0d0d0</color>
-  <color name="OSDColorsDiffuse">BBFFFFFF</color>  
-  <color name="FanartDiffuse">22FFFFFF</color>
+	<color name="OSDColorsDiffuse">BBFFFFFF</color>  
+	<color name="FanartDiffuse">22FFFFFF</color>
+	<color name="ThemeDiffuse">FFB630FF</color>
+	<color name="ThemeDiffuse2">bb240933</color>
 	<color name="33white">33FFFFFF</color>
 	<color name="44white">44FFFFFF</color>
 	<color name="55white">55FFFFFF</color>

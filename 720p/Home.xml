@@ -1,6 +1,6 @@
 <window id="0">
 	<defaultcontrol always="true">20</defaultcontrol>
-  <allowoverlay>yes</allowoverlay>
+	<allowoverlay>yes</allowoverlay>
 	<controls>
 		<include>BackgroundContent</include>
 		<include>HomeBackground</include>
@@ -8,11 +8,11 @@
 		<include>BackgroundVignette</include>
 		<!-- Main Home Menu Wraplist -->
 		<include>HomeMenuWraplist</include>
-	  <!-- Home TopMenu -->
+		<!-- Home TopMenu -->
 		<include>TopHomeMenu</include>
-	  <!-- Home Now Playing -->
+		<!-- Home Now Playing -->
 		<include>HomeNowPlaying</include>
-	  <!-- Various Home Includes -->
+		<!-- Various Home Includes -->
 		<include condition="!Skin.HasSetting(HideMoviesSubMenu)">HomeSubMenuMovies</include>
 		<include condition="!Skin.HasSetting(HideTVShowsSubMenu)">HomeSubMenuTVShows</include>
 		<include condition="!Skin.HasSetting(HideMusicSubMenu)">HomeSubMenuMusic</include>
@@ -21,6 +21,5 @@
 		<include>HomeSubMenusArrows</include>
 		<include>CommonDialogsFadeOutBG</include>
 		<include>ContentSkinWidgetsInfo</include>
-
 	</controls>	
 </window>

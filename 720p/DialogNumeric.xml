@@ -1,7 +1,6 @@
 <window id="109">
 	<defaultcontrol always="true">21</defaultcontrol>
 	<controls>
-
 		<control type="group">
 			<include>DialogAnimation</include>
 			<control type="image">
@@ -9,34 +8,31 @@
 				<include>FullscreenDimensions</include>
 				<texture>dialogs/keyboard/numpad-bg.png</texture>
 			</control>
-
-		<control type="label" id="1">
-			<description>Heading</description>
-			<posx>510</posx>
-			<posy>202</posy>
-			<width>260</width>
-			<font>FontSize_32</font>
-			<textcolor>white</textcolor>
-			<align>center</align>
-			<scroll>true</scroll>
-			<scrollspeed>20</scrollspeed>
-		</control>
-		<control type="label" id="4">
-			<description>Edit Text</description>
-			<posx>526</posx>
-			<posy>248</posy>
-			<width>228</width>
-			<font>FontSize_34</font>
-			<textcolor>77white</textcolor>
-			<align>center</align>
-			<scroll>true</scroll>
-			<scrollspeed>20</scrollspeed>
-		</control>
-										
+			<control type="label" id="1">
+				<description>Heading</description>
+				<posx>510</posx>
+				<posy>202</posy>
+				<width>260</width>
+				<font>FontSize_32</font>
+				<textcolor>white</textcolor>
+				<align>center</align>
+				<scroll>true</scroll>
+				<scrollspeed>20</scrollspeed>
+			</control>
+			<control type="label" id="4">
+				<description>Edit Text</description>
+				<posx>526</posx>
+				<posy>248</posy>
+				<width>228</width>
+				<font>FontSize_34</font>
+				<textcolor>77white</textcolor>
+				<align>center</align>
+				<scroll>true</scroll>
+				<scrollspeed>20</scrollspeed>
+			</control>
 			<control type="group">
 				<posx>513</posx>
 				<posy>289</posy>
-					
 				<!-- Row 1 -->
 				<control type="button" id="11">
 					<description>'1' button</description>
@@ -49,7 +45,7 @@
 					<onup>20</onup>
 					<ondown>14</ondown>
 					<texturenofocus border="6,8,6,8">dialogs/keyboard/button_nf.png</texturenofocus>
-					<texturefocus border="6,8,6,8">dialogs/keyboard/button_fo.png</texturefocus>
+					<texturefocus colordiffuse="ThemeDiffuse" border="6,8,6,8">dialogs/keyboard/button_fo.png</texturefocus>
 					<align>left</align>
 					<aligny>top</aligny>
 					<font>FontSize_16B</font>
@@ -59,7 +55,6 @@
 					<focusedcolor>white</focusedcolor>
 					<label>12311</label>
 				</control>
-				
 				<control type="button" id="12">
 					<description>'2' button</description>
 					<posx>76</posx>
@@ -71,7 +66,7 @@
 					<onup>10</onup>
 					<ondown>15</ondown>
 					<texturenofocus border="6,8,6,8">dialogs/keyboard/button_nf.png</texturenofocus>
-					<texturefocus border="6,8,6,8">dialogs/keyboard/button_fo.png</texturefocus>
+					<texturefocus colordiffuse="ThemeDiffuse" border="6,8,6,8">dialogs/keyboard/button_fo.png</texturefocus>
 					<align>left</align>
 					<aligny>top</aligny>
 					<font>FontSize_16B</font>
@@ -81,7 +76,6 @@
 					<focusedcolor>white</focusedcolor>
 					<label>12312</label>
 				</control>
-				
 				<control type="button" id="13">
 					<description>'3' button</description>
 					<posx>131</posx>
@@ -93,7 +87,7 @@
 					<onup>22</onup>
 					<ondown>16</ondown>
 					<texturenofocus border="6,8,6,8">dialogs/keyboard/button_nf.png</texturenofocus>
-					<texturefocus border="6,8,6,8">dialogs/keyboard/button_fo.png</texturefocus>
+					<texturefocus colordiffuse="ThemeDiffuse" border="6,8,6,8">dialogs/keyboard/button_fo.png</texturefocus>
 					<align>left</align>
 					<aligny>top</aligny>
 					<font>FontSize_16B</font>
@@ -103,7 +97,6 @@
 					<focusedcolor>white</focusedcolor>
 					<label>12313</label>
 				</control>
-				
 				<!-- Row 2 -->
 				<control type="button" id="14">
 					<description>'4' button</description>
@@ -116,7 +109,7 @@
 					<onup>11</onup>
 					<ondown>17</ondown>
 					<texturenofocus border="6,8,6,8">dialogs/keyboard/button_nf.png</texturenofocus>
-					<texturefocus border="6,8,6,8">dialogs/keyboard/button_fo.png</texturefocus>
+					<texturefocus colordiffuse="ThemeDiffuse" border="6,8,6,8">dialogs/keyboard/button_fo.png</texturefocus>
 					<align>left</align>
 					<aligny>top</aligny>
 					<font>FontSize_16B</font>
@@ -126,7 +119,6 @@
 					<focusedcolor>white</focusedcolor>
 					<label>12314</label>
 				</control>
-				
 				<control type="button" id="15">
 					<description>'5' button</description>
 					<posx>76</posx>
@@ -138,7 +130,7 @@
 					<onup>12</onup>
 					<ondown>18</ondown>
 					<texturenofocus border="6,8,6,8">dialogs/keyboard/button_nf.png</texturenofocus>
-					<texturefocus border="6,8,6,8">dialogs/keyboard/button_fo.png</texturefocus>
+					<texturefocus colordiffuse="ThemeDiffuse" border="6,8,6,8">dialogs/keyboard/button_fo.png</texturefocus>
 					<align>left</align>
 					<aligny>top</aligny>
 					<font>FontSize_16B</font>
@@ -148,7 +140,6 @@
 					<focusedcolor>white</focusedcolor>
 					<label>12315</label>
 				</control>
-				
 				<control type="button" id="16">
 					<description>'6' button</description>
 					<posx>131</posx>
@@ -160,7 +151,7 @@
 					<onup>13</onup>
 					<ondown>19</ondown>
 					<texturenofocus border="6,8,6,8">dialogs/keyboard/button_nf.png</texturenofocus>
-					<texturefocus border="6,8,6,8">dialogs/keyboard/button_fo.png</texturefocus>
+					<texturefocus colordiffuse="ThemeDiffuse" border="6,8,6,8">dialogs/keyboard/button_fo.png</texturefocus>
 					<align>left</align>
 					<aligny>top</aligny>
 					<font>FontSize_16B</font>
@@ -170,7 +161,6 @@
 					<focusedcolor>white</focusedcolor>
 					<label>12316</label>
 				</control>
-				
 				<!-- Row 3 -->
 				<control type="button" id="17">
 					<description>'7' button</description>
@@ -183,7 +173,7 @@
 					<onup>14</onup>
 					<ondown>20</ondown>
 					<texturenofocus border="6,8,6,8">dialogs/keyboard/button_nf.png</texturenofocus>
-					<texturefocus border="6,8,6,8">dialogs/keyboard/button_fo.png</texturefocus>
+					<texturefocus colordiffuse="ThemeDiffuse" border="6,8,6,8">dialogs/keyboard/button_fo.png</texturefocus>
 					<align>left</align>
 					<aligny>top</aligny>
 					<font>FontSize_16B</font>
@@ -193,7 +183,6 @@
 					<focusedcolor>white</focusedcolor>
 					<label>12317</label>
 				</control>
-				
 				<control type="button" id="18">
 					<description>'8' button</description>
 					<posx>76</posx>
@@ -205,7 +194,7 @@
 					<onup>15</onup>
 					<ondown>10</ondown>
 					<texturenofocus border="6,8,6,8">dialogs/keyboard/button_nf.png</texturenofocus>
-					<texturefocus border="6,8,6,8">dialogs/keyboard/button_fo.png</texturefocus>
+					<texturefocus colordiffuse="ThemeDiffuse" border="6,8,6,8">dialogs/keyboard/button_fo.png</texturefocus>
 					<align>left</align>
 					<aligny>top</aligny>
 					<font>FontSize_16B</font>
@@ -215,7 +204,6 @@
 					<focusedcolor>white</focusedcolor>
 					<label>12318</label>
 				</control>
-				
 				<control type="button" id="19">
 					<description>'9' button</description>
 					<posx>131</posx>
@@ -227,7 +215,7 @@
 					<onup>16</onup>
 					<ondown>22</ondown>
 					<texturenofocus border="6,8,6,8">dialogs/keyboard/button_nf.png</texturenofocus>
-					<texturefocus border="6,8,6,8">dialogs/keyboard/button_fo.png</texturefocus>
+					<texturefocus colordiffuse="ThemeDiffuse" border="6,8,6,8">dialogs/keyboard/button_fo.png</texturefocus>
 					<align>left</align>
 					<aligny>top</aligny>
 					<font>FontSize_16B</font>
@@ -237,7 +225,6 @@
 					<focusedcolor>white</focusedcolor>
 					<label>12319</label>
 				</control>
-				
 				<!-- Row 4 -->
 				<control type="button" id="20">
 					<description>'Previous' button</description>
@@ -250,9 +237,8 @@
 					<onup>17</onup>
 					<ondown>11</ondown>
 					<texturenofocus border="6,8,6,8">dialogs/keyboard/button_left_nf.png</texturenofocus>
-					<texturefocus border="6,8,6,8">dialogs/keyboard/button_left_fo.png</texturefocus>
+					<texturefocus colordiffuse="ThemeDiffuse" border="6,8,6,8">dialogs/keyboard/button_left_fo.png</texturefocus>
 				</control>
-				
 				<control type="button" id="10">
 					<description>'0' button</description>
 					<posx>76</posx>
@@ -264,7 +250,7 @@
 					<onup>18</onup>
 					<ondown>12</ondown>
 					<texturenofocus border="6,8,6,8">dialogs/keyboard/button_nf.png</texturenofocus>
-					<texturefocus border="6,8,6,8">dialogs/keyboard/button_fo.png</texturefocus>
+					<texturefocus colordiffuse="ThemeDiffuse" border="6,8,6,8">dialogs/keyboard/button_fo.png</texturefocus>
 					<align>left</align>
 					<aligny>top</aligny>
 					<font>FontSize_16B</font>
@@ -274,7 +260,6 @@
 					<focusedcolor>white</focusedcolor>
 					<label>12310</label>
 				</control>
-				
 				<control type="button" id="22">
 					<description>'Next' button</description>
 					<posx>131</posx>
@@ -286,9 +271,8 @@
 					<onup>19</onup>
 					<ondown>13</ondown>
 					<texturenofocus border="6,8,6,8">dialogs/keyboard/button_right_nf.png</texturenofocus>
-					<texturefocus border="6,8,6,8">dialogs/keyboard/button_right_fo.png</texturefocus>
+					<texturefocus colordiffuse="ThemeDiffuse" border="6,8,6,8">dialogs/keyboard/button_right_fo.png</texturefocus>
 				</control>
-				
 				<!-- Big Side Buttons -->
 				<control type="button" id="23">
 					<description>'Backspace' button</description>
@@ -301,19 +285,18 @@
 					<onup>21</onup>
 					<ondown>21</ondown>
 					<texturenofocus border="6,8,6,8">dialogs/keyboard/button_nf.png</texturenofocus>
-					<texturefocus border="6,8,6,8">dialogs/keyboard/button_fo.png</texturefocus>
+					<texturefocus colordiffuse="ThemeDiffuse" border="6,8,6,8">dialogs/keyboard/button_fo.png</texturefocus>
 					<align>left</align>
 					<aligny>top</aligny>
 					<font>FontSize_16B</font>
 					<textoffsetx>21</textoffsetx>
 					<textoffsety>94</textoffsety>
 					<textwidth>120</textwidth>
-				  <angle>90</angle>
+					<angle>90</angle>
 					<textcolor>99grey</textcolor>
 					<focusedcolor>white</focusedcolor>
 					<label>20181</label>
 				</control>
-		
 				<control type="button" id="21">
 					<description>'Done' button</description>
 					<posx>186</posx>
@@ -325,20 +308,19 @@
 					<onup>23</onup>
 					<ondown>23</ondown>
 					<texturenofocus border="6,8,6,8">dialogs/keyboard/button_nf.png</texturenofocus>
-					<texturefocus border="6,8,6,8">dialogs/keyboard/button_fo.png</texturefocus>
+					<texturefocus colordiffuse="ThemeDiffuse" border="6,8,6,8">dialogs/keyboard/button_fo.png</texturefocus>
 					<align>left</align>
 					<aligny>top</aligny>
 					<font>FontSize_15B</font>
 					<textoffsetx>21</textoffsetx>
 					<textoffsety>92</textoffsety>
 					<textwidth>120</textwidth>
-				  <angle>90</angle>
+					<angle>90</angle>
 					<textcolor>99grey</textcolor>
 					<focusedcolor>white</focusedcolor>
 					<label>20177</label>
 				</control>
 			</control>
 		</control>
-
 	</controls>
 </window>
