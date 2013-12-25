@@ -594,6 +594,7 @@
 								<shadowcolor>77000000</shadowcolor>
 								<align>left</align>
 								<aligny>center</aligny>
+								<scroll>true</scroll>
 								<label>$VAR[MusicLabel]</label>
 								<scroll>true</scroll>
 								<visible>!Stringcompare(ListItem.Label,..)</visible>
@@ -608,6 +609,7 @@
 								<shadowcolor>77000000</shadowcolor>
 								<align>right</align>
 								<aligny>center</aligny>
+								<scroll>true</scroll>
 								<label fallback="․  ․  ․">$VAR[MusicLabel2]</label>
 								<visible>![Container.Content(Addons) | Substring(Container.FolderPath,plugin,left)]</visible>
 								<visible>!Stringcompare(ListItem.Label,..)</visible>
@@ -742,11 +744,10 @@
 						<control type="label">
 							<posx>15</posx>
 							<height>30</height>
-							<width>640</width>
+							<width>875</width>
 							<textcolor>white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
 							<font>FontSize_38</font>
-							<scroll>false</scroll>
 							<align>left</align>
 							<label>$INFO[ListItem.label]</label>
 							<visible>!Container.Content(Songs)</visible>
@@ -755,11 +756,10 @@
 						<control type="label">
 							<posx>15</posx>
 							<height>30</height>
-							<width>640</width>
+							<width>875</width>
 							<textcolor>white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
 							<font>FontSize_38</font>
-							<scroll>false</scroll>
 							<align>left</align>
 							<label>$INFO[ListItem.Title]</label>
 							<scroll>true</scroll>
@@ -769,11 +769,10 @@
 							<posx>17</posx>
 							<posy>30</posy>
 							<height>30</height>
-							<width>640</width>
+							<width>875</width>
 							<textcolor>77white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
 							<font>FontSize_22</font>
-							<scroll>false</scroll>
 							<align>left</align>
 							<label>$VAR[GlobalInfo]</label>
 							<scroll>true</scroll>
@@ -783,11 +782,10 @@
 							<posx>17</posx>
 							<posy>30</posy>
 							<height>30</height>
-							<width>640</width>
+							<width>875</width>
 							<textcolor>77white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
 							<font>FontSize_22</font>
-							<scroll>false</scroll>
 							<align>left</align>
 							<label>$INFO[ListItem.Artist]</label>
 							<visible>Container.Content(Albums)</visible>
@@ -809,11 +807,10 @@
 				<control type="label">
 					<posy>258</posy>
 					<height>30</height>
-					<width>600</width>
+					<width>870</width>
 					<textcolor>99white</textcolor>
 					<shadowcolor>99000000</shadowcolor>
 					<font>FontSize_22</font>
-					<scrollspeed>30</scrollspeed>
 					<align>left</align>
 					<label fallback="195">$INFO[ListItem.Genre]</label>
 					<visible>!Container.Content(Artists)</visible>
@@ -821,18 +818,17 @@
 				<control type="label">
 					<posy>258</posy>
 					<height>30</height>
-					<width>600</width>
+					<width>870</width>
 					<textcolor>99white</textcolor>
 					<shadowcolor>99000000</shadowcolor>
 					<font>FontSize_22</font>
-					<scrollspeed>30</scrollspeed>
 					<align>left</align>
 					<label fallback="195">$INFO[ListItem.Property(Artist_YearsActive)]</label>
 					<visible>Container.Content(Artists)</visible>
 				</control>				
 				<control type="textbox">
 					<posy>293</posy>
-					<width>570</width>
+					<width>865</width>
 					<height>160</height>
 					<font>FontSize_22</font>
 					<textcolor>99white</textcolor>
@@ -1398,5 +1394,5 @@
 			</control>
 		</control>
 	</control>
-	</include>
+</include>
 </includes>

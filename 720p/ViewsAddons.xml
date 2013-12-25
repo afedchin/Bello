@@ -326,6 +326,7 @@
 								<shadowcolor>77000000</shadowcolor>
 								<align>left</align>
 								<aligny>center</aligny>
+								<scroll>true</scroll>
 								<label>$INFO[ListItem.Label]</label>
 								<visible>!Stringcompare(ListItem.Label,..)</visible>
 							</control>
@@ -339,6 +340,7 @@
 								<shadowcolor>77000000</shadowcolor>
 								<align>right</align>
 								<aligny>center</aligny>
+								<scroll>true</scroll>
 								<label fallback="․  ․  ․">$INFO[ListItem.Label2]</label>
 								<visible>IsEmpty(ListItem.Property(Addon.Broken))</visible>
 								<visible>!Stringcompare(ListItem.Label,..)</visible>
@@ -445,6 +447,15 @@
 						<bordersize>6</bordersize>
 						<visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
 					</control>
+					<control type="image">
+						<posx>26</posx>
+						<posy>27</posy>
+						<width>200</width>
+						<height>194</height>
+						<texture background="true">$VAR[AddonStatus]</texture>
+						<aspectratio align="center" aligny="center">stretch</aspectratio>
+						<bordersize>6</bordersize>
+					</control>
 					<control type="label">
 						<posx>128</posx>
 						<posy>220</posy>
@@ -486,6 +497,15 @@
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
 						<bordersize>6</bordersize>
 						<visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
+					</control>
+					<control type="image">
+						<posx>26</posx>
+						<posy>27</posy>
+						<width>200</width>
+						<height>194</height>
+						<texture background="true">$VAR[AddonStatus]</texture>
+						<aspectratio align="center" aligny="center">stretch</aspectratio>
+						<bordersize>6</bordersize>
 					</control>
 					<control type="label">
 						<posx>128</posx>

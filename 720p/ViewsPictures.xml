@@ -422,6 +422,7 @@
 								<shadowcolor>77000000</shadowcolor>
 								<align>left</align>
 								<aligny>center</aligny>
+								<scroll>true</scroll>
 								<label>$INFO[ListItem.Label]</label>
 								<visible>!Stringcompare(ListItem.Label,..)</visible>
 							</control>
@@ -553,6 +554,7 @@
 								<shadowcolor>77000000</shadowcolor>
 								<align>left</align>
 								<aligny>center</aligny>
+								<scroll>true</scroll>
 								<label>$INFO[ListItem.Label]</label>
 								<visible>!Stringcompare(ListItem.Label,..)</visible>
 							</control>

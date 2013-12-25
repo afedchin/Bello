@@ -68,7 +68,7 @@
 						<posy>167</posy>
 						<width>422</width>
 						<height>242</height>
-						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<aspectratio align="center" aligny="center">strecth</aspectratio>
 						<fadetime>150</fadetime>
 						<texture background="true" fallback="thumbs/fallback_fanart_tp.png">$VAR[FanartThumbs]</texture>
 						<bordersize>6</bordersize>
@@ -115,7 +115,6 @@
 							<height min="0" max="13">auto</height>
 							<width>180</width>
 							<scroll>true</scroll>
-
 							<label>$LOCALIZE[20339]</label>
 							<font>FontSize_18B</font>
 							<textcolor>99white</textcolor>
@@ -277,7 +276,6 @@
 						<autoscroll delay="8000" time="2000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
 						<label fallback="195">$VAR[GlobalPlotDescription]</label>
 						<visible>!Container.Content(Sets)</visible>
-						<!--		<visible>Container.Content(TVShows) | Container.Content(Seasons) | [substring(Container.FolderPath,plugin,left) + Container.HasFiles]</visible> -->
 					</control>
 					<control type="textbox.">
 						<posx>820</posx>
@@ -811,7 +809,6 @@
 					<width>23</width>
 					<height>20</height>
 					<texture>views/scrollbar/arrow.png</texture>
-					<!-- <visible>[Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(Sets) | Container.Content(Addons)] + ![substring(Container.FolderPath,plugin,left) + Container.Content(Episodes)]</visible> -->
 				</control>
 				<control type="image">
 					<posx>58</posx>
@@ -819,7 +816,6 @@
 					<width>23</width>
 					<height>20</height>
 					<texture flipy="true">views/scrollbar/arrow.png</texture>
-					<!-- <visible>[Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(Sets) | Container.Content(Addons)] + ![substring(Container.FolderPath,plugin,left) + Container.Content(Episodes)]</visible> -->
 				</control>
 			</control>
 		</control>
@@ -932,13 +928,10 @@
 							</control> 
 							<control type="label">
 								<height>30</height>
-								<width>690</width>
+								<width>935</width>
 								<textcolor>white</textcolor>
 								<shadowcolor>99000000</shadowcolor>
 								<font>FontSize_38</font>
-								<scrollout>false</scrollout>
-								<pauseatend>200</pauseatend>
-								<scrollspeed>30</scrollspeed>
 								<align>left</align>
 								<label>$INFO[ListItem.Label]</label>
 								<scroll>true</scroll>
@@ -1238,10 +1231,8 @@
 							<textcolor>white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
 							<font>FontSize_38</font>
-							<scroll>false</scroll>
 							<align>left</align>
 							<label>$INFO[ListItem.Label]</label>
-							<scroll>true</scroll>
 						</control>
 						<!-- Small Down Info -->
 						<control type="group">
@@ -2188,7 +2179,6 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
-							<scroll>true</scroll>
 							<visible>!Stringcompare(ListItem.Label,..)</visible>
 						</control>
 					</itemlayout>
@@ -2253,8 +2243,8 @@
 								<shadowcolor>77000000</shadowcolor>
 								<align>left</align>
 								<aligny>center</aligny>
-								<label>$INFO[ListItem.Label]</label>
 								<scroll>true</scroll>
+								<label>$INFO[ListItem.Label]</label>
 								<visible>!Stringcompare(ListItem.Label,..)</visible>
 							</control>
 						</control>
@@ -2510,8 +2500,7 @@
 				<pagecontrol>60</pagecontrol>
 				<scrolltime tween="Quadratic" easing="out">300</scrolltime>
 				<preloaditems>2</preloaditems>
-				<animation effect="slide" start="0,0" end="0,-10" time="0" tween="sine" easing="inout" condition="Container.Content(Episodes)">Conditional</animation>
-				<visible>Container.Content(Movies) | Container.Content(Sets) | Container.Content(TVShows) | Container.Content(Seasons) | Window.IsVisible(VideoPlaylist)</visible>
+				<visible>Container.Content(Movies) | Container.Content(Sets) | Container.Content(TVShows) | Container.Content(Seasons)</visible>
 				<itemlayout height="240" width="174">
 					<control type="image">
 						<posx>0</posx>
@@ -2591,7 +2580,6 @@
 				<posy>585</posy>
 				<visible>Control.IsVisible(560)</visible>
 				<visible>!Skin.HasSetting(ThumbnailShowInfo)</visible>
-				<visible>Container.Content(Movies) | Container.Content(Sets) | Container.Content(TVShows) | Container.Content(Seasons) | Window.IsVisible(VideoPlaylist)</visible>
 				<control type="label">
 					<posx>20</posx>
 					<posy>0</posy>
@@ -2672,7 +2660,6 @@
 				<posy>100</posy>
 				<visible>Control.IsVisible(560)</visible>
 				<visible>Skin.HasSetting(ThumbnailShowInfo)</visible>
-				<visible>Container.Content(Movies) | Container.Content(Sets) | Container.Content(TVShows) | Container.Content(Seasons) | Window.IsVisible(VideoPlaylist)</visible>
 				<control type="image">
 					<width>360</width>
 					<height>495</height>
@@ -2861,7 +2848,6 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
-						<scroll>true</scroll>
 					</control>
 				</itemlayout>
 				<focusedlayout height="180" width="244">
@@ -2903,8 +2889,8 @@
 						<scrollspeed>35</scrollspeed>
 						<align>center</align>
 						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]</label>
 						<scroll>true</scroll>
+						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="image">
 						<posx>-2</posx>
@@ -2973,7 +2959,6 @@
 						<posx>40</posx>
 						<width>550</width>
 						<label>$INFO[ListItem.Label]</label>
-						<scroll>true</scroll>
 						<font>FontSize_22</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>77000000</shadowcolor>
@@ -3054,8 +3039,8 @@
 							<textcolor>white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
 							<align>left</align>
-							<label>$INFO[ListItem.Label]</label>
 							<scroll>true</scroll>
+							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
 							<posx>180</posx>
@@ -3190,8 +3175,8 @@
 							<textcolor>white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
 							<align>left</align>
-							<label>$INFO[ListItem.Label]</label>
 							<scroll>true</scroll>
+							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
 							<posx>30</posx>
@@ -3289,13 +3274,10 @@
 							<width>400</width>
 							<font>FontSize_20</font>
 							<scroll>true</scroll>
-
 							<textcolor>99white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
 							<align>left</align>
 							<label>$INFO[ListItem.TVShowTitle] $INFO[ListItem.Season,,x]$INFO[ListItem.Episode]</label>
-							<scroll>true</scroll>
-
 						</control>
 						<control type="textbox">
 							<posx>310</posx>

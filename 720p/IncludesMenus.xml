@@ -8,7 +8,7 @@
 		<posx>285</posx>
 		<posy>370</posy>
 		<width>700</width>
-		<height>245</height>
+		<height>201</height>
 		<onup>23</onup>
 		<ondown>23</ondown>
 		<onleft>20</onleft>
@@ -83,63 +83,57 @@
 				<item id="0">
 					<label>$LOCALIZE[31200]</label>
 					<onclick>SetFocus(81)</onclick>
-					<visible>Library.HasContent(Movies)</visible>
+				</item>
+				<item id="11">
+					<label>$LOCALIZE[1037]</label>
+					<onclick>ActivateWindow(videos,addons,return)</onclick>
+				</item>
+				<item id="12">
+					<label>$LOCALIZE[31370]</label>
+					<icon>special://skin/extras/icons/UpdateVideoLibrary.png</icon>
+					<onclick>UpdateLibrary(video)</onclick>
+					<visible>Skin.HasSetting(ShowUpdateVideoLibraryButton)</visible>
 				</item>
 				<item id="1">
 					<label>$LOCALIZE[31018]</label>
 					<onclick>ActivateWindow(10025,plugin://plugin.video.the.trailers/,return)</onclick>
 					<visible>System.HasAddon(plugin.video.the.trailers)</visible>
-					<visible>Library.HasContent(Movies)</visible>
 				</item>
 				<item id="2">
 					<label>$LOCALIZE[135]</label>
 					<onclick>ActivateWindow(videos,moviegenres,return)</onclick>
-					<visible>Library.HasContent(Movies)</visible>
 				</item>
 				<item id="3">			
 					<label>$LOCALIZE[652]</label>
 					<onclick>ActivateWindow(videos,movieyears,return)</onclick>
-					<visible>Library.HasContent(Movies)</visible>
 				</item>
 				<item id="4">
 					<label>$LOCALIZE[344]</label>
 					<onclick>ActivateWindow(videos,movieactors,return)</onclick>
-					<visible>Library.HasContent(Movies)</visible>
 				</item>
 				<item id="5">
 					<label>$LOCALIZE[20348]</label>
 					<onclick>ActivateWindow(videos,moviedirectors,return)</onclick>
-					<visible>Library.HasContent(Movies)</visible>
 				</item>
 				<item id="6">
 					<label>$LOCALIZE[20388]</label>
 					<onclick>ActivateWindow(videos,moviestudios,return)</onclick>
-					<visible>Library.HasContent(Movies)</visible>
 				</item>
 				<item id="7">
 					<label>$LOCALIZE[136]</label>
 					<onclick>ActivateWindow(videos,playlists,return)</onclick>
-					<visible>Library.HasContent(Movies)</visible>
 				</item>
 				<item id="8">
 					<label>$LOCALIZE[20434]</label>
 					<onclick>ActivateWindow(Videos,MovieSets,return)</onclick>
-					<visible>Library.HasContent(MovieSets)</visible>				
 				</item>
 				<item id="9">
 					<label>$LOCALIZE[14022]</label>
 					<onclick>ActivateWindow(videos,root)</onclick>
-					<visible>Library.HasContent(Movies)</visible>
 				</item>
 				<item id="10">
 					<label>$LOCALIZE[744]</label>
 					<onclick>ActivateWindow(videos,files,return)</onclick>
-					<visible>Library.HasContent(Movies)</visible>
-				</item>
-				<item id="11">
-					<label>$LOCALIZE[1037]</label>
-					<onclick>ActivateWindow(videos,addons,return)</onclick>
-					<visible>Library.HasContent(Movies)</visible>
 				</item>
 			</content>
 		</control>				
@@ -164,54 +158,51 @@
 				<item id="0">
 					<label>$LOCALIZE[31201]</label>
 					<onclick>SetFocus(81)</onclick>
-					<visible>Library.HasContent(TVShows)</visible>
+				</item>
+				<item id="9">
+					<label>$LOCALIZE[1037]</label>
+					<onclick>ActivateWindow(videos,addons,return)</onclick>
+				</item>	
+				<item id="10">
+					<label>$LOCALIZE[31370]</label>
+					<icon>special://skin/extras/icons/UpdateVideoLibrary.png</icon>
+					<include>OnClickDialogsClose</include>
+					<onclick>UpdateLibrary(video)</onclick>
+					<visible>Skin.HasSetting(ShowUpdateVideoLibraryButton)</visible>
 				</item>
 				<item id="1">
 					<label>$LOCALIZE[31001]</label>
 					<onclick>XBMC.RunScript(script.tv.show.next.aired)</onclick>
 					<visible>System.HasAddon(script.tv.show.next.aired)</visible>
-					<visible>Library.HasContent(TVShows)</visible>
 				</item>
 				<item id="2">			
 					<label>$LOCALIZE[20388]</label>
 					<onclick>ActivateWindow(videos,tvshowstudios,return)</onclick>
-					<visible>Library.HasContent(TVShows)</visible>
 				</item>
 				<item id="3">				
 					<label>$LOCALIZE[135]</label>
 					<onclick>ActivateWindow(videos,tvshowgenres,return)</onclick>
-					<visible>Library.HasContent(TVShows)</visible>
 				</item>	
 				<item id="4">
 					<label>$LOCALIZE[344]</label>
 					<onclick>ActivateWindow(videos,tvshowactors,return)</onclick>		
-					<visible>Library.HasContent(TVShows)</visible>		
 				</item>
 				<item id="5">
 					<label>$LOCALIZE[652]</label>
 					<onclick>ActivateWindow(videos,tvshowyears,return)</onclick>		
-					<visible>Library.HasContent(TVShows)</visible>		
 				</item>
 				<item id="6">
 					<label>$LOCALIZE[136]</label>
 					<onclick>ActivateWindow(videos,playlists,return)</onclick>
-					<visible>Library.HasContent(TVShows)</visible>
 				</item>
 				<item id="7">
 					<label>$LOCALIZE[14022]</label>
 					<onclick>ActivateWindow(videos,root)</onclick>
-					<visible>Library.HasContent(TVShows)</visible>
 				</item>
 				<item id="8">
 					<label>$LOCALIZE[744]</label>
 					<onclick>ActivateWindow(videos,files,return)</onclick>
-					<visible>Library.HasContent(TVShows)</visible>
 				</item>
-				<item id="9">
-					<label>$LOCALIZE[1037]</label>
-					<onclick>ActivateWindow(videos,addons,return)</onclick>
-					<visible>Library.HasContent(TVShows)</visible>
-				</item>	
 			</content>
 		</control>
 	</include>
@@ -371,6 +362,50 @@
 			</content>
 		</control>
 	</include>
+	<!-- Home SubMenu LiveTV -->
+    <include name="HomeSubMenuLiveTV">
+        <control type="wraplist" id="23">
+            <description>SubMenu Container LiveTV</description>
+      <visible>![Window.IsActive(ShutdownMenu) | Window.IsActive(BusyDialog) | Window.IsActive(ProgressDialog) | Window.IsActive(PlayerControls) | Container(20).OnNext | Container(20).OnPrevious] + Container(20).HasFocus(11)</visible>
+      <include>SubMenuWraplistVarsDown</include>
+      <itemlayout height="46">
+        <control type="label">
+          <include>SubMenuItemLayoutVarsDown</include>
+        </control>
+      </itemlayout>
+      <focusedlayout height="55">
+        <control type="label">
+          <include>SubMenuFocusedLayoutVarsDown</include>
+        </control>
+     </focusedlayout>
+      <content>
+        <item id="0">
+          <label>$LOCALIZE[19023]</label>
+          <onclick>ActivateWindowAndFocus(PVR, 32,0, 11,0)</onclick>
+        </item>
+        <item id="1">
+          <label>$LOCALIZE[19163]</label>
+          <onclick>ActivateWindowAndFocus(PVR, 34,0, 13,0)</onclick>
+        </item>
+        <item id="2">
+          <label>$LOCALIZE[19040]</label>
+          <onclick>ActivateWindowAndFocus(PVR, 35,0, 14,0)</onclick>
+        </item>
+        <item id="3">
+          <label>$LOCALIZE[19069]</label>
+          <onclick>ActivateWindowAndFocus(PVR, 31,0, 10,0)</onclick>
+        </item>
+        <item id="4">
+          <label>$LOCALIZE[137]</label>
+          <onclick>ActivateWindowAndFocus(PVR, 36,0, 17,0)</onclick>
+        </item>
+        <item id="5">
+          <label>$LOCALIZE[19024]</label>
+          <onclick>ActivateWindowAndFocus(PVR, 33,0, 12,0)</onclick>
+        </item>
+      </content>
+    </control>
+  </include>
 	<!-- ============================ -->
 	<!-- == Content Top Slide Info == -->
 	<!-- ============================ -->
