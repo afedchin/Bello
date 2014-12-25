@@ -31,7 +31,7 @@
 		    <visible allowhiddenfocus="true">Control.HasFocus(150) + !Skin.HasSetting(DisableQuickNav)</visible>
 				<control type="image">
 			    <include>FullscreenDimensions</include>
-				  <texture background="true">views/list/shine.png</texture>
+				  <texture background="true" colordiffuse="ThemeDiffuse">views/list/shine.png</texture>
 					<!-- <colordiffuse>ccffffff</colordiffuse> -->
 				</control>
 				<control type="image">
@@ -41,7 +41,7 @@
 					<width>745</width>
 					<height>256</height>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
-		      <texture background="true" colordiffuse="ThemeDiffuse">osd/quicknav/bg_quicknav.png</texture>
+		      <texture background="true">osd/quicknav/bg_quicknav.png</texture>
 				</control>
 				<control type="label">
 			    <description>header label</description>
@@ -174,7 +174,7 @@
 		    <visible allowhiddenfocus="true">Control.HasFocus(200) + !Skin.HasSetting(DisableQuickNav) + !Window.IsVisible(BusyDialog)</visible>
 				<control type="image">
 			    <include>FullscreenDimensions</include>
-				  <texture background="true">views/list/shine.png</texture>
+				  <texture background="true" colordiffuse="ThemeDiffuse">views/list/shine.png</texture>
 					<!-- <colordiffuse>ccffffff</colordiffuse> -->
 				</control>
 				<control type="image">
@@ -184,7 +184,7 @@
 					<width>781</width>
 					<height>272</height>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
-		      <texture border="30" background="true" colordiffuse="ThemeDiffuse">osd/quicknav/bg_quicknav.png</texture>
+		      <texture border="30" background="true">osd/quicknav/bg_quicknav.png</texture>
 				</control>
 				<control type="label">
 			    <description>header title</description>
@@ -318,7 +318,7 @@
 		    <visible allowhiddenfocus="true">Control.HasFocus(250) + !Skin.HasSetting(DisableQuickNav) + !Window.IsVisible(BusyDialog)</visible>
 				<control type="image">
 			    <include>FullscreenDimensions</include>
-				  <texture background="true">views/list/shine.png</texture>
+				  <texture background="true" colordiffuse="ThemeDiffuse">views/list/shine.png</texture>
 					<!-- <colordiffuse>ccffffff</colordiffuse> -->
 				</control>
 				<control type="image">
@@ -328,7 +328,7 @@
 					<width>781</width>
 					<height>272</height>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
-		      <texture border="30" background="true" colordiffuse="ThemeDiffuse">osd/quicknav/bg_quicknav.png</texture>
+		      <texture border="30" background="true">osd/quicknav/bg_quicknav.png</texture>
 				</control>
 				<control type="label">
 			    <description>header label</description>
@@ -461,7 +461,7 @@
 		    <visible allowhiddenfocus="true">Control.HasFocus(300) + !Skin.HasSetting(DisableQuickNav) + !Window.IsVisible(BusyDialog)</visible>
 				<control type="image">
 			    <include>FullscreenDimensions</include>
-				  <texture background="true">views/list/shine.png</texture>
+				  <texture background="true" colordiffuse="ThemeDiffuse">views/list/shine.png</texture>
 					<!-- <colordiffuse>ccffffff</colordiffuse> -->
 				</control>
 				<control type="image">
@@ -471,7 +471,7 @@
 					<width>800</width>
 					<height>256</height>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
-		      <texture border="30" background="true" colordiffuse="ThemeDiffuse">osd/quicknav/bg_quicknav.png</texture>
+		      <texture border="30" background="true">osd/quicknav/bg_quicknav.png</texture>
 				</control>
 				<control type="label">
 			    <description>header label</description>
@@ -626,7 +626,7 @@
 		    <visible allowhiddenfocus="true">Control.HasFocus(350) + !Skin.HasSetting(DisableQuickNav) + !Window.IsVisible(BusyDialog) + !Window.IsVisible(ProgressDialog)</visible>
 				<control type="image">
 			    <include>FullscreenDimensions</include>
-				  <texture background="true">views/list/shine.png</texture>
+				  <texture background="true" colordiffuse="ThemeDiffuse">views/list/shine.png</texture>
 					<!-- <colordiffuse>ccffffff</colordiffuse> -->
 				</control>
 				<control type="image">
@@ -636,7 +636,7 @@
 					<width>800</width>
 					<height>256</height>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
-		      <texture background="true" colordiffuse="ThemeDiffuse">osd/quicknav/bg_quicknav.png</texture>
+		      <texture background="true">osd/quicknav/bg_quicknav.png</texture>
 				</control>
 				<control type="label">
 			    <description>header label</description>
@@ -778,7 +778,7 @@
 		    <visible allowhiddenfocus="true">ControlGroup(100).HasFocus + Player.HasMedia + !Window.IsVisible(BusyDialog)</visible>
 				<control type="image">
 			    <include>FullscreenDimensions</include>
-				  <texture background="true">views/list/shine.png</texture>
+				  <texture background="true" colordiffuse="ThemeDiffuse">views/list/shine.png</texture>
 					<!-- <colordiffuse>ccffffff</colordiffuse> -->
 				</control>
 				<control type="image">
