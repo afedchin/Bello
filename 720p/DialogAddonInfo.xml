@@ -17,7 +17,7 @@
 					<width>386</width>
 					<height>386</height>
 					<aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
-					<texture diffuse="thumbs/video_diffuse.png">thumbs/thumb_back.png</texture>
+					<texture diffuse="thumbs/video_diffuse.png" colordiffuse="ThemeDiffuse">thumbs/thumb_back.png</texture>
 				</control>
 				<control type="image">
 					<left>0</left>

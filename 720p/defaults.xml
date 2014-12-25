@@ -66,8 +66,8 @@
 	  <disabledcolor>33white</disabledcolor>
 		<texturefocus>buttons/settings_fo.png</texturefocus>
 		<texturenofocus>-</texturenofocus>
-		<textureradioonfocus>buttons/radio_button_on.png</textureradioonfocus>
-		<textureradioonnofocus>buttons/radio_button_on.png</textureradioonnofocus>
+		<textureradioonfocus colordiffuse="ThemeDiffuse">buttons/radio_button_on.png</textureradioonfocus>
+		<textureradioonnofocus colordiffuse="ThemeDiffuse">buttons/radio_button_on.png</textureradioonnofocus>
 		<textureradioofffocus>buttons/radio_button_off.png</textureradioofffocus>
 		<textureradiooffnofocus>buttons/radio_button_off.png</textureradiooffnofocus>
 		<align>left</align>
@@ -105,8 +105,8 @@
 		<texturenofocus>-</texturenofocus>
 		<textureup>buttons/arrow_up_nf.png</textureup>
 		<texturedown>buttons/arrow_down_nf.png</texturedown>
-		<textureupfocus>buttons/arrow_up_fo.png</textureupfocus>
-		<texturedownfocus>buttons/arrow_down_fo.png</texturedownfocus>
+		<textureupfocus colordiffuse="ThemeDiffuse">buttons/arrow_up_fo.png</textureupfocus>
+		<texturedownfocus colordiffuse="ThemeDiffuse">buttons/arrow_down_fo.png</texturedownfocus>
 		<spinposx>0</spinposx>
 		<spinposy>0</spinposy>
     <align>left</align>
@@ -127,8 +127,8 @@
 		<texturenofocus>-</texturenofocus>
 		<textureup>buttons/arrow_up_nf.png</textureup>
 		<texturedown>buttons/arrow_down_nf.png</texturedown>
-		<textureupfocus>buttons/arrow_up_fo.png</textureupfocus>
-		<texturedownfocus>buttons/arrow_down_fo.png</texturedownfocus>
+		<textureupfocus colordiffuse="ThemeDiffuse">buttons/arrow_up_fo.png</textureupfocus>
+		<texturedownfocus colordiffuse="ThemeDiffuse">buttons/arrow_down_fo.png</texturedownfocus>
 		<spinposx>0</spinposx>
 		<spinposy>0</spinposy>
 		<align>left</align>
@@ -146,7 +146,7 @@
 		<texturenofocus>-</texturenofocus>
 		<texturesliderbar>osd/osd_slider_bg.png</texturesliderbar>
 		<textureslidernib>osd/osd_slider_nib_nf.png</textureslidernib>
-		<textureslidernibfocus>osd/osd_slider_nib_fo.png</textureslidernibfocus>
+		<textureslidernibfocus colordiffuse="ThemeDiffuse">osd/osd_slider_nib_fo.png</textureslidernibfocus>
 		<sliderwidth>200</sliderwidth>
 		<sliderheight>25</sliderheight>
     <align>left</align>
@@ -162,9 +162,9 @@
 	</default>
 	<default type="progress">
 		<texturebg>osd/osd_bg_progress.png</texturebg>
-		<lefttexture>osd/osd_left_progress.png</lefttexture>
-		<midtexture>osd/osd_center_progress.png</midtexture>
-		<righttexture>osd/osd_right_progress.png</righttexture>
+		<lefttexture colordiffuse="ThemeDiffuse">osd/osd_left_progress.png</lefttexture>
+		<midtexture colordiffuse="ThemeDiffuse">osd/osd_center_progress.png</midtexture>
+		<righttexture colordiffuse="ThemeDiffuse">osd/osd_right_progress.png</righttexture>
 		<overlaytexture>-</overlaytexture>
 	</default>
 	<default type="slider">

@@ -317,7 +317,7 @@
 							<width>305</width>
 							<height>355</height>
 							<aspectratio align="center" aligny="center">stretch</aspectratio>
-							<texture border="25">windows/weather/day_panel_focus.png</texture>
+							<texture border="25" colordiffuse="ThemeDiffuse">windows/weather/day_panel_focus.png</texture>
 							<animation effect="slide" start="70,0" end="0,0" time="350" reversible="false" tween="back" easing="out" condition="Container(52).OnPrevious">Focus</animation>
 							<animation effect="slide" start="-70,0" end="0,0" time="350" reversible="false" tween="back" easing="out" condition="Container(52).OnNext">Focus</animation>
 							<visible>Control.HasFocus(52)</visible>
@@ -2273,7 +2273,7 @@
 							<width>305</width>
 							<height>355</height>
 							<aspectratio align="center" aligny="center">stretch</aspectratio>
-							<texture border="25">windows/weather/day_panel_focus.png</texture>
+							<texture border="25" colordiffuse="ThemeDiffuse">windows/weather/day_panel_focus.png</texture>
 							<animation effect="slide" start="70,0" end="0,0" time="350" reversible="false" tween="back" easing="out" condition="Container(51).OnPrevious">Focus</animation>
 							<animation effect="slide" start="-70,0" end="0,0" time="350" reversible="false" tween="back" easing="out" condition="Container(51).OnNext">Focus</animation>
               <animation effect="fade" start="100" end="0" time="100" condition="ControlGroup(9111).HasFocus">Conditional</animation>

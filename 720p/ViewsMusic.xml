@@ -23,7 +23,7 @@
 					<width>1040</width>
 					<height>610</height>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
-					<texture>views/list/shine.png</texture>
+					<texture colordiffuse="ThemeDiffuse">views/list/shine.png</texture>
 					<!-- <colordiffuse>ccffffff</colordiffuse> -->
 				</control>
 				<control type="image">
@@ -97,6 +97,7 @@
 						<height min="0" max="13">auto</height>
 						<width>180</width>
 						<label>$LOCALIZE[24000] $LOCALIZE[31041]</label>
+						<scroll>true</scroll>
 						<font>FontSize_18B</font>
 						<textcolor>99white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
@@ -108,6 +109,7 @@
 						<font>FontSize_18</font>
 					  <textcolor>99white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
+						<scroll>true</scroll>
 					  <scrollspeed>30</scrollspeed>
 					</control>
 				</control>
@@ -122,6 +124,7 @@
 						<height min="0" max="13">auto</height>
 						<width>180</width>
 						<label>$LOCALIZE[24000] $LOCALIZE[467]</label>
+						<scroll>true</scroll>
 						<font>FontSize_18B</font>
 						<textcolor>99white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
@@ -130,6 +133,7 @@
 						<height min="0" max="13">auto</height>
 						<width>180</width>
 						<label fallback="195">$INFO[ListItem.Property(Addon.Type)]</label>
+						<scroll>true</scroll>
 						<font>FontSize_18</font>
 					  <textcolor>99white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
@@ -147,6 +151,7 @@
 						<height min="0" max="13">auto</height>
 						<width>180</width>
 						<label>$LOCALIZE[24000] $LOCALIZE[560]</label>
+						<scroll>true</scroll>
 						<font>FontSize_18B</font>
 						<textcolor>99white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
@@ -155,6 +160,7 @@
 						<height min="0" max="13">auto</height>
 						<width>180</width>
 						<label fallback="195">$INFO[ListItem.Property(Addon.ID)]</label>
+						<scroll>true</scroll>
 						<font>FontSize_18</font>
 					  <textcolor>99white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
@@ -173,6 +179,7 @@
 						<height min="0" max="13">auto</height>
 						<width>180</width>
 						<label>$LOCALIZE[557] $LOCALIZE[21894]</label>
+						<scroll>true</scroll>
 						<font>FontSize_18B</font>
 						<textcolor>99white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
@@ -182,6 +189,7 @@
 						<height min="0" max="13">auto</height>
 						<width>180</width>
 						<label fallback="195">$INFO[ListItem.Property(Artist_Formed)]</label>
+						<scroll>true</scroll>
 						<font>FontSize_18</font>
 					  <textcolor>99white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
@@ -192,6 +200,7 @@
 						<height min="0" max="13">auto</height>
 						<width>180</width>
 						<label>$LOCALIZE[558] $LOCALIZE[467]</label>
+						<scroll>true</scroll>
 						<font>FontSize_18B</font>
 						<textcolor>99white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
@@ -201,6 +210,7 @@
 						<height min="0" max="13">auto</height>
 						<width>180</width>
 						<label fallback="195">$INFO[ListItem.Property(Album_Type)]</label>
+						<scroll>true</scroll>
 						<font>FontSize_18</font>
 					  <textcolor>99white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
@@ -211,6 +221,7 @@
 						<height min="0" max="13">auto</height>
 						<width>180</width>
 						<label>$LOCALIZE[515]</label>
+						<scroll>true</scroll>
 						<font>FontSize_18B</font>
 						<textcolor>99white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
@@ -220,6 +231,7 @@
 						<height min="0" max="13">auto</height>
 						<width>180</width>
 						<label fallback="195">$INFO[ListItem.Genre]</label>
+						<scroll>true</scroll>
 						<font>FontSize_18</font>
 					  <textcolor>99white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
@@ -238,6 +250,7 @@
 						<height min="0" max="13">auto</height>
 						<width>180</width>
 						<label>$LOCALIZE[557] $LOCALIZE[21898]</label>
+						<scroll>true</scroll>
 						<font>FontSize_18B</font>
 						<textcolor>99white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
@@ -247,6 +260,7 @@
 						<height min="0" max="13">auto</height>
 						<width>180</width>
 						<label fallback="195">$INFO[ListItem.Property(Artist_YearsActive)]</label>
+						<scroll>true</scroll>
 						<font>FontSize_18</font>
 					  <textcolor>99white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
@@ -257,6 +271,7 @@
 						<height min="0" max="13">auto</height>
 						<width>180</width>
 						<label>$LOCALIZE[558] $LOCALIZE[175]</label>
+						<scroll>true</scroll>
 						<font>FontSize_18B</font>
 						<textcolor>99white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
@@ -266,6 +281,7 @@
 						<height min="0" max="13">auto</height>
 						<width>180</width>
 						<label fallback="195">$INFO[ListItem.Property(Album_Mood)]</label>
+						<scroll>true</scroll>
 						<font>FontSize_18</font>
 					  <textcolor>99white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
@@ -276,6 +292,7 @@
 						<height min="0" max="13">auto</height>
 						<width>180</width>
 						<label>$LOCALIZE[31005]</label>
+						<scroll>true</scroll>
 						<font>FontSize_18B</font>
 						<textcolor>99white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
@@ -285,6 +302,7 @@
 						<height min="0" max="13">auto</height>
 						<width>180</width>
 						<label fallback="195">#0$INFO[ListItem.TrackNumber]</label>
+						<scroll>true</scroll>
 						<font>FontSize_18</font>
 					  <textcolor>99white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
@@ -296,6 +314,7 @@
 						<height min="0" max="13">auto</height>
 						<width>180</width>
 						<label fallback="195">#$INFO[ListItem.TrackNumber]</label>
+						<scroll>true</scroll>
 						<font>FontSize_18</font>
 					  <textcolor>99white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
@@ -315,6 +334,7 @@
 						<height min="0" max="13">auto</height>
 						<width>180</width>
 						<label>$LOCALIZE[557] $LOCALIZE[21892]</label>
+						<scroll>true</scroll>
 						<font>FontSize_18B</font>
 						<textcolor>99white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
@@ -324,6 +344,7 @@
 						<height min="0" max="13">auto</height>
 						<width>180</width>
 						<label fallback="195">$INFO[ListItem.Property(Artist_Instrument)]</label>
+						<scroll>true</scroll>
 						<font>FontSize_18</font>
 					  <textcolor>99white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
@@ -334,6 +355,7 @@
 						<height min="0" max="13">auto</height>
 						<width>180</width>
 						<label>$LOCALIZE[558] $LOCALIZE[21899]</label>
+						<scroll>true</scroll>
 						<font>FontSize_18B</font>
 						<textcolor>99white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
@@ -343,6 +365,7 @@
 						<height min="0" max="13">auto</height>
 						<width>180</width>
 						<label fallback="195">$INFO[ListItem.Property(Album_Label)]</label>
+						<scroll>true</scroll>
 						<font>FontSize_18</font>
 					  <textcolor>99white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
@@ -353,6 +376,7 @@
 						<height min="0" max="13">auto</height>
 						<width>180</width>
 						<label>$LOCALIZE[561] $LOCALIZE[467]</label>
+						<scroll>true</scroll>
 						<font>FontSize_18B</font>
 						<textcolor>99white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
@@ -362,6 +386,7 @@
 						<height min="0" max="13">auto</height>
 						<width>180</width>
 						<label fallback="195">$INFO[ListItem.FileExtension]</label>
+						<scroll>true</scroll>
 						<font>FontSize_18</font>
 					  <textcolor>99white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
@@ -377,6 +402,7 @@
 					<textcolor>blue</textcolor>
 					<shadowcolor>99000000</shadowcolor>
 					<label>$VAR[GlobalInfo]</label>
+					<scroll>true</scroll>
 				</control>
 				<control type="textbox">
 					<left>820</left>
@@ -389,6 +415,7 @@
 					<align>justify</align>
 					<autoscroll delay="8000" time="2000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
 					<label fallback="195">$VAR[GlobalPlotDescription]</label>
+					<scroll>true</scroll>
 				</control>
 			</control>
 			<control type="group">
@@ -401,7 +428,7 @@
 					<width>790</width>
 					<height>590</height>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
-					<texture>views/list/shine2.png</texture>
+					<texture colordiffuse="ThemeDiffuse">views/list/shine2.png</texture>
 					<!-- <colordiffuse>ccffffff</colordiffuse> -->
 				</control>
 				<control type="image">
@@ -495,6 +522,7 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<label fallback="․  ․  ․">$VAR[MusicLabel2]</label>
+						<scroll>true</scroll>
 		        <visible>![Container.Content(Addons) | Substring(Container.FolderPath,plugin,left)]</visible>
             <visible>!Stringcompare(ListItem.Label,..)</visible>
 					</control>
@@ -509,6 +537,7 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<label fallback="․  ․  ․">$INFO[ListItem.Label2]</label>
+						<scroll>true</scroll>
 		        <visible>Container.Content(Addons) | Substring(Container.FolderPath,plugin,left)</visible>
             <visible>!Stringcompare(ListItem.Label,..)</visible>
 					</control>
@@ -554,6 +583,7 @@
 							<aligny>center</aligny>
 					    <scroll>true</scroll>
 							<label fallback="․  ․  ․">$VAR[MusicLabel2]</label>
+							<scroll>true</scroll>
 			        <visible>![Container.Content(Addons) | Substring(Container.FolderPath,plugin,left)]</visible>
 	            <visible>!Stringcompare(ListItem.Label,..)</visible>
 						</control>
@@ -568,6 +598,7 @@
 							<align>right</align>
 							<aligny>center</aligny>
 							<label fallback="․  ․  ․">$INFO[ListItem.Label2]</label>
+							<scroll>true</scroll>
 			        <visible>Container.Content(Addons) | Substring(Container.FolderPath,plugin,left)</visible>
 	            <visible>!Stringcompare(ListItem.Label,..)</visible>
 						</control>
@@ -629,7 +660,7 @@
 					<width>1800</width>
 					<height>760</height>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
-					<texture background="true">views/list/shine.png</texture>
+					<texture background="true" colordiffuse="ThemeDiffuse">views/list/shine.png</texture>
 				</control>
 				<control type="image">
 			    <include>FullscreenDimensions</include>
@@ -817,7 +848,7 @@
 					<width>1700</width>
 					<height>860</height>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
-					<texture background="true">views/list/shine.png</texture>
+					<texture background="true" colordiffuse="ThemeDiffuse">views/list/shine.png</texture>
 				</control>
 				<control type="image">
 		      <include>FullscreenDimensions</include>
@@ -1210,7 +1241,7 @@
 						<width>672</width>
 						<height>654</height>
 						<aspectratio aligny="center" align="center">stretch</aspectratio>
-						<texture background="true">views/wall/square_blue_shadow.png</texture>
+						<texture background="true" colordiffuse="ThemeDiffuse">views/wall/square_blue_shadow.png</texture>
 					  <animation type="WindowOpen">
 							<effect type="fade" start="0" end="100" time="500" delay="800" tween="sine" easing="out"/>
 							<effect type="zoom" start="398,108,485,472" end="302,21,672,654" time="1000" delay="750" tween="sine" easing="out"/>

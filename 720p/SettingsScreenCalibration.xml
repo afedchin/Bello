@@ -35,7 +35,7 @@
 				<posy>0</posy>
 				<width>128</width>
 				<height>128</height>
-				<texturefocus>dialogs/calibrate/calibrate_top_fo.png</texturefocus>
+				<texturefocus colordiffuse="ThemeDiffuse">dialogs/calibrate/calibrate_top_fo.png</texturefocus>
 				<texturenofocus>dialogs/calibrate/calibrate_top_nf.png</texturenofocus>
 		    <include>OpenCloseFadeEffect</include>
 			</control>
@@ -45,7 +45,7 @@
 				<posy>500</posy>
 				<width>128</width>
 				<height>128</height>
-				<texturefocus>dialogs/calibrate/calibrate_bottom_fo.png</texturefocus>
+				<texturefocus colordiffuse="ThemeDiffuse">dialogs/calibrate/calibrate_bottom_fo.png</texturefocus>
 				<texturenofocus>dialogs/calibrate/calibrate_bottom_nf.png</texturenofocus>
 		    <include>OpenCloseFadeEffect</include>
 			</control>
@@ -55,7 +55,7 @@
 				<posy>500</posy>
 				<width>512</width>
 				<height>128</height>
-				<texturefocus>dialogs/calibrate/calibrate_subtitles_fo.png</texturefocus>
+				<texturefocus colordiffuse="ThemeDiffuse">dialogs/calibrate/calibrate_subtitles_fo.png</texturefocus>
 				<texturenofocus>dialogs/calibrate/calibrate_subtitles_nf.png</texturenofocus>
 		    <include>OpenCloseFadeEffect</include>
 			</control>
@@ -65,7 +65,7 @@
 				<posy>232</posy>
 				<width>256</width>
 				<height>256</height>
-				<texturefocus>dialogs/calibrate/calibrate_ratio_fo.png</texturefocus>
+				<texturefocus colordiffuse="ThemeDiffuse">dialogs/calibrate/calibrate_ratio_fo.png</texturefocus>
 				<texturenofocus>dialogs/calibrate/calibrate_ratio_nf.png</texturenofocus>
 		    <include>OpenCloseFadeEffect</include>
 			</control>

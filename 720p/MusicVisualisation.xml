@@ -412,9 +412,9 @@
 						<info>Player.Progress</info>
             <reveal>true</reveal>
 						<texturebg border="1">osd/osd_bg_progress_big.png</texturebg>
-						<lefttexture border="1">osd/osd_left_progress.png</lefttexture>
-						<midtexture border="1">osd/osd_center_progress.png</midtexture>
-						<righttexture border="1">osd/osd_right_progress.png</righttexture>
+						<lefttexture border="1" colordiffuse="ThemeDiffuse">osd/osd_left_progress.png</lefttexture>
+						<midtexture border="1" colordiffuse="ThemeDiffuse">osd/osd_center_progress.png</midtexture>
+						<righttexture border="1" colordiffuse="ThemeDiffuse">osd/osd_right_progress.png</righttexture>
             <overlaytexture>-</overlaytexture>
 					</control>
 					<control type="label">

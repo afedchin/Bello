@@ -232,7 +232,7 @@
 								<top>0</top>
 								<width>60</width>
 								<height>45</height>
-								<texture>windows/pvr/focus.png</texture>
+								<texture colordiffuse="ThemeDiffuse">windows/pvr/focus.png</texture>
 					      <include>VisibleFadeEffect2</include>
 							</control>
 							<control type="image">
@@ -241,7 +241,7 @@
 								<top>0</top>
 								<width>265</width>
 								<height>45</height>
-								<texture>windows/pvr/focus.png</texture>
+								<texture colordiffuse="ThemeDiffuse">windows/pvr/focus.png</texture>
 					      <include>VisibleFadeEffect2</include>
 							</control>
 							<control type="image">
@@ -250,7 +250,7 @@
 								<top>0</top>
 								<width>535</width>
 								<height>45</height>
-								<texture>windows/pvr/focus.png</texture>
+								<texture colordiffuse="ThemeDiffuse">windows/pvr/focus.png</texture>
 					      <include>VisibleFadeEffect2</include>
 							</control>
 							<control type="label">
@@ -612,7 +612,7 @@
 								<top>0</top>
 								<width>60</width>
 								<height>45</height>
-								<texture>windows/pvr/focus.png</texture>
+								<texture colordiffuse="ThemeDiffuse">windows/pvr/focus.png</texture>
 					      <include>VisibleFadeEffect2</include>
 							</control>
 							<control type="image">
@@ -621,7 +621,7 @@
 								<top>0</top>
 								<width>265</width>
 								<height>45</height>
-								<texture>windows/pvr/focus.png</texture>
+								<texture colordiffuse="ThemeDiffuse">windows/pvr/focus.png</texture>
 					      <include>VisibleFadeEffect2</include>
 							</control>
 							<control type="image">
@@ -630,7 +630,7 @@
 								<top>0</top>
 								<width>535</width>
 								<height>45</height>
-								<texture>windows/pvr/focus.png</texture>
+								<texture colordiffuse="ThemeDiffuse">windows/pvr/focus.png</texture>
 					      <include>VisibleFadeEffect2</include>
 							</control>
 							<control type="label">
@@ -881,7 +881,7 @@
 								<top>0</top>
 								<width>60</width>
 								<height>45</height>
-							  <texture>windows/pvr/focus.png</texture>
+							  <texture colordiffuse="ThemeDiffuse">windows/pvr/focus.png</texture>
 					      <include>VisibleFadeEffect2</include>
 						    <visible>Control.HasFocus(10)</visible>
 							</control>
@@ -900,7 +900,7 @@
 								<top>0</top>
 								<width>261</width>
 								<height>45</height>
-							  <texture>windows/pvr/focus.png</texture>
+							  <texture colordiffuse="ThemeDiffuse">windows/pvr/focus.png</texture>
 					      <include>VisibleFadeEffect2</include>
 						    <visible>Control.HasFocus(10)</visible>
 							</control>
@@ -1516,7 +1516,7 @@
 								<top>0</top>
 								<width>60</width>
 								<height>45</height>
-								<texture>windows/pvr/focus.png</texture>
+								<texture colordiffuse="ThemeDiffuse">windows/pvr/focus.png</texture>
 					      <include>VisibleFadeEffect2</include>
 							</control>
 							<control type="image">
@@ -1525,7 +1525,7 @@
 								<top>0</top>
 								<width>265</width>
 								<height>45</height>
-								<texture>windows/pvr/focus.png</texture>
+								<texture colordiffuse="ThemeDiffuse">windows/pvr/focus.png</texture>
 					      <include>VisibleFadeEffect2</include>
 							</control>
 							<control type="image">
@@ -1534,7 +1534,7 @@
 								<top>0</top>
 								<width>535</width>
 								<height>45</height>
-								<texture>windows/pvr/focus.png</texture>
+								<texture colordiffuse="ThemeDiffuse">windows/pvr/focus.png</texture>
 					      <include>VisibleFadeEffect2</include>
 							</control>
 							<control type="image">
@@ -1543,7 +1543,7 @@
 								<top>0</top>
 								<width>157</width>
 								<height>45</height>
-								<texture>windows/pvr/focus.png</texture>
+								<texture colordiffuse="ThemeDiffuse">windows/pvr/focus.png</texture>
 					      <include>VisibleFadeEffect2</include>
 							</control>
 							<control type="image">
@@ -1552,7 +1552,7 @@
 								<top>0</top>
 								<width>157</width>
 								<height>45</height>
-								<texture>windows/pvr/focus.png</texture>
+								<texture colordiffuse="ThemeDiffuse">windows/pvr/focus.png</texture>
 					      <include>VisibleFadeEffect2</include>
 							</control>
 							<control type="label">
@@ -1760,14 +1760,14 @@
 					<top>0</top>
 					<width>60</width>
 					<height>45</height>
-					<texture>windows/pvr/focus.png</texture>
+					<texture colordiffuse="ThemeDiffuse">windows/pvr/focus.png</texture>
 				</control>
 				<control type="image">
 					<left>74</left>
 					<top>0</top>
 					<width>1116</width>
 					<height>45</height>
-					<texture>windows/pvr/focus.png</texture>
+					<texture colordiffuse="ThemeDiffuse">windows/pvr/focus.png</texture>
 				</control>
 				<control type="label">
 					<left>35</left>
@@ -1952,7 +1952,7 @@
 								<top>0</top>
 								<width>60</width>
 								<height>45</height>
-								<texture>windows/pvr/focus.png</texture>
+								<texture colordiffuse="ThemeDiffuse">windows/pvr/focus.png</texture>
 					      <include>VisibleFadeEffect2</include>
 							</control>
 							<control type="image">
@@ -1961,7 +1961,7 @@
 								<top>0</top>
 								<width>392</width>
 								<height>45</height>
-								<texture>windows/pvr/focus.png</texture>
+								<texture colordiffuse="ThemeDiffuse">windows/pvr/focus.png</texture>
 					      <include>VisibleFadeEffect2</include>
 							</control>
 							<control type="image">
@@ -1970,7 +1970,7 @@
 								<top>0</top>
 								<width>202</width>
 								<height>45</height>
-								<texture>windows/pvr/focus.png</texture>
+								<texture colordiffuse="ThemeDiffuse">windows/pvr/focus.png</texture>
 					      <include>VisibleFadeEffect2</include>
 							</control>
 							<control type="image">
@@ -1979,7 +1979,7 @@
 								<top>0</top>
 								<width>202</width>
 								<height>45</height>
-								<texture>windows/pvr/focus.png</texture>
+								<texture colordiffuse="ThemeDiffuse">windows/pvr/focus.png</texture>
 					      <include>VisibleFadeEffect2</include>
 							</control>
               <control type="image">
@@ -2272,7 +2272,7 @@
 								<top>0</top>
 								<width>60</width>
 								<height>45</height>
-								<texture>windows/pvr/focus.png</texture>
+								<texture colordiffuse="ThemeDiffuse">windows/pvr/focus.png</texture>
 					      <include>VisibleFadeEffect2</include>
 							</control>
 							<control type="image">
@@ -2281,7 +2281,7 @@
 								<top>0</top>
 								<width>495</width>
 								<height>45</height>
-								<texture>windows/pvr/focus.png</texture>
+								<texture colordiffuse="ThemeDiffuse">windows/pvr/focus.png</texture>
 					      <include>VisibleFadeEffect2</include>
 							  <visible>!IsEmpty(ListItem.Date)</visible>
 							</control>
@@ -2291,7 +2291,7 @@
 								<top>0</top>
 								<width>305</width>
 								<height>45</height>
-								<texture>windows/pvr/focus.png</texture>
+								<texture colordiffuse="ThemeDiffuse">windows/pvr/focus.png</texture>
 					      <include>VisibleFadeEffect2</include>
 							  <visible>!IsEmpty(ListItem.Date)</visible>
 							</control>
@@ -2301,7 +2301,7 @@
 								<top>0</top>
 								<width>1116</width>
 								<height>45</height>
-								<texture>windows/pvr/focus.png</texture>
+								<texture colordiffuse="ThemeDiffuse">windows/pvr/focus.png</texture>
 							  <visible>IsEmpty(ListItem.Date)</visible>
 							</control>
 							<control type="label">
@@ -2565,7 +2565,7 @@
 								<top>0</top>
 								<width>60</width>
 								<height>45</height>
-								<texture>windows/pvr/focus.png</texture>
+								<texture colordiffuse="ThemeDiffuse">windows/pvr/focus.png</texture>
 					      <include>VisibleFadeEffect2</include>
 							</control>
 							<control type="image">
@@ -2574,7 +2574,7 @@
 								<top>0</top>
 								<width>265</width>
 								<height>45</height>
-								<texture>windows/pvr/focus.png</texture>
+								<texture colordiffuse="ThemeDiffuse">windows/pvr/focus.png</texture>
 					      <include>VisibleFadeEffect2</include>
 							  <visible>!IsEmpty(ListItem.Date)</visible>
 							</control>
@@ -2584,7 +2584,7 @@
 								<top>0</top>
 								<width>517</width>
 								<height>45</height>
-								<texture>windows/pvr/focus.png</texture>
+								<texture colordiffuse="ThemeDiffuse">windows/pvr/focus.png</texture>
 					      <include>VisibleFadeEffect2</include>
 							  <visible>!IsEmpty(ListItem.Date)</visible>
 							</control>
@@ -2594,7 +2594,7 @@
 								<top>0</top>
 								<width>190</width>
 								<height>45</height>
-								<texture>windows/pvr/focus.png</texture>
+								<texture colordiffuse="ThemeDiffuse">windows/pvr/focus.png</texture>
 					      <include>VisibleFadeEffect2</include>
 							  <visible>!IsEmpty(ListItem.Date)</visible>
 							</control>
@@ -2604,7 +2604,7 @@
 								<top>0</top>
 								<width>132</width>
 								<height>45</height>
-								<texture>windows/pvr/focus.png</texture>
+								<texture colordiffuse="ThemeDiffuse">windows/pvr/focus.png</texture>
 					      <include>VisibleFadeEffect2</include>
 							  <visible>!IsEmpty(ListItem.Date)</visible>
 							</control>
@@ -2614,7 +2614,7 @@
 								<top>0</top>
 								<width>1116</width>
 								<height>45</height>
-								<texture>windows/pvr/focus.png</texture>
+								<texture colordiffuse="ThemeDiffuse">windows/pvr/focus.png</texture>
 					      <include>VisibleFadeEffect2</include>
 							  <visible>IsEmpty(ListItem.Date)</visible>
 							</control>
@@ -2903,7 +2903,7 @@
 								<top>0</top>
 								<width>60</width>
 								<height>45</height>
-								<texture>windows/pvr/focus.png</texture>
+								<texture colordiffuse="ThemeDiffuse">windows/pvr/focus.png</texture>
 					      <include>VisibleFadeEffect2</include>
 							</control>
 							<control type="image">
@@ -2912,7 +2912,7 @@
 								<top>0</top>
 								<width>265</width>
 								<height>45</height>
-								<texture>windows/pvr/focus.png</texture>
+								<texture colordiffuse="ThemeDiffuse">windows/pvr/focus.png</texture>
 					      <include>VisibleFadeEffect2</include>
 							  <visible>!IsEmpty(ListItem.Date)</visible>
 							</control>
@@ -2922,7 +2922,7 @@
 								<top>0</top>
 								<width>517</width>
 								<height>45</height>
-								<texture>windows/pvr/focus.png</texture>
+								<texture colordiffuse="ThemeDiffuse">windows/pvr/focus.png</texture>
 					      <include>VisibleFadeEffect2</include>
 							  <visible>!IsEmpty(ListItem.Date)</visible>
 							</control>				
@@ -2932,7 +2932,7 @@
 								<top>0</top>
 								<width>190</width>
 								<height>45</height>
-								<texture>windows/pvr/focus.png</texture>
+								<texture colordiffuse="ThemeDiffuse">windows/pvr/focus.png</texture>
 					      <include>VisibleFadeEffect2</include>
 							  <visible>!IsEmpty(ListItem.Date)</visible>
 							</control>
@@ -2942,7 +2942,7 @@
 								<top>0</top>
 								<width>132</width>
 								<height>45</height>
-								<texture>windows/pvr/focus.png</texture>
+								<texture colordiffuse="ThemeDiffuse">windows/pvr/focus.png</texture>
 					      <include>VisibleFadeEffect2</include>
 							  <visible>!IsEmpty(ListItem.Date)</visible>
 							</control>
@@ -2952,7 +2952,7 @@
 								<top>0</top>
 								<width>1116</width>
 								<height>45</height>
-								<texture>windows/pvr/focus.png</texture>
+								<texture colordiffuse="ThemeDiffuse">windows/pvr/focus.png</texture>
 					      <include>VisibleFadeEffect2</include>
 							  <visible>IsEmpty(ListItem.Date)</visible>
 							</control>

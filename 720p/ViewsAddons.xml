@@ -23,7 +23,7 @@
 					<width>1040</width>
 					<height>610</height>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
-					<texture>views/list/shine.png</texture>
+					<texture colordiffuse="ThemeDiffuse">views/list/shine.png</texture>
 					<!-- <colordiffuse>ccffffff</colordiffuse> -->
 				</control>
 				<control type="image">
@@ -503,7 +503,7 @@
 						<width>256</width>
 						<height>270</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture border="30">views/thumbnails/focus.png</texture>
+						<texture border="30" colordiffuse="ThemeDiffuse">views/thumbnails/focus.png</texture>
             <animation type="Focus">
               <effect type="zoom" start="95" end="100" time="150" tween="sine" easing="inout" center="auto" />
             </animation>

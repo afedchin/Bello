@@ -63,7 +63,7 @@
 					 <width>450</width>
 					 <height>450</height>
 					 <aspectratio align="center" aligny="center">stretch</aspectratio>
-				   <texture background="true">views/list/shine.png</texture>
+				   <texture background="true" colordiffuse="ThemeDiffuse">views/list/shine.png</texture>
 				 </control>
 	       <control type="image">
 	         <posx>3</posx>
