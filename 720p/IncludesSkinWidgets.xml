@@ -180,7 +180,7 @@
 				<width>1800</width>
 				<height>780</height>
 				<aspectratio align="center" aligny="center">stretch</aspectratio>
-				<texture background="true">views/list/shine.png</texture>
+				<texture background="true" colordiffuse="ThemeDiffuse">views/list/shine.png</texture>
 				<include>BackgroundFade</include>
 				<visible>Container(20).HasFocus(2) | Container(20).HasFocus(1)</visible>
 			</control>
@@ -190,7 +190,7 @@
 				<width>1800</width>
 				<height>740</height>
 				<aspectratio align="center" aligny="center">stretch</aspectratio>
-				<texture background="true">views/list/shine.png</texture>
+				<texture background="true" colordiffuse="ThemeDiffuse">views/list/shine.png</texture>
 				<include>BackgroundFade</include>
 				<visible>Container(20).HasFocus(3)</visible>
 			</control>

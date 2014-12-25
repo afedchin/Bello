@@ -1,6 +1,0 @@
-.gitignore
-Thumbs.db
-Desktop.ini
-dsstdfx.bin
-build.bat
-exclude.txt

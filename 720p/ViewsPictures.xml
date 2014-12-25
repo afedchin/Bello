@@ -23,7 +23,7 @@
 					<width>880</width>
 					<height>840</height>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
-					<texture>views/list/shine.png</texture>
+					<texture colordiffuse="ThemeDiffuse">views/list/shine.png</texture>
 					<!-- <colordiffuse>ccffffff</colordiffuse> -->
 				</control>
 				<control type="image">
@@ -121,7 +121,7 @@
 					<width>790</width>
 					<height>590</height>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
-					<texture>views/list/shine2.png</texture>
+					<texture colordiffuse="ThemeDiffuse">views/list/shine2.png</texture>
 					<!-- <colordiffuse>ccffffff</colordiffuse> -->
 				</control>
 				<control type="image">
@@ -146,7 +146,7 @@
 					<width>1040</width>
 					<height>610</height>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
-					<texture>views/list/shine.png</texture>
+					<texture colordiffuse="ThemeDiffuse">views/list/shine.png</texture>
 					<!-- <colordiffuse>ccffffff</colordiffuse> -->
 				</control>
 				<control type="image">
@@ -313,7 +313,7 @@
 					<width>790</width>
 					<height>590</height>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
-					<texture>views/list/shine2.png</texture>
+					<texture colordiffuse="ThemeDiffuse">views/list/shine2.png</texture>
 					<!-- <colordiffuse>ccffffff</colordiffuse> -->
 				</control>
 				<control type="image">
@@ -604,7 +604,7 @@
 					<width>1700</width>
 					<height>860</height>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
-					<texture background="true">views/slide/shine.png</texture>
+					<texture background="true" colordiffuse="ThemeDiffuse">views/slide/shine.png</texture>
 				</control>
 				<control type="image">
 					<left>0</left>

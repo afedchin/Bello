@@ -50,7 +50,7 @@
 					<onup>20</onup>
 					<ondown>14</ondown>
 					<texturenofocus border="6,8,6,8">dialogs/keyboard/button_nf.png</texturenofocus>
-					<texturefocus border="6,8,6,8">dialogs/keyboard/button_fo.png</texturefocus>
+					<texturefocus border="6,8,6,8" colordiffuse="ThemeDiffuse">dialogs/keyboard/button_fo.png</texturefocus>
 					<align>left</align>
 					<aligny>top</aligny>
 					<font>FontSize_16B</font>
@@ -72,7 +72,7 @@
 					<onup>10</onup>
 					<ondown>15</ondown>
 					<texturenofocus border="6,8,6,8">dialogs/keyboard/button_nf.png</texturenofocus>
-					<texturefocus border="6,8,6,8">dialogs/keyboard/button_fo.png</texturefocus>
+					<texturefocus border="6,8,6,8" colordiffuse="ThemeDiffuse">dialogs/keyboard/button_fo.png</texturefocus>
 					<align>left</align>
 					<aligny>top</aligny>
 					<font>FontSize_16B</font>
@@ -94,7 +94,7 @@
 					<onup>22</onup>
 					<ondown>16</ondown>
 					<texturenofocus border="6,8,6,8">dialogs/keyboard/button_nf.png</texturenofocus>
-					<texturefocus border="6,8,6,8">dialogs/keyboard/button_fo.png</texturefocus>
+					<texturefocus border="6,8,6,8" colordiffuse="ThemeDiffuse">dialogs/keyboard/button_fo.png</texturefocus>
 					<align>left</align>
 					<aligny>top</aligny>
 					<font>FontSize_16B</font>
@@ -117,7 +117,7 @@
 					<onup>11</onup>
 					<ondown>17</ondown>
 					<texturenofocus border="6,8,6,8">dialogs/keyboard/button_nf.png</texturenofocus>
-					<texturefocus border="6,8,6,8">dialogs/keyboard/button_fo.png</texturefocus>
+					<texturefocus border="6,8,6,8" colordiffuse="ThemeDiffuse">dialogs/keyboard/button_fo.png</texturefocus>
 					<align>left</align>
 					<aligny>top</aligny>
 					<font>FontSize_16B</font>
@@ -139,7 +139,7 @@
 					<onup>12</onup>
 					<ondown>18</ondown>
 					<texturenofocus border="6,8,6,8">dialogs/keyboard/button_nf.png</texturenofocus>
-					<texturefocus border="6,8,6,8">dialogs/keyboard/button_fo.png</texturefocus>
+					<texturefocus border="6,8,6,8" colordiffuse="ThemeDiffuse">dialogs/keyboard/button_fo.png</texturefocus>
 					<align>left</align>
 					<aligny>top</aligny>
 					<font>FontSize_16B</font>
@@ -161,7 +161,7 @@
 					<onup>13</onup>
 					<ondown>19</ondown>
 					<texturenofocus border="6,8,6,8">dialogs/keyboard/button_nf.png</texturenofocus>
-					<texturefocus border="6,8,6,8">dialogs/keyboard/button_fo.png</texturefocus>
+					<texturefocus border="6,8,6,8" colordiffuse="ThemeDiffuse">dialogs/keyboard/button_fo.png</texturefocus>
 					<align>left</align>
 					<aligny>top</aligny>
 					<font>FontSize_16B</font>
@@ -184,7 +184,7 @@
 					<onup>14</onup>
 					<ondown>20</ondown>
 					<texturenofocus border="6,8,6,8">dialogs/keyboard/button_nf.png</texturenofocus>
-					<texturefocus border="6,8,6,8">dialogs/keyboard/button_fo.png</texturefocus>
+					<texturefocus border="6,8,6,8" colordiffuse="ThemeDiffuse">dialogs/keyboard/button_fo.png</texturefocus>
 					<align>left</align>
 					<aligny>top</aligny>
 					<font>FontSize_16B</font>
@@ -206,7 +206,7 @@
 					<onup>15</onup>
 					<ondown>10</ondown>
 					<texturenofocus border="6,8,6,8">dialogs/keyboard/button_nf.png</texturenofocus>
-					<texturefocus border="6,8,6,8">dialogs/keyboard/button_fo.png</texturefocus>
+					<texturefocus border="6,8,6,8" colordiffuse="ThemeDiffuse">dialogs/keyboard/button_fo.png</texturefocus>
 					<align>left</align>
 					<aligny>top</aligny>
 					<font>FontSize_16B</font>
@@ -228,7 +228,7 @@
 					<onup>16</onup>
 					<ondown>22</ondown>
 					<texturenofocus border="6,8,6,8">dialogs/keyboard/button_nf.png</texturenofocus>
-					<texturefocus border="6,8,6,8">dialogs/keyboard/button_fo.png</texturefocus>
+					<texturefocus border="6,8,6,8" colordiffuse="ThemeDiffuse">dialogs/keyboard/button_fo.png</texturefocus>
 					<align>left</align>
 					<aligny>top</aligny>
 					<font>FontSize_16B</font>
@@ -265,7 +265,7 @@
 					<onup>18</onup>
 					<ondown>12</ondown>
 					<texturenofocus border="6,8,6,8">dialogs/keyboard/button_nf.png</texturenofocus>
-					<texturefocus border="6,8,6,8">dialogs/keyboard/button_fo.png</texturefocus>
+					<texturefocus border="6,8,6,8" colordiffuse="ThemeDiffuse">dialogs/keyboard/button_fo.png</texturefocus>
 					<align>left</align>
 					<aligny>top</aligny>
 					<font>FontSize_16B</font>
@@ -302,7 +302,7 @@
 					<onup>21</onup>
 					<ondown>21</ondown>
 					<texturenofocus border="6,8,6,8">dialogs/keyboard/button_nf.png</texturenofocus>
-					<texturefocus border="6,8,6,8">dialogs/keyboard/button_fo.png</texturefocus>
+					<texturefocus border="6,8,6,8" colordiffuse="ThemeDiffuse">dialogs/keyboard/button_fo.png</texturefocus>
 					<align>left</align>
 					<aligny>top</aligny>
 					<font>FontSize_16B</font>
@@ -326,7 +326,7 @@
 					<onup>23</onup>
 					<ondown>23</ondown>
 					<texturenofocus border="6,8,6,8">dialogs/keyboard/button_nf.png</texturenofocus>
-					<texturefocus border="6,8,6,8">dialogs/keyboard/button_fo.png</texturefocus>
+					<texturefocus border="6,8,6,8" colordiffuse="ThemeDiffuse">dialogs/keyboard/button_fo.png</texturefocus>
 					<align>left</align>
 					<aligny>top</aligny>
 					<font>FontSize_15B</font>

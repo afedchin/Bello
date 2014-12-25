@@ -14,16 +14,36 @@
 						<texture background="true">windows/bg/colors_pulse.png</texture>
 						<visible>!Skin.HasSetting(HomeMenuAnimation)</visible>
 					</control>
-          <control type="image">
-            <height>720</height>
-            <width>3280</width>
-            <texture>windows/bg/colors_pulse.png</texture>
-            <animation type="Conditional" condition="true" loop="true" reversible="false">
-	            <effect type="slide" start="0,0" end="-2000,0" time="20350" />
-	            <effect type="slide" start="0,0" end="2000,0" time="20350" delay="20350"/>
-            </animation>
-						<visible>Skin.HasSetting(HomeMenuAnimation)</visible>
-          </control>					
+				<control type="image">
+					<height>720</height>
+					<width>3280</width>
+					<texture>windows/bg/dark_pulse.png</texture>
+					<animation type="Conditional" condition="true" loop="true" reversible="false">
+						<effect type="slide" start="-2000,0" end="0,0" time="30350" />
+						<effect type="slide" start="0,0" end="-2000,0" time="30350" delay="30350"/>
+					</animation>
+					<visible>Skin.HasSetting(HomeMenuAnimation)</visible>
+				</control>	
+				<control type="image">
+					<height>720</height>
+					<width>3280</width>
+					<texture colordiffuse="ThemeDiffuse2">windows/bg/light_pulse.png</texture>
+					<animation type="Conditional" condition="true" loop="true" reversible="false">
+						<effect type="slide" start="0,0" end="-2000,0" time="30350" />
+						<effect type="slide" start="0,0" end="2000,0" time="30350" delay="30350"/>
+					</animation>
+					<visible>Skin.HasSetting(HomeMenuAnimation)</visible>
+				</control>	
+				<control type="image">
+					<height>1200</height>
+					<width>1920</width>
+					<texture>windows/bg/darkspot.png</texture>
+					<animation type="Conditional" condition="true" loop="true" reversible="false">
+						<effect type="fade" start="40" end="90" time="5000"/>  
+						<effect type="fade" start="90" end="40" time="5000" delay="30350"/>
+					</animation>
+					<visible>Skin.HasSetting(HomeMenuAnimation)</visible>
+				</control>		
 					<control type="wraplist" id="20">
 					 <description>Home Container</description>
 					 <left>-95</left>

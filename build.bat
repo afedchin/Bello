@@ -12,9 +12,19 @@ Echo build.bat>>exclude.txt
 Echo exclude.txt>>exclude.txt
 
 ECHO ----------------------------------------
-ECHO Creating XBT File...
+ECHO Creating Main XBT File...
 START /B /WAIT tools\TexturePacker\TexturePacker -dupecheck -input media -output _build\skin.bello\media\Textures.xbt
 
+ECHO ----------------------------------------
+ECHO Creating themes XBT Files...
+START /B /WAIT tools\TexturePacker\TexturePacker -dupecheck -input themes/Blue/media -output _build\skin.bello\media\Blue.xbt
+START /B /WAIT tools\TexturePacker\TexturePacker -dupecheck -input themes/Dark/media -output _build\skin.bello\media\Dark.xbt
+START /B /WAIT tools\TexturePacker\TexturePacker -dupecheck -input themes/Green/media -output _build\skin.bello\media\Green.xbt
+START /B /WAIT tools\TexturePacker\TexturePacker -dupecheck -input themes/Light/media -output _build\skin.bello\media\Light.xbt
+START /B /WAIT tools\TexturePacker\TexturePacker -dupecheck -input themes/Orange/media -output _build\skin.bello\media\Orange.xbt
+START /B /WAIT tools\TexturePacker\TexturePacker -dupecheck -input themes/Pink/media -output _build\skin.bello\media\Pink.xbt
+START /B /WAIT tools\TexturePacker\TexturePacker -dupecheck -input themes/Red/media -output _build\skin.bello\media\Red.xbt
+START /B /WAIT tools\TexturePacker\TexturePacker -dupecheck -input themes/Yellow/media -output _build\skin.bello\media\Yellow.xbt
 ECHO ----------------------------------------
 ECHO XBT Texture Files Created...
 ECHO Building Skin Directory...

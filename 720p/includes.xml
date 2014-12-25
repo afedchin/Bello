@@ -436,8 +436,8 @@
 			<shadowcolor>99000000</shadowcolor>
 			<texturefocus>buttons/settings_fo.png</texturefocus>
 			<texturenofocus>-</texturenofocus>
-			<textureradioonfocus>buttons/radio_button_on.png</textureradioonfocus>
-			<textureradioonnofocus>buttons/radio_button_on.png</textureradioonnofocus>
+			<textureradioonfocus colordiffuse="ThemeDiffuse">buttons/radio_button_on.png</textureradioonfocus>
+			<textureradioonnofocus colordiffuse="ThemeDiffuse">buttons/radio_button_on.png</textureradioonnofocus>
 			<textureradioofffocus>buttons/radio_button_off.png</textureradioofffocus>
 			<textureradiooffnofocus>buttons/radio_button_off.png</textureradiooffnofocus>
 			<align>left</align>
@@ -460,8 +460,8 @@
 			<texturenofocus>-</texturenofocus>
 			<textureup>buttons/arrow_up_nf.png</textureup>
 			<texturedown>buttons/arrow_down_nf.png</texturedown>
-			<textureupfocus>buttons/arrow_up_fo.png</textureupfocus>
-			<texturedownfocus>buttons/arrow_down_fo.png</texturedownfocus>
+			<textureupfocus colordiffuse="ThemeDiffuse">buttons/arrow_up_fo.png</textureupfocus>
+			<texturedownfocus colordiffuse="ThemeDiffuse">buttons/arrow_down_fo.png</texturedownfocus>
 			<align>left</align>
 			<aligny>top</aligny>
 			<spinwidth>30</spinwidth>
@@ -484,7 +484,7 @@
 			<texturenofocus>-</texturenofocus>
 			<texturesliderbar>osd/osd_slider_bg.png</texturesliderbar>
 			<textureslidernib>osd/osd_slider_nib_nf.png</textureslidernib>
-			<textureslidernibfocus>osd/osd_slider_nib_fo.png</textureslidernibfocus>
+			<textureslidernibfocus colordiffuse="ThemeDiffuse">osd/osd_slider_nib_fo.png</textureslidernibfocus>
 			<sliderwidth>200</sliderwidth>
 			<sliderheight>25</sliderheight>
 	    <align>left</align>
@@ -523,8 +523,8 @@
 			<shadowcolor>99000000</shadowcolor>
 			<texturefocus>buttons/settings_fo.png</texturefocus>
 			<texturenofocus>-</texturenofocus>
-			<textureradioonfocus>buttons/radio_button_on.png</textureradioonfocus>
-			<textureradioonnofocus>buttons/radio_button_on.png</textureradioonnofocus>
+			<textureradioonfocus colordiffuse="ThemeDiffuse">buttons/radio_button_on.png</textureradioonfocus>
+			<textureradioonnofocus colordiffuse="ThemeDiffuse">buttons/radio_button_on.png</textureradioonnofocus>
 			<textureradioofffocus>buttons/radio_button_off.png</textureradioofffocus>
 			<textureradiooffnofocus>buttons/radio_button_off.png</textureradiooffnofocus>
 			<align>left</align>
@@ -546,8 +546,8 @@
 			<texturenofocus>-</texturenofocus>
 			<textureup>buttons/arrow_up_nf.png</textureup>
 			<texturedown>buttons/arrow_down_nf.png</texturedown>
-			<textureupfocus>buttons/arrow_up_fo.png</textureupfocus>
-			<texturedownfocus>buttons/arrow_down_fo.png</texturedownfocus>
+			<textureupfocus colordiffuse="ThemeDiffuse">buttons/arrow_up_fo.png</textureupfocus>
+			<texturedownfocus colordiffuse="ThemeDiffuse">buttons/arrow_down_fo.png</texturedownfocus>
 			<align>left</align>
 			<aligny>top</aligny>
 			<spinwidth>30</spinwidth>
@@ -570,7 +570,7 @@
 			<texturenofocus>-</texturenofocus>
 			<texturesliderbar>osd/osd_slider_bg.png</texturesliderbar>
 			<textureslidernib>osd/osd_slider_nib_nf.png</textureslidernib>
-			<textureslidernibfocus>osd/osd_slider_nib_fo.png</textureslidernibfocus>
+			<textureslidernibfocus colordiffuse="ThemeDiffuse">osd/osd_slider_nib_fo.png</textureslidernibfocus>
 	    <align>left</align>
 		  <aligny>top</aligny>
 			<sliderwidth>200</sliderwidth>

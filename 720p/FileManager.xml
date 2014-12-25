@@ -128,7 +128,7 @@
 						<top>2</top>
 						<width>515</width>
 						<height>45</height>
-				    <texture background="true" border="1">windows/filemanager/focus.png</texture>
+				    <texture background="true" border="1" colordiffuse="ThemeDiffuse">windows/filemanager/focus.png</texture>
 						<visible>!Control.HasFocus(20)</visible>
 			      <animation effect="fade" start="100" end="30" time="250" condition="!Control.HasFocus(20)">Conditional</animation>
 					</control>
@@ -137,7 +137,7 @@
 						<top>2</top>
 						<width>515</width>
 						<height>45</height>
-				    <texture background="true" border="1">windows/filemanager/focus.png</texture>
+				    <texture background="true" border="1" colordiffuse="ThemeDiffuse">windows/filemanager/focus.png</texture>
 						<visible>Control.HasFocus(20)</visible>
 			      <animation effect="slide" start="0,25" end="0,0" time="200" reversible="false" tween="back" easing="out" condition="Container(20).OnPrevious">focus</animation>
 			      <animation effect="slide" start="0,-25" end="0,0" time="200" reversible="false" tween="back" easing="out" condition="Container(20).OnNext">focus</animation>
@@ -264,7 +264,7 @@
 						<top>2</top>
 						<width>515</width>
 						<height>45</height>
-				    <texture border="1">windows/filemanager/focus.png</texture>
+				    <texture border="1" colordiffuse="ThemeDiffuse">windows/filemanager/focus.png</texture>
 						<visible>!Control.HasFocus(21)</visible>
 			      <animation effect="fade" start="100" end="30" time="250" condition="!Control.HasFocus(21)" reversible="true">Conditional</animation>
 					</control>
@@ -273,7 +273,7 @@
 						<top>2</top>
 						<width>515</width>
 						<height>45</height>
-				    <texture border="1">windows/filemanager/focus.png</texture>
+				    <texture border="1" colordiffuse="ThemeDiffuse">windows/filemanager/focus.png</texture>
 						<visible>Control.HasFocus(21)</visible>
 			      <animation effect="slide" start="0,25" end="0,0" time="200" reversible="false" tween="back" easing="out" condition="Container(21).OnPrevious">focus</animation>
 			      <animation effect="slide" start="0,-25" end="0,0" time="200" reversible="false" tween="back" easing="out" condition="Container(21).OnNext">focus</animation>

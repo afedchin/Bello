@@ -23,7 +23,7 @@
 					<width>1040</width>
 					<height>668</height>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
-				  <texture background="true">views/list/shine.png</texture>
+				  <texture background="true" colordiffuse="ThemeDiffuse">views/list/shine.png</texture>
 					<!-- <colordiffuse>ccffffff</colordiffuse> -->
 				</control>
 				<control type="image">
@@ -117,6 +117,7 @@
 						<height min="0" max="13">auto</height>
 						<width>180</width>
 						<label>$LOCALIZE[20339]</label>
+						<scroll>true</scroll>
 						<font>FontSize_18B</font>
 						<textcolor>99white</textcolor>
 						<shadowcolor>77000000</shadowcolor>
@@ -289,7 +290,7 @@
 					<width>790</width>
 					<height>590</height>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
-					<texture>views/list/shine2.png</texture>
+					<texture colordiffuse="ThemeDiffuse">views/list/shine2.png</texture>
 					<!-- <colordiffuse>ccffffff</colordiffuse> -->
 				</control>
 				<control type="image">
@@ -319,7 +320,7 @@
 					<width>1040</width>
 					<height>610</height>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
-				  <texture background="true">views/list/shine.png</texture>
+				  <texture background="true" colordiffuse="ThemeDiffuse">views/list/shine.png</texture>
 					<!-- <colordiffuse>ccffffff</colordiffuse> -->
 				</control>
 				<control type="image">
@@ -667,7 +668,7 @@
 			        <width>14</width>
 							<height>14</height>
 			        <aspectratio align="left" aligny="center">stretch</aspectratio>
-	            <texture background="true">overlays/unwatched/list/unwatched.png</texture>
+	            <texture background="true" colordiffuse="ThemeDiffuse">overlays/unwatched/list/unwatched.png</texture>
 	            <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
 	    			  <visible>!ListItem.IsPlaying</visible>
 						</control>
@@ -1035,7 +1036,7 @@
 				<width>1700</width>
 				<height>860</height>
 				<aspectratio align="center" aligny="center">stretch</aspectratio>
-				<texture background="true">views/list/shine.png</texture>
+				<texture background="true" colordiffuse="ThemeDiffuse">views/list/shine.png</texture>
 			</control>
 			<control type="image">
 		    <include>FullscreenDimensions</include>
@@ -1113,6 +1114,7 @@
 						<align>left</align>
 						<aligny>top</aligny>
 						<label>$INFO[ListItem.label]</label>
+						<scroll>true</scroll>
 					</control>
 				</itemlayout>
 				<focusedlayout width="695" height="380">
@@ -1188,6 +1190,7 @@
 								<font>FontSize_38</font>
 								<align>left</align>
 								<label>$INFO[ListItem.label]</label>
+								<scroll>true</scroll>
 						 </control>
 						 <!-- Small Down Info -->
 						 <control type="group">
@@ -1354,7 +1357,7 @@
 						<top>32</top>
 						<width>562</width>
 						<height>673</height>
-						<texture background="true">views/wall/poster_blue_shadow.png</texture>
+						<texture background="true" colordiffuse="ThemeDiffuse">views/wall/poster_blue_shadow.png</texture>
 					  <animation type="WindowOpen">
 							<effect type="fade" start="0" end="100" time="500" delay="800"/>
 							<effect type="zoom" start="230,148,360,436" end="128,32,562,673" time="980" delay="750"/>
@@ -1641,7 +1644,7 @@
 						<top>32</top>
 						<width>562</width>
 						<height>673</height>
-						<texture background="true">views/wall/poster_blue_shadow.png</texture>
+						<texture background="true" colordiffuse="ThemeDiffuse">views/wall/poster_blue_shadow.png</texture>
 					  <animation type="WindowOpen">
 							<effect type="fade" start="0" end="100" time="500" delay="800" tween="sine" easing="out"/>
 							<effect type="zoom" start="230,148,360,436" end="128,32,562,673" time="980" delay="750" tween="sine" easing="out"/>
@@ -1932,7 +1935,7 @@
 						<width>574</width>
 						<height>702</height>
 						<aspectratio aligny="center" align="center">stretch</aspectratio>
-						<texture background="true">views/wall/poster_blue_shadow_no.png</texture>
+						<texture background="true" colordiffuse="ThemeDiffuse">views/wall/poster_blue_shadow_no.png</texture>
 					  <animation type="WindowOpen">
 							<effect type="fade" start="0" end="100" time="500" delay="800" tween="sine" easing="out"/>
 							<effect type="zoom" start="540,148,366,438" end="442,28,574,702" time="980" delay="750" tween="sine" easing="out"/>
@@ -2247,7 +2250,7 @@
 				        <width>14</width>
 								<height>14</height>
 				        <aspectratio align="left" aligny="center">stretch</aspectratio>
-		            <texture background="true">overlays/unwatched/list/unwatched.png</texture>
+		            <texture background="true" colordiffuse="ThemeDiffuse">overlays/unwatched/list/unwatched.png</texture>
 		            <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
 		    			  <visible>!ListItem.IsPlaying</visible>
 							</control>
@@ -2263,6 +2266,7 @@
 								<aligny>center</aligny>
 					      <scroll>true</scroll>
 								<label>$INFO[ListItem.Label]</label>
+								<scroll>true</scroll>
 							</control>
 		        </control>
 					</focusedlayout>
@@ -2329,7 +2333,7 @@
 				<width>1200</width>
 				<height>900</height>
 				<aspectratio align="center" aligny="center">stretch</aspectratio>
-				<texture background="true">views/list/shine.png</texture>
+				<texture background="true" colordiffuse="ThemeDiffuse">views/list/shine.png</texture>
 			</control>
 			<control type="fadelabel">
 				<left>0</left>
@@ -2904,6 +2908,7 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
+						<scroll>true</scroll>
 					</control>
 					<control type="image">
 						<left>-2</left>
@@ -3060,6 +3065,7 @@
 				      <shadowcolor>99000000</shadowcolor>
 							<align>left</align>
 							<label>$INFO[ListItem.Label]</label>
+							<scroll>true</scroll>
 		          <visible>!Stringcompare(ListItem.Label,..)</visible>
 						</control>
 						<control type="label">
@@ -3176,6 +3182,7 @@
 				      <shadowcolor>99000000</shadowcolor>
 							<align>left</align>
 							<label>$INFO[ListItem.Label]</label>
+							<scroll>true</scroll>
 						</control>
 						<control type="label">
 							<left>30</left>
@@ -3414,7 +3421,7 @@
 				<height>18</height>
         <colordiffuse>99white</colordiffuse>
         <aspectratio align="left" aligny="center">stretch</aspectratio>
-        <texture background="true">overlays/unwatched/list/unwatched.png</texture>
+        <texture background="true" colordiffuse="ThemeDiffuse">overlays/unwatched/list/unwatched.png</texture>
         <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
 			</control>
 			<control type="label">

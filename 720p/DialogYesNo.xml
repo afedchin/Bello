@@ -43,7 +43,7 @@
 			<width>160</width>
 			<height>40</height>
 			<texturenofocus border="10,0,10,0">dialogs/keyboard/button_nf.png</texturenofocus>
-			<texturefocus border="10,0,10,0">dialogs/keyboard/button_fo.png</texturefocus>
+			<texturefocus border="10,0,10,0" colordiffuse="ThemeDiffuse">dialogs/keyboard/button_fo.png</texturefocus>
 			<align>center</align>
 			<aligny>top</aligny>
 			<font>FontSize_22</font>
@@ -64,7 +64,7 @@
 			<width>160</width>
 			<height>40</height>
 			<texturenofocus border="10,0,10,0">dialogs/keyboard/button_nf.png</texturenofocus>
-			<texturefocus border="10,0,10,0">dialogs/keyboard/button_fo.png</texturefocus>
+			<texturefocus border="10,0,10,0" colordiffuse="ThemeDiffuse">dialogs/keyboard/button_fo.png</texturefocus>
 			<align>center</align>
 			<aligny>top</aligny>
 			<font>FontSize_22</font>

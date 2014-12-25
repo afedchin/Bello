@@ -41,7 +41,7 @@
 					<width>745</width>
 					<height>256</height>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
-		      <texture background="true">osd/quicknav/bg_quicknav.png</texture>
+		      <texture background="true" colordiffuse="ThemeDiffuse">osd/quicknav/bg_quicknav.png</texture>
 				</control>
 				<control type="label">
 			    <description>header label</description>
@@ -138,7 +138,7 @@
 							<width>175</width>
 							<height>165</height>
 							<aspectratio align="center" aligny="center">stretch</aspectratio>
-							<texture background="true">osd/quicknav/focus_square.png</texture>
+							<texture background="true" colordiffuse="ThemeDiffuse">osd/quicknav/focus_square.png</texture>
 	            <animation type="Focus">
 	              <effect type="zoom" start="95" end="100" time="200" tween="sine" easing="inout" center="auto" />
 	              <effect type="fade" start="0" end="100" time="200" tween="sine" easing="in" />
@@ -184,7 +184,7 @@
 					<width>781</width>
 					<height>272</height>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
-		      <texture border="30" background="true">osd/quicknav/bg_quicknav.png</texture>
+		      <texture border="30" background="true" colordiffuse="ThemeDiffuse">osd/quicknav/bg_quicknav.png</texture>
 				</control>
 				<control type="label">
 			    <description>header title</description>
@@ -259,7 +259,7 @@
 							<width>125</width>
 							<height>180</height>
 							<aspectratio align="center" aligny="center">stretch</aspectratio>
-							<texture border="3,2,3,2">osd/quicknav/focus_poster.png</texture>
+							<texture border="3,2,3,2" colordiffuse="ThemeDiffuse">osd/quicknav/focus_poster.png</texture>
 	            <animation type="Focus">
 	              <effect type="zoom" start="95" end="100" time="200" tween="sine" easing="inout" center="auto" />
 	              <effect type="fade" start="0" end="100" time="200" tween="sine" easing="in" />
@@ -328,7 +328,7 @@
 					<width>781</width>
 					<height>272</height>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
-		      <texture border="30" background="true">osd/quicknav/bg_quicknav.png</texture>
+		      <texture border="30" background="true" colordiffuse="ThemeDiffuse">osd/quicknav/bg_quicknav.png</texture>
 				</control>
 				<control type="label">
 			    <description>header label</description>
@@ -403,7 +403,7 @@
 							<width>125</width>
 							<height>180</height>
 							<aspectratio align="center" aligny="center">stretch</aspectratio>
-							<texture border="3,2,3,2">osd/quicknav/focus_poster.png</texture>
+							<texture border="3,2,3,2" colordiffuse="ThemeDiffuse">osd/quicknav/focus_poster.png</texture>
 	            <animation type="Focus">
 	              <effect type="zoom" start="95" end="100" time="200" tween="sine" easing="inout" center="auto" />
 	              <effect type="fade" start="0" end="100" time="200" tween="sine" easing="in" />
@@ -471,7 +471,7 @@
 					<width>800</width>
 					<height>256</height>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
-		      <texture border="30" background="true">osd/quicknav/bg_quicknav.png</texture>
+		      <texture border="30" background="true" colordiffuse="ThemeDiffuse">osd/quicknav/bg_quicknav.png</texture>
 				</control>
 				<control type="label">
 			    <description>header label</description>
@@ -567,7 +567,7 @@
 							<width>165</width>
 							<height>165</height>
 							<aspectratio align="center" aligny="center">stretch</aspectratio>
-							<texture border="3,2,3,2">osd/quicknav/focus_square.png</texture>
+							<texture border="3,2,3,2" colordiffuse="ThemeDiffuse">osd/quicknav/focus_square.png</texture>
 	            <animation type="Focus">
 	              <effect type="zoom" start="95" end="100" time="200" tween="sine" easing="inout" center="auto" />
 	              <effect type="fade" start="0" end="100" time="200" tween="sine" easing="in" />
@@ -636,7 +636,7 @@
 					<width>800</width>
 					<height>256</height>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
-		      <texture background="true">osd/quicknav/bg_quicknav.png</texture>
+		      <texture background="true" colordiffuse="ThemeDiffuse">osd/quicknav/bg_quicknav.png</texture>
 				</control>
 				<control type="label">
 			    <description>header label</description>
@@ -727,7 +727,7 @@
 							<width>225</width>
 							<height>136</height>
 							<aspectratio align="center" aligny="center">stretch</aspectratio>
-							<texture border="10">osd/quicknav/focus_square.png</texture>
+							<texture border="10" colordiffuse="ThemeDiffuse">osd/quicknav/focus_square.png</texture>
 	            <animation type="Focus">
 	              <effect type="zoom" start="95" end="100" time="200" tween="sine" easing="inout" center="auto" />
 	              <effect type="fade" start="0" end="100" time="200" tween="sine" easing="in" />
