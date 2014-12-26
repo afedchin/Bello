@@ -46,6 +46,10 @@
 				<description>Default SpinControlex</description>
 		    <include>SettingsSpincontrolex</include>
 			</control>
+			<control type="sliderex" id="13">
+				<description>Default Sliderex</description>
+		    <include>SettingsSliderex</include>
+			</control>
 	  </control>
 
 		<control type="group" id="9001">

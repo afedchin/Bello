@@ -12,7 +12,7 @@
     <!-- ==================== -->
     <!-- Top Options Controls -->
     <!-- ==================== -->
-	  <control type="group"  id="9000">
+	  <control type="group" id="9000">
 			<left>45</left>
 			<top>-10</top>
       <include>TopOptionsSlideAnimations</include>
