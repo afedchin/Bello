@@ -87,7 +87,7 @@
 				       <effect type="fade" start="100" end="35" time="0" />
 				     </animation>
 						 <control type="label">
-							  <left>300</left>
+							  <left>00</left>
 								<top>200</top>
 								<width>590</width>
 			          <textcolor>white</textcolor>
@@ -117,7 +117,7 @@
 			          <effect type="fade" start="35" end="100" time="250" tween="sine" easing="out" />
 			        </animation>
 							<control type="label">
-							  <left>300</left>
+							  <left>00</left>
 								<top>200</top>
 								<width>590</width>
 			          <textcolor>white</textcolor>

@@ -67,7 +67,7 @@
 									<include>VisibleFadeEffect2</include>
 								</control>
 								<control type="label">
-									<left>40</left>
+									<left>10</left>
 									<top>0</top>
 									<width>60</width>
 									<height>45</height>
@@ -143,7 +143,7 @@
 									<visible>Control.HasFocus(10)</visible>
 								</control>
 								<control type="label">
-									<left>40</left>
+									<left>10</left>
 									<top>0</top>
 									<width>60</width>
 									<height>45</height>
@@ -632,7 +632,7 @@
 									<include>VisibleFadeEffect2</include>
 								</control>
 								<control type="label">
-									<left>40</left>
+									<left>10</left>
 									<top>0</top>
 									<width>60</width>
 									<height>45</height>
@@ -682,7 +682,7 @@
 									<label>$INFO[ListItem.Label]</label>
 								</control>
 								<control type="label">
-									<left>960</left>
+									<left>890</left>
 									<top>0</top>
 									<width>147</width>
 									<height>45</height>
@@ -695,7 +695,7 @@
 									<label>$INFO[ListItem.StartTime]</label>
 								</control>
 								<control type="label">
-									<left>1115</left>
+									<left>1050</left>
 									<top>0</top>
 									<width>137</width>
 									<height>45</height>
@@ -789,7 +789,7 @@
 									<include>VisibleFadeEffect2</include>
 								</control>
 								<control type="label">
-									<left>40</left>
+									<left>10</left>
 									<top>0</top>
 									<width>60</width>
 									<height>45</height>
@@ -839,7 +839,7 @@
 									<label>$INFO[ListItem.Label]</label>
 								</control>
 								<control type="label">
-									<left>960</left>
+									<left>890</left>
 									<top>0</top>
 									<width>147</width>
 									<height>45</height>
@@ -852,7 +852,7 @@
 									<label>$INFO[ListItem.StartTime]</label>
 								</control>
 								<control type="label">
-									<left>1115</left>
+									<left>1050</left>
 									<top>0</top>
 									<width>137</width>
 									<height>45</height>
@@ -998,7 +998,7 @@
 									<include>VisibleFadeEffect2</include>
 								</control>
 								<control type="label">
-									<left>40</left>
+									<left>10</left>
 									<top>0</top>
 									<width>60</width>
 									<height>45</height>
@@ -1048,7 +1048,7 @@
 									<label>$INFO[ListItem.Label]</label>
 								</control>
 								<control type="label">
-									<left>960</left>
+									<left>890</left>
 									<top>0</top>
 									<width>147</width>
 									<height>45</height>
@@ -1061,7 +1061,7 @@
 									<label>$INFO[ListItem.StartTime]</label>
 								</control>
 								<control type="label">
-									<left>1115</left>
+									<left>1050</left>
 									<top>0</top>
 									<width>137</width>
 									<height>45</height>
@@ -1155,7 +1155,7 @@
 									<include>VisibleFadeEffect2</include>
 								</control>
 								<control type="label">
-									<left>40</left>
+									<left>10</left>
 									<top>0</top>
 									<width>60</width>
 									<height>45</height>
@@ -1205,7 +1205,7 @@
 									<label>$INFO[ListItem.Label]</label>
 								</control>
 								<control type="label">
-									<left>960</left>
+									<left>890</left>
 									<top>0</top>
 									<width>147</width>
 									<height>45</height>
@@ -1218,7 +1218,7 @@
 									<label>$INFO[ListItem.StartTime]</label>
 								</control>
 								<control type="label">
-									<left>1115</left>
+									<left>1050</left>
 									<top>0</top>
 									<width>137</width>
 									<height>45</height>
@@ -1456,7 +1456,7 @@
 									<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
 								</control>
 								<control type="label">
-									<left>40</left>
+									<left>10</left>
 									<top>0</top>
 									<width>60</width>
 									<height>45</height>
@@ -1482,7 +1482,7 @@
 									<label>$INFO[ListItem.Label]</label>
 								</control>
 								<control type="label">
-									<left>572</left>
+									<left>480</left>
 									<top>0</top>
 									<width>190</width>
 									<height>45</height>
@@ -1495,7 +1495,7 @@
 									<label>$INFO[ListItem.StartDate]</label>
 								</control>
 								<control type="label">
-									<left>777</left>
+									<left>677</left>
 									<top>0</top>
 									<width>190</width>
 									<height>45</height>
@@ -1590,7 +1590,7 @@
 									<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
 								</control>
 								<control type="label">
-									<left>40</left>
+									<left>10</left>
 									<top>0</top>
 									<width>60</width>
 									<height>45</height>
@@ -1616,7 +1616,7 @@
 									<label>$INFO[ListItem.Label]</label>
 								</control>
 								<control type="label">
-									<left>572</left>
+									<left>480</left>
 									<top>0</top>
 									<width>190</width>
 									<height>45</height>
@@ -1629,7 +1629,7 @@
 									<label>$INFO[ListItem.StartDate]</label>
 								</control>
 								<control type="label">
-									<left>777</left>
+									<left>677</left>
 									<top>0</top>
 									<width>190</width>
 									<height>45</height>

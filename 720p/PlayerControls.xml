@@ -112,7 +112,7 @@
 						  <bordersize>6</bordersize>
 						</control>
 						<control type="label">
-							<left>118</left>
+							<left>-20</left>
 							<top>168</top>
 							<width>275</width>
 							<height>35</height>

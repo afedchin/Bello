@@ -5,8 +5,6 @@
     <include file="ViewsPictures.xml" />
     <include file="ViewsPrograms.xml" />
     <include file="ViewsAddons.xml" />
-	<include file="ViewsPVRChannels.xml" />
-	<include file="ViewsPVRGuide.xml" />
 
     <include name="VideoViews">
       <include>ListView_Videos</include> <!-- id = 50 -->
@@ -64,51 +62,5 @@
       <include condition="!Skin.HasSetting(HideThumbnailsMusic)">ThumbnailsView</include> <!-- id = 56 -->
       <include condition="!Skin.HasSetting(HideBannersViewMusic)">BannersView_Music</include> <!-- id = 57 -->
     </include>
-
-    <include name="ChannelsViews">
-      <include>ListView_Channels</include> <!-- id = 11 -->
-    </include>
-    
-    <include name="GuideViews">
-      <include>TimelineView_Guide</include> <!-- id = 10 -->
-      <include>NowView_Guide</include> <!-- id = 11 -->
-      <include>NextView_Guide</include> <!-- id = 12 -->
-      <include>ChannelView_Guide</include> <!-- id = 13 -->
-    </include>
-    
-	<include name="LiveTV_InfoLabels">
-		<control type="group">
-			<left>45</left>
-			<top>215</top>
-			<visible>![Window.IsActive(BusyDialog) | Window.IsActive(ProgressDialog)]</visible>
-			<animation effect="slide" end="0,-25" time="0" condition="Control.IsVisible(10)">Conditional</animation>
-			<control type="grouplist">
-				<left>0</left>
-				<top>0</top>
-				<height>70</height>
-				<width>1000</width>
-				<align>left</align>
-				<itemgap>20</itemgap>
-				<orientation>horizontal</orientation>
-				<control type="label">
-					<include>TopBigLabel</include>
-					<label>$INFO[Control.GetLabel(29)]</label>
-				</control>
-				<control type="label">
-					<include>TopZoomedSmallLabel</include>
-					<label>$INFO[Control.GetLabel(30)]</label>
-				</control>
-			</control>
-
-			<control type="label" id="29">
-				<description>Empty so we can pass the values up one level</description>
-				<visible>False</visible>
-			</control>
-			<control type="label" id="30">
-				<description>Empty so we can pass the values up one level</description>
-				<visible>False</visible>
-			</control>
-		</control>
-	</include>
 
 </includes>    

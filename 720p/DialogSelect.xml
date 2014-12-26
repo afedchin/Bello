@@ -134,7 +134,7 @@
 				</control>
 				<control type="label">
 					<left>80</left>
-					<top>8</top>
+					<top>0</top>
 					<width>470</width>
 					<height>30</height>
 					<font>FontSize_20</font>
@@ -146,7 +146,7 @@
 		      <animation effect="slide" start="0,35" end="0,10" time="0" reversible="false" condition="IsEmpty(ListItem.Label2)">Conditional</animation>
 				</control>
 				<control type="label">
-					<left>80</left>
+					<left>75</left>
 					<top>32</top>
 					<width>470</width>
 					<height>30</height>
@@ -191,7 +191,7 @@
 				</control>
 				<control type="label">
 					<left>80</left>
-					<top>8</top>
+					<top>0</top>
 					<width>470</width>
 					<height>30</height>
 					<font>FontSize_20</font>
@@ -204,7 +204,7 @@
 		      <animation effect="slide" start="0,0" end="0,10" time="0" reversible="false" condition="IsEmpty(ListItem.Label2)">Conditional</animation>
 				</control>
 				<control type="label">
-					<left>80</left>
+					<left>75</left>
 					<top>32</top>
 					<width>470</width>
 					<height>30</height>
