@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="600">
+	<defaultcontrol always="true">17</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<views>17</views>
+	<controls>
+		<include>BackgroundItems</include>
+		<control type="group" id="50">
+			<control type="image">
+				<include>FullscreenDimensions</include>
+				<texture background="true">windows/pvr/bg_overlay.png</texture>
+				<colordiffuse>D9FF0000</colordiffuse>
+				<include>FanartFade</include>
+			</control>
+		<control type="group">
+			<description>Search</description>
+			<include>DialogZoomInOutAnimation</include>
+			<include>FullscreenDimensions</include>
+
+			<control type="group">
+				<defaultcontrol always="true">17</defaultcontrol>
+				<visible>Control.IsVisible(17)</visible>
+				<include>PVRAnimations</include>
+				<control type="group">
+					<include>LiveTV_InfoLabels</include>
+					<visible>Control.IsVisible(17)</visible>
+					<control type="list" id="17">
+						<left>35</left>
+						<top>270</top>
+						<width>1190</width>
+						<height>350</height>
+						<onleft>9000</onleft>
+						<onright>67</onright>
+						<onup>17</onup>
+						<ondown>17</ondown>
+						<preloaditems>2</preloaditems>
+						<viewtype label="535">list</viewtype>
+						<pagecontrol>67</pagecontrol>
+						<scrolltime tween="cubic" easing="out">300</scrolltime>
+						<itemlayout height="50">
+							<control type="group">
+								<control type="image">
+									<description>ChannelNumber Sep</description>
+									<left>10</left>
+									<top>0</top>
+									<width>60</width>
+									<height>45</height>
+									<texture>windows/pvr/seperator.png</texture>
+									<include>VisibleFadeEffect2</include>
+								</control>
+								<control type="image">
+									<description>ChannelName Sep</description>
+									<left>74</left>
+									<top>0</top>
+									<width>265</width>
+									<height>45</height>
+									<texture>windows/pvr/seperator.png</texture>
+									<include>VisibleFadeEffect2</include>
+								</control>
+								<control type="image">
+									<description>Title Sep</description>
+									<left>343</left>
+									<top>0</top>
+									<width>517</width>
+									<height>45</height>
+									<texture>windows/pvr/seperator.png</texture>
+									<include>VisibleFadeEffect2</include>
+								</control>
+								<control type="image">
+									<description>Date Sep</description>
+									<left>864</left>
+									<top>0</top>
+									<width>190</width>
+									<height>45</height>
+									<texture>windows/pvr/seperator.png</texture>
+									<include>VisibleFadeEffect2</include>
+								</control>
+								<control type="image">
+									<description>Time Sep</description>
+									<left>1058</left>
+									<top>0</top>
+									<width>132</width>
+									<height>45</height>
+									<texture>windows/pvr/seperator.png</texture>
+									<include>VisibleFadeEffect2</include>
+								</control>
+								<control type="label">
+									<left>40</left>
+									<top>0</top>
+									<width>60</width>
+									<height>45</height>
+									<font>FontSize_22</font>
+									<textcolor>77white</textcolor>
+									<shadowcolor>99000000</shadowcolor>
+									<selectedcolor>selected</selectedcolor>
+									<align>center</align>
+									<aligny>center</aligny>
+									<label fallback="..">$INFO[ListItem.ChannelNumber]</label>
+								</control>
+								<control type="label">
+									<left>87</left>
+									<top>0</top>
+									<width>245</width>
+									<height>45</height>
+									<font>FontSize_22</font>
+									<textcolor>77white</textcolor>
+									<shadowcolor>99000000</shadowcolor>
+									<selectedcolor>selected</selectedcolor>
+									<align>left</align>
+									<aligny>center</aligny>
+									<label fallback="..">$INFO[ListItem.ChannelName]</label>
+									<visible>IsEmpty(ListItem.ChannelName)</visible>
+								</control>
+								<control type="label">
+									<left>87</left>
+									<top>0</top>
+									<width>245</width>
+									<height>45</height>
+									<font>FontSize_22</font>
+									<textcolor>77white</textcolor>
+									<shadowcolor>99000000</shadowcolor>
+									<selectedcolor>selected</selectedcolor>
+									<align>left</align>
+									<aligny>center</aligny>
+									<label>$INFO[ListItem.ChannelName]</label>
+									<visible>!IsEmpty(ListItem.ChannelName)</visible>
+								</control>
+								<control type="label">
+									<left>355</left>
+									<top>0</top>
+									<width>480</width>
+									<height>45</height>
+									<font>FontSize_20</font>
+									<textcolor>77white</textcolor>
+									<shadowcolor>99000000</shadowcolor>
+									<selectedcolor>selected</selectedcolor>
+									<align>left</align>
+									<aligny>center</aligny>
+									<label>$INFO[ListItem.Label]</label>
+									<animation effect="slide" end="-268" time="0" condition="IsEmpty(ListItem.Date)">Conditional</animation>
+								</control>
+								<control type="label">
+									<left>959</left>
+									<top>0</top>
+									<width>180</width>
+									<height>45</height>
+									<font>FontSize_20</font>
+									<textcolor>77white</textcolor>
+									<shadowcolor>99000000</shadowcolor>
+									<selectedcolor>selected</selectedcolor>
+									<align>center</align>
+									<aligny>center</aligny>
+									<label>$INFO[ListItem.StartDate]</label>
+								</control>
+								<control type="label">
+									<left>1125</left>
+									<top>0</top>
+									<width>120</width>
+									<height>45</height>
+									<font>FontSize_20</font>
+									<textcolor>77white</textcolor>
+									<shadowcolor>99000000</shadowcolor>
+									<selectedcolor>selected</selectedcolor>
+									<align>center</align>
+									<aligny>center</aligny>
+									<label>$INFO[ListItem.StartTime]</label>
+								</control>
+								<control type="image">
+									<left>10</left>
+									<top>0</top>
+									<width>1180</width>
+									<height>45</height>
+									<texture>windows/pvr/selected.png</texture>
+									<visible>ListItem.IsSelected | ListItem.IsPlaying</visible>
+								</control>
+							</control>
+						</itemlayout>
+						<focusedlayout height="50">
+							<control type="group">
+								<include>PVRListFocusAnimation</include>
+								<control type="image">
+									<description>ChannelNumber Sep</description>
+									<left>10</left>
+									<top>0</top>
+									<width>60</width>
+									<height>45</height>
+									<texture colordiffuse="ThemeDiffuse">windows/pvr/focus.png</texture>
+									<include>VisibleFadeEffect2</include>
+								</control>
+								<control type="image">
+									<description>ChannelName Sep</description>
+									<left>74</left>
+									<top>0</top>
+									<width>265</width>
+									<height>45</height>
+									<texture colordiffuse="ThemeDiffuse">windows/pvr/focus.png</texture>
+									<include>VisibleFadeEffect2</include>
+									<visible>!IsEmpty(ListItem.Date)</visible>
+								</control>
+								<control type="image">
+									<description>Title Sep</description>
+									<left>343</left>
+									<top>0</top>
+									<width>517</width>
+									<height>45</height>
+									<texture colordiffuse="ThemeDiffuse">windows/pvr/focus.png</texture>
+									<include>VisibleFadeEffect2</include>
+									<visible>!IsEmpty(ListItem.Date)</visible>
+								</control>				
+								<control type="image">
+									<description>Date Sep</description>
+									<left>864</left>
+									<top>0</top>
+									<width>190</width>
+									<height>45</height>
+									<texture colordiffuse="ThemeDiffuse">windows/pvr/focus.png</texture>
+									<include>VisibleFadeEffect2</include>
+									<visible>!IsEmpty(ListItem.Date)</visible>
+								</control>
+								<control type="image">
+									<description>Time Sep</description>
+									<left>1058</left>
+									<top>0</top>
+									<width>132</width>
+									<height>45</height>
+									<texture colordiffuse="ThemeDiffuse">windows/pvr/focus.png</texture>
+									<include>VisibleFadeEffect2</include>
+									<visible>!IsEmpty(ListItem.Date)</visible>
+								</control>
+								<control type="image">
+									<description>Add Timer Sep</description>
+									<left>74</left>
+									<top>0</top>
+									<width>1116</width>
+									<height>45</height>
+									<texture colordiffuse="ThemeDiffuse">windows/pvr/focus.png</texture>
+									<include>VisibleFadeEffect2</include>
+									<visible>IsEmpty(ListItem.Date)</visible>
+								</control>
+								<control type="label">
+									<left>40</left>
+									<top>0</top>
+									<width>60</width>
+									<height>45</height>
+									<font>FontSize_22</font>
+									<textcolor>white</textcolor>
+									<shadowcolor>99000000</shadowcolor>
+									<selectedcolor>selected</selectedcolor>
+									<align>center</align>
+									<aligny>center</aligny>
+									<label fallback="..">$INFO[ListItem.ChannelNumber]</label>
+								</control>
+								<control type="label">
+									<left>87</left>
+									<top>0</top>
+									<width>245</width>
+									<height>45</height>
+									<font>FontSize_22</font>
+									<textcolor>white</textcolor>
+									<shadowcolor>99000000</shadowcolor>
+									<selectedcolor>selected</selectedcolor>
+									<align>left</align>
+									<aligny>center</aligny>
+									<label fallback="..">$INFO[ListItem.ChannelName]</label>
+									<visible>IsEmpty(ListItem.ChannelName) + IntegerGreaterThan(Container(17).NumItems,1)</visible>
+								</control>
+								<control type="label">
+									<left>87</left>
+									<top>0</top>
+									<width>245</width>
+									<height>45</height>
+									<font>FontSize_22</font>
+									<textcolor>white</textcolor>
+									<shadowcolor>99000000</shadowcolor>
+									<selectedcolor>selected</selectedcolor>
+									<align>left</align>
+									<aligny>center</aligny>
+									<label>$INFO[ListItem.ChannelName]</label>
+									<visible>!IsEmpty(ListItem.ChannelName)</visible>
+								</control>
+								<control type="label">
+									<left>355</left>
+									<top>0</top>
+									<width>480</width>
+									<height>45</height>
+									<font>FontSize_20</font>
+									<textcolor>white</textcolor>
+									<shadowcolor>99000000</shadowcolor>
+									<selectedcolor>selected</selectedcolor>
+									<align>left</align>
+									<aligny>center</aligny>
+									<label fallback="..">$INFO[ListItem.Label]</label>
+									<animation effect="slide" end="-268" time="0" condition="IsEmpty(ListItem.Date)">Conditional</animation>
+								</control>
+								<control type="label">
+									<left>959</left>
+									<top>0</top>
+									<width>180</width>
+									<height>45</height>
+									<font>FontSize_20</font>
+									<textcolor>white</textcolor>
+									<shadowcolor>99000000</shadowcolor>
+									<selectedcolor>selected</selectedcolor>
+									<align>center</align>
+									<aligny>center</aligny>
+									<label>$INFO[ListItem.StartDate]</label>
+								</control>
+								<control type="label">
+									<left>1125</left>
+									<top>0</top>
+									<width>120</width>
+									<height>45</height>
+									<font>FontSize_20</font>
+									<textcolor>white</textcolor>
+									<shadowcolor>99000000</shadowcolor>
+									<selectedcolor>selected</selectedcolor>
+									<align>center</align>
+									<aligny>center</aligny>
+									<label>$INFO[ListItem.StartTime]</label>
+								</control>
+								<control type="image">
+									<left>10</left>
+									<top>0</top>
+									<width>1180</width>
+									<height>45</height>
+									<texture>windows/pvr/selected.png</texture>
+									<visible>ListItem.IsSelected | ListItem.IsPlaying</visible>
+								</control>
+							</control>
+						</focusedlayout>
+					</control>
+
+					<control type="scrollbar" id="67">
+						<left>896</left>
+						<top>269</top>
+						<width>2</width>
+						<height>347</height>
+						<texturesliderbackground>-</texturesliderbackground>
+						<texturesliderbar border="0,14,0,14">views/scrollbar/scrollbar_pvr.png</texturesliderbar>
+						<texturesliderbarfocus border="0,14,0,14">views/scrollbar/scrollbar_pvr.png</texturesliderbarfocus>
+						<textureslidernib>-</textureslidernib>
+						<textureslidernibfocus>-</textureslidernibfocus>
+						<onleft>17</onleft>
+						<onright>17</onright>
+						<showonepage>false</showonepage>
+						<orientation>vertical</orientation>
+						<animation effect="fade" start="100" end="0" time="250" condition="!Control.HasFocus(67)">Conditional</animation>
+						<visible>Control.IsVisible(17)</visible>
+					</control>
+				</control>
+			</control>
+		</control>
+		</control>
+
+		<include>CommonItems</include>
+
+		<!-- ==================== -->
+		<!-- PVR Options Controls -->
+		<!-- ==================== -->
+		<control type="group" id="9000">
+			<zorder>100</zorder>
+			<left>45</left>
+			<top>-10</top>
+			<include>TopOptionsSlideAnimations</include>
+			<visible allowhiddenfocus="true">ControlGroup(9111).HasFocus + !Window.IsActive(ContextMenu) + !Window.IsActive(ShutdownMenu) + !Window.IsActive(favourites)</visible>
+			<!-- PVR Options -->
+			<control type="grouplist">
+				<left>0</left>
+				<top>0</top>
+				<height>70</height>
+				<width>1000</width>
+				<align>left</align>
+				<aligny>center</aligny>
+				<itemgap>20</itemgap>
+				<orientation>horizontal</orientation>
+				<include>TopOptionsSlideAnimations</include>
+				<control type="label">
+					<include>TopBigLabel</include>
+					<label>$LOCALIZE[33063] $LOCALIZE[33061]</label>
+				</control>
+				<control type="label">
+					<include>TopZoomedSmallLabel</include>
+					<label>$INFO[Control.GetLabel(29)]</label>
+				</control>
+			</control>
+			<control type="grouplist" id="9111">
+				<left>0</left>
+				<top>50</top>
+				<width>460</width>
+				<height max="520">auto</height>
+				<itemgap>0</itemgap>
+				<align>left</align>
+				<onleft>10</onleft>
+				<onright>10</onright>
+				<onup>9111</onup>
+				<ondown>9111</ondown>
+				<onback>10</onback>
+				<include>TopOptionsSlideAnimations</include>
+				<control type="button" id="100">
+					<description>TV Channels</description>
+					<label>$LOCALIZE[19019]</label>
+					<include>TopLeftMenusButton</include>
+					<onclick condition="Window.IsActive(TVChannels) | Window.IsActive(RadioChannels)">NextChannelGroup</onclick>
+					<onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVChannels)</onclick>
+					<onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioChannels)</onclick>
+				</control>
+				<control type="button" id="101">
+					<description>EPG</description>
+					<label>$LOCALIZE[19222]: $LOCALIZE[19030]</label>
+					<include>TopLeftMenusButton</include>
+					<onclick condition="Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)">NextChannelGroup</onclick>
+					<onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVGuide)</onclick>
+					<onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioGuide)</onclick>
+				</control>
+				<control type="button" id="102">
+					<description>Recordings</description>
+					<label>$LOCALIZE[19163]</label>
+					<include>TopLeftMenusButton</include>
+					<onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVRecordings)</onclick>
+					<onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioRecordings)</onclick>
+				</control>
+				<control type="button" id="103">
+					<description>Timers</description>
+					<label>$LOCALIZE[19040]</label>
+					<include>TopLeftMenusButton</include>
+					<onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVTimers)</onclick>
+					<onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioTimers)</onclick>
+				</control>
+				<control type="button" id="104">
+					<description>Search</description>
+					<label>137</label>
+					<include>TopLeftMenusButton</include>
+					<onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVSearch)</onclick>
+					<onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioSearch)</onclick>
+				</control>
+				<control type="button" id="28">
+					<description>Channel Groups</description>
+					<label>-</label>
+					<include>TopLeftMenusButton</include>
+				</control>
+				<control type="button" id="5">
+					<description>Group recording items by folder structure</description>
+					<label>-</label>
+					<include>TopLeftMenusButton</include>
+					<visible>Window.IsActive(TVRecordings) | Window.IsActive(RadioRecordings)</visible>
+				</control>
+				<control type="button" id="2">
+					<description>View As button</description>
+					<include>TopLeftMenusButton</include>
+					<label>-</label>
+					<!-- <visible>Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)</visible> -->
+				</control>
+				<control type="button" id="3">
+					<description>Sort by button</description>
+					<include>TopLeftMenusButton</include>
+					<label>103</label>
+				</control>
+				<control type="togglebutton" id="4">
+					<description>Sort asc</description>
+					<include>TopLeftMenusButton</include>
+					<label>$LOCALIZE[21429]: $LOCALIZE[21430]</label>
+					<altlabel>$LOCALIZE[21429]: $LOCALIZE[21431]</altlabel>
+					<usealttexture>Container.SortDirection(Ascending)</usealttexture>
+				</control>
+			</control>
+		</control>
+
+		<!-- ================ -->
+		<!-- Top Content Info -->
+		<!-- ================ -->
+		<control type="group">
+			<left>45</left>
+			<top>25</top>
+			<include>CommonSlideAnimations</include>
+			<include>ShutdownMenuAnimation</include>
+			<visible>!ControlGroup(9000).HasFocus + !Window.IsActive(PVRGuideInfo) + !Window.IsActive(PVRRecordingInfo) + !Window.IsActive(PVRTimerSetting) + !Window.IsActive(PVRGuideSearch) + !Window.IsActive(PVRGuideSearch)</visible>
+			<control type="grouplist">
+				<left>0</left>
+				<top>0</top>
+				<height>70</height>
+				<width>1000</width>
+				<align>left</align>
+				<itemgap>20</itemgap>
+				<orientation>horizontal</orientation>
+				<include>CommonSlideAnimations</include>
+				<!-- TV Channels -->
+				<control type="label">
+					<include>TopBigLabel</include>
+					<label>$INFO[Control.GetLabel(29)]</label>
+				</control>
+				<!-- Small Labels -->
+				<control type="label">
+					<include>TopZoomedSmallLabel</include>
+					<label>$INFO[Control.GetLabel(30)]</label>
+				</control>
+			</control>
+		</control>
+		<include>CommonWeatherAndClock</include>
+	</controls>
+</window>
