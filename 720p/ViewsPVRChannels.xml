@@ -121,7 +121,7 @@
 										<include>VisibleFadeEffect2</include>
 									</control>
 									<control type="label">
-										<left>40</left>
+										<left>10</left>
 										<top>0</top>
 										<width>60</width>
 										<height>45</height>
@@ -253,7 +253,7 @@
 										<include>VisibleFadeEffect2</include>
 									</control>
 									<control type="label">
-										<left>40</left>
+										<left>10</left>
 										<top>0</top>
 										<width>60</width>
 										<height>45</height>

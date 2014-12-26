@@ -85,7 +85,7 @@
 									<include>VisibleFadeEffect2</include>
 								</control>
 								<control type="label">
-									<left>40</left>
+									<left>10</left>
 									<top>0</top>
 									<width>60</width>
 									<height>45</height>
@@ -140,7 +140,7 @@
 									<animation effect="slide" end="-268" time="0" condition="IsEmpty(ListItem.Date)">Conditional</animation>
 								</control>
 								<control type="label">
-									<left>959</left>
+									<left>869</left>
 									<top>0</top>
 									<width>180</width>
 									<height>45</height>
@@ -153,7 +153,7 @@
 									<label>$INFO[ListItem.StartDate]</label>
 								</control>
 								<control type="label">
-									<left>1125</left>
+									<left>1065</left>
 									<top>0</top>
 									<width>120</width>
 									<height>45</height>
@@ -238,7 +238,7 @@
 									<visible>IsEmpty(ListItem.Date)</visible>
 								</control>
 								<control type="label">
-									<left>40</left>
+									<left>10</left>
 									<top>0</top>
 									<width>60</width>
 									<height>45</height>
@@ -293,7 +293,7 @@
 									<animation effect="slide" end="-268" time="0" condition="IsEmpty(ListItem.Date)">Conditional</animation>
 								</control>
 								<control type="label">
-									<left>959</left>
+									<left>869</left>
 									<top>0</top>
 									<width>180</width>
 									<height>45</height>
@@ -306,7 +306,7 @@
 									<label>$INFO[ListItem.StartDate]</label>
 								</control>
 								<control type="label">
-									<left>1125</left>
+									<left>1065</left>
 									<top>0</top>
 									<width>120</width>
 									<height>45</height>
@@ -353,117 +353,7 @@
 		</control>
 
 		<include>CommonItems</include>
-
-		<!-- ==================== -->
-		<!-- PVR Options Controls -->
-		<!-- ==================== -->
-		<control type="group" id="9000">
-			<zorder>100</zorder>
-			<left>45</left>
-			<top>-10</top>
-			<include>TopOptionsSlideAnimations</include>
-			<visible allowhiddenfocus="true">ControlGroup(9111).HasFocus + !Window.IsActive(ContextMenu) + !Window.IsActive(ShutdownMenu) + !Window.IsActive(favourites)</visible>
-			<!-- PVR Options -->
-			<control type="grouplist">
-				<left>0</left>
-				<top>0</top>
-				<height>70</height>
-				<width>1000</width>
-				<align>left</align>
-				<aligny>center</aligny>
-				<itemgap>20</itemgap>
-				<orientation>horizontal</orientation>
-				<include>TopOptionsSlideAnimations</include>
-				<control type="label">
-					<include>TopBigLabel</include>
-					<label>$LOCALIZE[33063] $LOCALIZE[33061]</label>
-				</control>
-				<control type="label">
-					<include>TopZoomedSmallLabel</include>
-					<label>$INFO[Control.GetLabel(29)]</label>
-				</control>
-			</control>
-			<control type="grouplist" id="9111">
-				<left>0</left>
-				<top>50</top>
-				<width>460</width>
-				<height max="520">auto</height>
-				<itemgap>0</itemgap>
-				<align>left</align>
-				<onleft>10</onleft>
-				<onright>10</onright>
-				<onup>9111</onup>
-				<ondown>9111</ondown>
-				<onback>10</onback>
-				<include>TopOptionsSlideAnimations</include>
-				<control type="button" id="100">
-					<description>TV Channels</description>
-					<label>$LOCALIZE[19019]</label>
-					<include>TopLeftMenusButton</include>
-					<onclick condition="Window.IsActive(TVChannels) | Window.IsActive(RadioChannels)">NextChannelGroup</onclick>
-					<onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVChannels)</onclick>
-					<onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioChannels)</onclick>
-				</control>
-				<control type="button" id="101">
-					<description>EPG</description>
-					<label>$LOCALIZE[19222]: $LOCALIZE[19030]</label>
-					<include>TopLeftMenusButton</include>
-					<onclick condition="Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)">NextChannelGroup</onclick>
-					<onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVGuide)</onclick>
-					<onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioGuide)</onclick>
-				</control>
-				<control type="button" id="102">
-					<description>Recordings</description>
-					<label>$LOCALIZE[19163]</label>
-					<include>TopLeftMenusButton</include>
-					<onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVRecordings)</onclick>
-					<onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioRecordings)</onclick>
-				</control>
-				<control type="button" id="103">
-					<description>Timers</description>
-					<label>$LOCALIZE[19040]</label>
-					<include>TopLeftMenusButton</include>
-					<onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVTimers)</onclick>
-					<onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioTimers)</onclick>
-				</control>
-				<control type="button" id="104">
-					<description>Search</description>
-					<label>137</label>
-					<include>TopLeftMenusButton</include>
-					<onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVSearch)</onclick>
-					<onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioSearch)</onclick>
-				</control>
-				<control type="button" id="28">
-					<description>Channel Groups</description>
-					<label>-</label>
-					<include>TopLeftMenusButton</include>
-				</control>
-				<control type="button" id="5">
-					<description>Group recording items by folder structure</description>
-					<label>-</label>
-					<include>TopLeftMenusButton</include>
-					<visible>Window.IsActive(TVRecordings) | Window.IsActive(RadioRecordings)</visible>
-				</control>
-				<control type="button" id="2">
-					<description>View As button</description>
-					<include>TopLeftMenusButton</include>
-					<label>-</label>
-					<!-- <visible>Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)</visible> -->
-				</control>
-				<control type="button" id="3">
-					<description>Sort by button</description>
-					<include>TopLeftMenusButton</include>
-					<label>103</label>
-				</control>
-				<control type="togglebutton" id="4">
-					<description>Sort asc</description>
-					<include>TopLeftMenusButton</include>
-					<label>$LOCALIZE[21429]: $LOCALIZE[21430]</label>
-					<altlabel>$LOCALIZE[21429]: $LOCALIZE[21431]</altlabel>
-					<usealttexture>Container.SortDirection(Ascending)</usealttexture>
-				</control>
-			</control>
-		</control>
+		<include>PVROptionControls</include>
 
 		<!-- ================ -->
 		<!-- Top Content Info -->

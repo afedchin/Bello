@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+	<include file="ViewsPVRChannels.xml" />
+	<include file="ViewsPVRGuide.xml" />
+
+    <include name="PVRChannelsViews">
+      <include>ListView_Channels</include> <!-- id = 11 -->
+    </include>
+    
+    <include name="PVRGuideViews">
+      <include>TimelineView_Guide</include> <!-- id = 10 -->
+      <include>NowView_Guide</include> <!-- id = 11 -->
+      <include>NextView_Guide</include> <!-- id = 12 -->
+      <include>ChannelView_Guide</include> <!-- id = 13 -->
+    </include>
+    
+	<include name="LiveTV_InfoLabels">
+		<control type="group">
+			<left>45</left>
+			<top>215</top>
+			<visible>![Window.IsActive(BusyDialog) | Window.IsActive(ProgressDialog)]</visible>
+			<animation effect="slide" end="0,-25" time="0" condition="Control.IsVisible(10)">Conditional</animation>
+			<control type="grouplist">
+				<left>0</left>
+				<top>0</top>
+				<height>70</height>
+				<width>1000</width>
+				<align>left</align>
+				<itemgap>20</itemgap>
+				<orientation>horizontal</orientation>
+				<control type="label">
+					<include>TopBigLabel</include>
+					<label>$INFO[Control.GetLabel(29)]</label>
+				</control>
+				<control type="label">
+					<include>TopZoomedSmallLabel</include>
+					<label>$INFO[Control.GetLabel(30)]</label>
+				</control>
+			</control>
+
+			<control type="label" id="29">
+				<description>Empty so we can pass the values up one level</description>
+				<visible>False</visible>
+			</control>
+			<control type="label" id="30">
+				<description>Empty so we can pass the values up one level</description>
+				<visible>False</visible>
+			</control>
+		</control>
+	</include>
+
+	<include name="PVROptionControls">
+		<control type="group" id="9000">
+			<zorder>100</zorder>
+			<left>45</left>
+			<top>-10</top>
+			<include>TopOptionsSlideAnimations</include>
+			<visible allowhiddenfocus="true">ControlGroup(9111).HasFocus + !Window.IsActive(ContextMenu) + !Window.IsActive(ShutdownMenu) + !Window.IsActive(favourites)</visible>
+			<!-- PVR Options -->
+			<control type="grouplist">
+				<left>0</left>
+				<top>0</top>
+				<height>70</height>
+				<width>1000</width>
+				<align>left</align>
+				<aligny>center</aligny>
+				<itemgap>20</itemgap>
+				<orientation>horizontal</orientation>
+				<include>TopOptionsSlideAnimations</include>
+				<control type="label">
+					<include>TopBigLabel</include>
+					<label>$LOCALIZE[33063] $LOCALIZE[33061]</label>
+				</control>
+				<control type="label">
+					<include>TopZoomedSmallLabel</include>
+					<label>$LOCALIZE[19019]</label>
+				</control>
+			</control>
+			<control type="grouplist" id="9111">
+				<left>0</left>
+				<top>50</top>
+				<width>460</width>
+				<height max="520">auto</height>
+				<itemgap>0</itemgap>
+				<align>left</align>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<onup>9111</onup>
+				<ondown>9111</ondown>
+				<onback>50</onback>
+				<include>TopOptionsSlideAnimations</include>
+				<control type="button" id="100">
+					<description>TV Channels</description>
+					<label>$LOCALIZE[19019]</label>
+					<include>TopLeftMenusButton</include>
+					<onclick condition="Window.IsActive(TVChannels) | Window.IsActive(RadioChannels)">NextChannelGroup</onclick>
+					<onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVChannels)</onclick>
+					<onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioChannels)</onclick>
+				</control>
+				<control type="button" id="101">
+					<description>EPG</description>
+					<label>$LOCALIZE[19222]: $LOCALIZE[19030]</label>
+					<include>TopLeftMenusButton</include>
+					<onclick condition="Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)">NextChannelGroup</onclick>
+					<onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVGuide)</onclick>
+					<onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioGuide)</onclick>
+				</control>
+				<control type="button" id="102">
+					<description>Recordings</description>
+					<label>$LOCALIZE[19163]</label>
+					<include>TopLeftMenusButton</include>
+					<onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVRecordings)</onclick>
+					<onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioRecordings)</onclick>
+				</control>
+				<control type="button" id="103">
+					<description>Timers</description>
+					<label>$LOCALIZE[19040]</label>
+					<include>TopLeftMenusButton</include>
+					<onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVTimers)</onclick>
+					<onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioTimers)</onclick>
+				</control>
+				<control type="button" id="104">
+					<description>Search</description>
+					<label>137</label>
+					<include>TopLeftMenusButton</include>
+					<onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVSearch)</onclick>
+					<onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioSearch)</onclick>
+				</control>
+				<control type="button" id="28">
+					<description>Channel Groups</description>
+					<label>-</label>
+					<include>TopLeftMenusButton</include>
+				</control>
+				<control type="togglebutton" id="5">
+					<description>Group recording items by folder structure</description>
+					<label>$LOCALIZE[19270] : $LOCALIZE[31012]</label>
+					<altlabel>$LOCALIZE[19270] : $LOCALIZE[31011]</altlabel>
+					<include>TopLeftMenusButton</include>
+					<visible>Window.IsActive(TVRecordings) | Window.IsActive(RadioRecordings)</visible>
+				</control>
+				<control type="button" id="2">
+					<description>View As button</description>
+					<include>TopLeftMenusButton</include>
+					<label>-</label>
+					<!-- <visible>Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)</visible> -->
+				</control>
+				<control type="button" id="3">
+					<description>Sort by button</description>
+					<include>TopLeftMenusButton</include>
+					<label>103</label>
+				</control>
+				<control type="togglebutton" id="4">
+					<description>Sort asc</description>
+					<include>TopLeftMenusButton</include>
+					<label>$LOCALIZE[21429]: $LOCALIZE[21430]</label>
+					<altlabel>$LOCALIZE[21429]: $LOCALIZE[21431]</altlabel>
+					<usealttexture>Container.SortDirection(Ascending)</usealttexture>
+				</control>
+			</control>
+		</control>
+	</include>
+</includes>

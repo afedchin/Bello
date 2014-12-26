@@ -609,7 +609,7 @@
             <visible>Substring(ListItem.Path,videodb://movies/sets/)</visible>
 					</control>
 					<control type="label">
-						<left>580</left>
+						<left>280</left>
 						<top>0</top>
 						<width>300</width>
 						<height>45</height>
@@ -738,7 +738,7 @@
 	            <visible>Substring(ListItem.Path,videodb://movies/sets/)</visible>
 						</control>
 						<control type="label">
-							<left>580</left>
+							<left>280</left>
 							<top>0</top>
 							<width>300</width>
 							<height>45</height>

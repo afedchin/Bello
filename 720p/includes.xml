@@ -13,6 +13,7 @@
 	<include file="IncludesSkinWidgets.xml" />
   <include file="IncludesStaticContent.xml" />
 	<include file="IncludesWeather.xml" />
+	<include file="IncludesPVR.xml" />
 
 	<constant name="FanartCrossfadeTime">250</constant>
 	<constant name="IconCrossfadeTime">250</constant>

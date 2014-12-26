@@ -248,7 +248,7 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="label">
-						<left>585</left>
+						<left>285</left>
 						<top>0</top>
 						<width>300</width>
 						<height>45</height>
@@ -262,7 +262,7 @@
             <visible>!Stringcompare(ListItem.Label,..)</visible>
 					</control>
 					<control type="label">
-						<left>585</left>
+						<left>285</left>
 						<top>0</top>
 						<width>300</width>
 						<height>45</height>
@@ -295,7 +295,7 @@
 						<control type="label">
 							<left>95</left>
 							<top>0</top>
-							<width>455</width>
+							<width>450</width>
 							<height>44</height>
 							<font>FontSize_22</font>
 							<textcolor>white</textcolor>
@@ -306,7 +306,7 @@
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
-							<left>585</left>
+							<left>285</left>
 							<top>0</top>
 							<width>300</width>
 							<height>45</height>
@@ -321,7 +321,7 @@
               <visible>!Stringcompare(ListItem.Label,..)</visible>
 						</control>
 						<control type="label">
-							<left>585</left>
+							<left>285</left>
 							<top>0</top>
 							<width>300</width>
 							<height>45</height>
@@ -435,7 +435,7 @@
 						<bordersize>6</bordersize>
 					</control>
 					<control type="label">
-						<left>128</left>
+						<left>25</left>
 						<top>215</top>
 						<width>205</width>
 						<height>35</height>
@@ -486,7 +486,7 @@
 						<bordersize>6</bordersize>
 					</control>
 					<control type="label">
-						<left>128</left>
+						<left>25</left>
 						<top>215</top>
 						<width>205</width>
 						<height>35</height>

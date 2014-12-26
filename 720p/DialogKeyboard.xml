@@ -367,7 +367,7 @@
 					<align>center</align>
 					<aligny>top</aligny>
 					<font>FontSize_14B</font>
-					<textoffsetx>6</textoffsetx>
+					<textoffsetx>7</textoffsetx>
 					<textoffsety>25</textoffsety>
 					<textcolor>99grey</textcolor>
 					<focusedcolor>white</focusedcolor>
