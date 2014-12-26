@@ -357,6 +357,11 @@
 				  <include>TopButton</include>
 					<label>24069</label>
 				</control>
+				<control type="button" id="12">
+					<description>Launch Addon button</description>
+				  <include>TopButton</include>
+					<label>518</label>
+				</control>
 				<control type="button" id="6">
 					<description>Install/UnInstall</description>
 				  <include>TopButton</include>
@@ -376,7 +381,7 @@
 					<description>Changelog</description>
 				  <include>TopButton</include>
 					<label>24036</label>
-				</control>
+			</control>
 			</control>
       <!-- Labels -->
 			<control type="grouplist">
@@ -418,6 +423,14 @@
 					<animation effect="fade" start="100" end="60" time="200" tween="cubic" easing="inout" condition="!Control.IsEnabled(8)" reversible="true">Conditional</animation>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!Control.HasFocus(8)" reversible="true">Conditional</animation>
           <animation effect="zoom" start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(8)" reversible="true">Conditional</animation>
+				</control>
+				<control type="label">
+					<description>Launch Addon button</description>
+				  <include>TopSmallLabel</include>
+					<label>$INFO[Control.GetLabel(12)]</label>
+					<animation effect="fade" start="100" end="60" time="200" tween="cubic" easing="inout" condition="!Control.IsEnabled(12)" reversible="true">Conditional</animation>
+					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!Control.HasFocus(12)" reversible="true">Conditional</animation>
+          <animation effect="zoom" start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(12)" reversible="true">Conditional</animation>
 				</control>
 				<control type="label">
 					<description>Install/UnInstall</description>

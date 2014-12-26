@@ -29,16 +29,6 @@
 				<scroll>true</scroll>
 				<scrollspeed>20</scrollspeed>
 			</control>
-			<control type="label" id="3">
-				<description>No Settings Label</description>
-				<left>320</left>
-				<top>175</top>
-				<width>640</width>
-				<height>352</height>
-				<textcolor>77white</textcolor>
-				<align>center</align>
-				<font>FontSize_20</font>
-			</control>
 			<control type="grouplist" id="5">
 				<description>control area</description>
 				<left>363</left>
@@ -64,7 +54,7 @@
 			<description>Default SpinControlex</description>
 	    <include>DialogsSpincontrolex</include>
 		</control>
-		<control type="sliderex" id="10">
+		<control type="sliderex" id="13">
 			<description>Default Slider</description>
 	    <include>DialogsSliderx</include>
 		</control>

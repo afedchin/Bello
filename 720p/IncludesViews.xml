@@ -5,7 +5,8 @@
     <include file="ViewsPictures.xml" />
     <include file="ViewsPrograms.xml" />
     <include file="ViewsAddons.xml" />
-	  <include file="ViewsPVR.xml" />
+	<include file="ViewsPVRChannels.xml" />
+	<include file="ViewsPVRGuide.xml" />
 
     <include name="VideoViews">
       <include>ListView_Videos</include> <!-- id = 50 -->
@@ -64,23 +65,50 @@
       <include condition="!Skin.HasSetting(HideBannersViewMusic)">BannersView_Music</include> <!-- id = 57 -->
     </include>
 
-    <include name="PVRViews">
-     <control type="group" id="50">
-			<control type="image">
-			  <include>FullscreenDimensions</include>
-				<texture background="true">windows/pvr/bg_overlay.png</texture>
-        <colordiffuse>D9FFFFFF</colordiffuse>
-			  <include>FanartFade</include>
-			</control>
-			<include>LiveTV_ChannelsView</include> <!-- view id = 11 -->
-			<include>LiveRadio_ChannelsView</include> <!-- view id = 12 -->
-			<include>LiveTV_EPGTimelineView</include> <!-- view id = 10 -->
-			<include>LiveTV_EPGNowNextView</include> <!-- view id = 16 -->
-			<include>LiveTV_EPGChannelView</include> <!-- view id = 15 -->
-			<include>LiveTV_RecordingsView</include> <!-- view id = 13 -->
-			<include>LiveTV_TimersView</include> <!-- view id = 14 -->
-			<include>LiveTV_SearchView</include> <!-- view id = 17 -->
-     </control>
+    <include name="ChannelsViews">
+      <include>ListView_Channels</include> <!-- id = 11 -->
     </include>
+    
+    <include name="GuideViews">
+      <include>TimelineView_Guide</include> <!-- id = 10 -->
+      <include>NowView_Guide</include> <!-- id = 11 -->
+      <include>NextView_Guide</include> <!-- id = 12 -->
+      <include>ChannelView_Guide</include> <!-- id = 13 -->
+    </include>
+    
+	<include name="LiveTV_InfoLabels">
+		<control type="group">
+			<left>45</left>
+			<top>215</top>
+			<visible>![Window.IsActive(BusyDialog) | Window.IsActive(ProgressDialog)]</visible>
+			<animation effect="slide" end="0,-25" time="0" condition="Control.IsVisible(10)">Conditional</animation>
+			<control type="grouplist">
+				<left>0</left>
+				<top>0</top>
+				<height>70</height>
+				<width>1000</width>
+				<align>left</align>
+				<itemgap>20</itemgap>
+				<orientation>horizontal</orientation>
+				<control type="label">
+					<include>TopBigLabel</include>
+					<label>$INFO[Control.GetLabel(29)]</label>
+				</control>
+				<control type="label">
+					<include>TopZoomedSmallLabel</include>
+					<label>$INFO[Control.GetLabel(30)]</label>
+				</control>
+			</control>
+
+			<control type="label" id="29">
+				<description>Empty so we can pass the values up one level</description>
+				<visible>False</visible>
+			</control>
+			<control type="label" id="30">
+				<description>Empty so we can pass the values up one level</description>
+				<visible>False</visible>
+			</control>
+		</control>
+	</include>
 
 </includes>    
