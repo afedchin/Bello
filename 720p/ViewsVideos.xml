@@ -2591,7 +2591,7 @@
 						<width>186</width>
 						<height>255</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture border="30">views/thumbnails/focus.png</texture>
+						<texture border="30" colordiffuse="ThemeDiffuse">views/thumbnails/focus.png</texture>
             <animation type="Focus">
               <effect type="zoom" start="95" end="100" time="200" tween="sine" easing="inout" center="auto" />
               <effect type="fade" start="0" end="100" time="200" tween="sine" easing="in" />
@@ -2916,7 +2916,7 @@
 						<width>260</width>
 						<height>199</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture background="true" border="30">views/thumbnails/focus.png</texture>
+						<texture background="true" border="30" colordiffuse="ThemeDiffuse">views/thumbnails/focus.png</texture>
             <animation type="Focus">
               <effect type="zoom" start="95" end="100" time="200" tween="sine" easing="inout" center="auto" />
               <effect type="fade" start="0" end="100" time="200" tween="sine" easing="in" />
