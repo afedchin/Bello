@@ -435,7 +435,7 @@
 						<bordersize>6</bordersize>
 					</control>
 					<control type="label">
-						<left>25</left>
+						<left>24</left>
 						<top>215</top>
 						<width>205</width>
 						<height>35</height>
@@ -486,7 +486,7 @@
 						<bordersize>6</bordersize>
 					</control>
 					<control type="label">
-						<left>25</left>
+						<left>24</left>
 						<top>215</top>
 						<width>205</width>
 						<height>35</height>
