@@ -89,7 +89,7 @@
         <effect type="slide" start="0,0" end="0,-55" time="350" tween="sine" easing="out" />
 			</animation>
 			<control type="label">
-				<left>0</left>
+				<left>280</left>
 				<top>375</top>
 				<width>700</width>
 				<height>55</height>
