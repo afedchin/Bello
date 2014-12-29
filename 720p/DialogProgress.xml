@@ -23,18 +23,18 @@
 			<effect type="fade" time="350" center="640,360" start="100" easing="in" end="0"/>
 		 </animation>
 		 <control type="image">
-			<left>430</left>
+			<left>395</left>
 			<top>165</top>
-			<width>435</width>
+			<width>500</width>
 			<height>375</height>
 			<texture border="49">dialogs/progress/bg.png</texture>
 			<aspectratio align="center" aligny="center">stretch</aspectratio>
 		 </control>
 			<control type="label" id="1">
 				<description>header label</description>
-				<left>455</left>
+				<left>420</left>
 				<top>200</top>
-				<width>385</width>
+				<width>445</width>
 				<font>FontSize_26</font>
 				<textcolor>99white</textcolor>
 				<align>center</align>
@@ -44,7 +44,7 @@
 				<label>Remove ID to Test, Remove ID to Test, Remove ID to Test</label>
 			</control>
 		 <control type="group">
-			<left>540</left>
+			<left>535</left>
 			<top>233</top>
 			<control type="image">
 				<description>Busy animation</description>
@@ -91,15 +91,15 @@
 		 </control>	
 	
 		 <control type="group">
-			<left>455</left>
-			<top>455</top>
+			<left>425</left>
+			<top>435</top>
 			<control type="label" id="2">
 				<description>Busy Line 1</description>
 				<left>0</left>
 				<top>0</top>
-				<width>385</width>
+				<width>445</width>
 				<height>20</height>
-				<font>FontSize_22</font>
+				<font>FontSize_20</font>
 				<textcolor>77white</textcolor>
 				<shadowcolor>99000000</shadowcolor>
 				<align>center</align>
@@ -112,9 +112,24 @@
 				<description>Busy Line 2</description>
 				<left>0</left>
 				<top>25</top>
-				<width>385</width>
+				<width>445</width>
 				<height>20</height>
-				<font>FontSize_22</font>
+				<font>FontSize_20</font>
+				<textcolor>77white</textcolor>
+				<shadowcolor>99000000</shadowcolor>
+				<align>center</align>
+				<aligny>center</aligny>
+				<scroll>true</scroll>
+				<scrollspeed>20</scrollspeed>
+				<label>Remove ID to Test, Remove ID to Test, Remove ID to Test</label>
+			</control>
+			<control type="label" id="4">
+				<description>Busy Line 3</description>
+				<left>0</left>
+				<top>50</top>
+				<width>445</width>
+				<height>20</height>
+				<font>FontSize_20</font>
 				<textcolor>77white</textcolor>
 				<shadowcolor>99000000</shadowcolor>
 				<align>center</align>
