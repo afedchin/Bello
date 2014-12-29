@@ -73,7 +73,13 @@
 				</control>
 				<control type="label">
 					<include>TopZoomedSmallLabel</include>
-					<label>$LOCALIZE[19019]</label>
+					<label>$LOCALIZE[19023]</label>
+					<visible>IsEmpty(Window.Property(IsRadio))</visible>
+				</control>
+				<control type="label">
+					<include>TopZoomedSmallLabel</include>
+					<label>$LOCALIZE[19024]</label>
+					<visible>!IsEmpty(Window.Property(IsRadio))</visible>
 				</control>
 			</control>
 			<control type="grouplist" id="9111">
@@ -155,6 +161,70 @@
 					<label>$LOCALIZE[21429]: $LOCALIZE[21430]</label>
 					<altlabel>$LOCALIZE[21429]: $LOCALIZE[21431]</altlabel>
 					<usealttexture>Container.SortDirection(Ascending)</usealttexture>
+				</control>
+			</control>
+		</control>
+	</include>
+
+	<include name="PVRTopContentInfo">
+		<control type="group">
+			<left>45</left>
+			<top>25</top>
+			<include>CommonSlideAnimations</include>
+			<include>ShutdownMenuAnimation</include>
+			<visible>!ControlGroup(9000).HasFocus + !Window.IsActive(PVRGuideInfo) + !Window.IsActive(PVRRecordingInfo) + !Window.IsActive(PVRTimerSetting) + !Window.IsActive(PVRGuideSearch) + !Window.IsActive(PVRGuideSearch)</visible>
+			<control type="grouplist">
+				<left>0</left>
+				<top>0</top>
+				<height>70</height>
+				<width>1000</width>
+				<align>left</align>
+				<itemgap>20</itemgap>
+				<orientation>horizontal</orientation>
+				<include>CommonSlideAnimations</include>
+				<!-- Big Labels -->
+				<control type="label">
+					<include>TopBigLabel</include>
+					<label>$LOCALIZE[19023]</label>
+					<visible>IsEmpty(Window.Property(IsRadio))</visible>
+					<visible>!Window.IsActive(TVGuide) + !Window.IsActive(RadioGuide)</visible>
+				</control>
+				<control type="label">
+					<include>TopBigLabel</include>
+					<label>$LOCALIZE[19024]</label>
+					<visible>!IsEmpty(Window.Property(IsRadio))</visible>
+					<visible>!Window.IsActive(TVGuide) + !Window.IsActive(RadioGuide)</visible>
+				</control>
+				<control type="label">
+					<include>TopBigLabel</include>
+					<label>$INFO[Control.GetLabel(29)]</label>
+					<visible>Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)</visible>
+				</control>
+				<!-- Small Labels -->
+				<control type="label">
+					<include>TopZoomedSmallLabel</include>
+					<label>$INFO[Container.FolderName]</label>
+					<visible>Window.IsActive(TVChannels) | Window.IsActive(RadioChannels)</visible>
+				</control>
+				<control type="label">
+					<include>TopZoomedSmallLabel</include>
+					<label>$INFO[Control.GetLabel(30)]</label>
+					<visible>Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)</visible>
+				</control>
+				<control type="label">
+					<include>TopZoomedSmallLabel</include>
+					<label>$LOCALIZE[19017]</label>
+					<visible>Window.IsActive(TVRecordings) | Window.IsActive(RadioRecordings)</visible>
+				</control>
+				<control type="label">
+					<include>TopZoomedSmallLabel</include>
+					<label>$LOCALIZE[19040]</label>
+					<visible>Window.IsActive(TVTimers) | Window.IsActive(RadioTimers)</visible>
+				</control>
+				<control type="label">
+					<include>TopZoomedSmallLabel</include>
+					<label>$LOCALIZE[137]</label>
+					<visible>Window.IsActive(TVSearch) | Window.IsActive(RadioSearch)</visible>
 				</control>
 			</control>
 		</control>

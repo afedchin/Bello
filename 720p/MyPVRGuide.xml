@@ -17,37 +17,7 @@
 
 		<include>CommonItems</include>
 		<include>PVROptionControls</include>
-
-		<!-- ================ -->
-		<!-- Top Content Info -->
-		<!-- ================ -->
-		<control type="group">
-			<left>45</left>
-			<top>25</top>
-			<include>CommonSlideAnimations</include>
-			<include>ShutdownMenuAnimation</include>
-			<visible>!ControlGroup(9000).HasFocus + !Window.IsActive(PVRGuideInfo) + !Window.IsActive(PVRRecordingInfo) + !Window.IsActive(PVRTimerSetting) + !Window.IsActive(PVRGuideSearch) + !Window.IsActive(PVRGuideSearch)</visible>
-			<control type="grouplist">
-				<left>0</left>
-				<top>0</top>
-				<height>70</height>
-				<width>1000</width>
-				<align>left</align>
-				<itemgap>20</itemgap>
-				<orientation>horizontal</orientation>
-				<include>CommonSlideAnimations</include>
-				<!-- TV Channels -->
-				<control type="label">
-					<include>TopBigLabel</include>
-					<label>$INFO[Control.GetLabel(29)]</label>
-				</control>
-				<!-- Small Labels -->
-				<control type="label">
-					<include>TopZoomedSmallLabel</include>
-					<label>$INFO[Control.GetLabel(30)]</label>
-				</control>
-			</control>
-		</control>
+		<include>PVRTopContentInfo</include>
 		<include>CommonWeatherAndClock</include>
 	</controls>
 </window>
