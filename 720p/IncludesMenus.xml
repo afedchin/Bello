@@ -470,7 +470,7 @@
 	<include name="HomeSubMenuLiveTV">
 		<control type="wraplist" id="23">
 			<description>SubMenu Container LiveTV</description>
-			<visible>![Window.IsActive(ShutdownMenu) | Window.IsActive(BusyDialog) | Window.IsActive(ProgressDialog) | Window.IsActive(PlayerControls) | Window.IsActive(Favourites) | Container(20).OnNext | Container(20).OnPrevious] + Container(20).HasFocus(11)</visible>
+			<visible>![Window.IsActive(ShutdownMenu) | Window.IsActive(BusyDialog) | Window.IsActive(ProgressDialog) | Window.IsActive(PlayerControls) | Window.IsActive(Favourites) | Container(20).OnNext | Container(20).OnPrevious] + [Container(20).HasFocus(11) | Container(20).HasFocus(26)]</visible>
 			<include>SubMenuWraplistVarsDown</include>
 			<itemlayout height="46">
 				<control type="label">
@@ -486,26 +486,42 @@
 				<item id="0">
 					<label>$LOCALIZE[19023]</label>
 					<onclick>ActivateWindow(TVChannels)</onclick>
+					<visible>Container(20).HasFocus(11)</visible>
 				</item>
 				<item id="1">
-					<label>$LOCALIZE[19163]</label>
-					<onclick>ActivateWindow(TVRecordings)</onclick>
-				</item>
-				<item id="2">
-					<label>$LOCALIZE[19040]</label>
-					<onclick>ActivateWindow(TVTimers)</onclick>
-				</item>
-				<item id="3">
-					<label>$LOCALIZE[19069]</label>
-					<onclick>ActivateWindow(TVGuide)</onclick>
-				</item>
-				<item id="4">
-					<label>$LOCALIZE[137]</label>
-					<onclick>ActivateWindow(TVSearch)</onclick>
-				</item>
-				<item id="5">
 					<label>$LOCALIZE[19024]</label>
 					<onclick>ActivateWindow(RadioChannels)</onclick>
+					<visible>Container(20).HasFocus(26)</visible>
+				</item>
+				<item id="2">
+					<label>$LOCALIZE[19163]</label>
+					<onclick condition="Container(20).HasFocus(11)">ActivateWindow(TVRecordings)</onclick>
+					<onclick condition="Container(20).HasFocus(26)">ActivateWindow(RadioRecordings)</onclick>
+				</item>
+				<item id="3">
+					<label>$LOCALIZE[19040]</label>
+					<onclick condition="Container(20).HasFocus(11)">ActivateWindow(TVTimers)</onclick>
+					<onclick condition="Container(20).HasFocus(26)">ActivateWindow(RadioTimers)</onclick>
+				</item>
+				<item id="4">
+					<label>$LOCALIZE[19069]</label>
+					<onclick condition="Container(20).HasFocus(11)">ActivateWindow(TVGuide)</onclick>
+					<onclick condition="Container(20).HasFocus(26)">ActivateWindow(RadioGuide)</onclick>
+				</item>
+				<item id="5">
+					<label>$LOCALIZE[137]</label>
+					<onclick condition="Container(20).HasFocus(11)">ActivateWindow(TVSearch)</onclick>
+					<onclick condition="Container(20).HasFocus(26)">ActivateWindow(RadioSearch)</onclick>
+				</item>
+				<item id="6">
+					<label>$LOCALIZE[19024]</label>
+					<onclick>ActivateWindow(RadioChannels)</onclick>
+					<visible>Container(20).HasFocus(11)</visible>
+				</item>
+				<item id="7">
+					<label>$LOCALIZE[19023]</label>
+					<onclick>ActivateWindow(TVChannels)</onclick>
+					<visible>Container(20).HasFocus(26)</visible>
 				</item>
 			</content>
 		</control>

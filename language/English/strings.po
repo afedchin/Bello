@@ -1027,6 +1027,10 @@ msgctxt "#31399"
 msgid "Hide LiveTV Button"
 msgstr ""
 
+msgctxt "#31421"
+msgid "Hide Radio Button"
+msgstr ""
+
 #empty string with id 31400
 #Settings Category Description & Header Labels
 

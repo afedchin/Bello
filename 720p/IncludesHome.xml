@@ -57,7 +57,8 @@
 					                  | [Container(20).HasFocus(7) + !Skin.HasSetting(HideAddonsSubMenu)]
 														| [[Library.HasContent(movies) + Container(20).HasFocus(2)] + !Skin.HasSetting(HideMoviesSubMenu)]
 														| [[Library.HasContent(tvshows) + Container(20).HasFocus(1)] + !Skin.HasSetting(HideTVShowsSubMenu)]
-														| [[Library.HasContent(music) + Container(20).HasFocus(3)] + !Skin.HasSetting(HideMusicSubMenu)]">SetFocus(23)</ondown>
+														| [[Library.HasContent(music) + Container(20).HasFocus(3)] + !Skin.HasSetting(HideMusicSubMenu)]
+														| Container(20).HasFocus(26)">SetFocus(23)</ondown>
 														
 					 <ondown condition="[[Library.HasContent(movies) + Container(20).HasFocus(2)] + Skin.HasSetting(HideMoviesSubMenu)]
 														| [[Library.HasContent(tvshows) + Container(20).HasFocus(1)] + Skin.HasSetting(HideTVShowsSubMenu)]
@@ -134,7 +135,7 @@
 								<texture>$INFO[ListItem.Icon]</texture>
 	              <colordiffuse>CCFFFFFF</colordiffuse>
 			          <visible>!ControlGroup(21).HasFocus + !Control.HasFocus(23)</visible>
-			          <visible>[Container(20).HasFocus(1) + [Library.HasContent(tvshows) + !Skin.HasSetting(HideTVShowsSubMenu)]] | [Container(20).HasFocus(2) + [Library.HasContent(movies) + !Skin.HasSetting(HideMoviesSubMenu)]] | [Container(20).HasFocus(3) + [Library.HasContent(music) + !Skin.HasSetting(HideMusicSubMenu)]] | [Container(20).HasFocus(9) + !Skin.HasSetting(HideSettingsSubMenu)] | [Container(20).HasFocus(7) + !Skin.HasSetting(HideAddonsSubMenu)] | [Container(20).HasFocus(11) + !Skin.HasSetting(HideLiveTVSubMenu)]</visible>
+			          <visible>[Container(20).HasFocus(1) + [Library.HasContent(tvshows) + !Skin.HasSetting(HideTVShowsSubMenu)]] | [Container(20).HasFocus(2) + [Library.HasContent(movies) + !Skin.HasSetting(HideMoviesSubMenu)]] | [Container(20).HasFocus(3) + [Library.HasContent(music) + !Skin.HasSetting(HideMusicSubMenu)]] | [Container(20).HasFocus(9) + !Skin.HasSetting(HideSettingsSubMenu)] | [Container(20).HasFocus(7) + !Skin.HasSetting(HideAddonsSubMenu)] | [Container(20).HasFocus(11) + !Skin.HasSetting(HideLiveTVSubMenu)] | Container(20).HasFocus(26)</visible>
 								<animation effect="fade" time="200" reversible="false">Visible</animation>
 								<animation effect="fade" time="200" reversible="false">Hidden</animation>
 							</control>

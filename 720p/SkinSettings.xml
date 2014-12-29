@@ -546,6 +546,14 @@
 						<selected>Skin.HasSetting(HideHomeMenuSettingsButton)</selected>
 						<visible>Skin.HasSetting(HideHomeCategories)</visible>
 					</control>
+					<control type="radiobutton" id="8312">
+						<description>Hide Radio Button</description>
+						<include>SettingsRadioButton</include>
+						<label> • $LOCALIZE[31421]</label>
+						<onclick>Skin.ToggleSetting(HideHomeMenuRadioButton)</onclick>
+						<selected>Skin.HasSetting(HideHomeMenuRadioButton)</selected>
+						<visible>Skin.HasSetting(HideHomeCategories)</visible>
+					</control>
 
 				  <!-- Show Home Menu Buttons -->
 					<control type="button" id="8320">
@@ -588,7 +596,6 @@
 						<selected>Skin.HasSetting(ShowHomeMenuExitButton)</selected>
 						<visible>Skin.HasSetting(ShowHomeCategories)</visible>
 					</control>
-
 				  <!-- Custom Home Menu Buttons -->
 					<control type="button" id="8380">
 						<description>Custom Home Buttons</description>

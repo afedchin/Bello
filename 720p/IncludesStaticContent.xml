@@ -62,6 +62,12 @@
 		  <onclick>SetFocus(3)</onclick>
 			<visible>!Skin.HasSetting(HideHomeMenuSettingsButton)</visible>
 	  </item>
+	  <item id="26">
+			<icon>buttons/arrow.png</icon>
+			<label>$LOCALIZE[19021]</label>
+			<onclick>ActivateWindow(RadioChannels)</onclick>
+			<visible>!Skin.HasSetting(HideHomeMenuRadioButton) + PVR.HasRadioChannels</visible>
+	  </item>
 	  <item id="11">
 			<icon>buttons/arrow.png</icon>
 			<label>$LOCALIZE[31000]</label>
