@@ -246,7 +246,7 @@
 							<texture border="25">windows/weather/day_panel.png</texture>
 						</control>
 						<control type="label">
-						  <left>163</left>
+						  <left>40</left>
 							<top>25</top>
 							<width>245</width>
 							<height>30</height>
@@ -258,7 +258,7 @@
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
-						  <left>163</left>
+						  <left>40</left>
 							<top>55</top>
 							<width>245</width>
 							<height>30</height>
@@ -270,7 +270,7 @@
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
 						<control type="label">
-					    <left>163</left>
+					    <left>40</left>
 							<top>255</top>
 							<width>245</width>
 							<height>30</height>
@@ -282,7 +282,7 @@
 							<label>$INFO[ListItem.Property(HighTemperature)]</label>
 						</control>
 						<control type="label">
-					    <left>163</left>
+					    <left>40</left>
 							<top>285</top>
 							<width>245</width>
 							<height>30</height>
@@ -323,7 +323,7 @@
 							<visible>Control.HasFocus(52)</visible>
 						</control>
 						<control type="label">
-						  <left>163</left>
+						  <left>40</left>
 							<top>25</top>
 							<width>245</width>
 							<height>30</height>
@@ -335,7 +335,7 @@
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
-						  <left>163</left>
+						  <left>40</left>
 							<top>55</top>
 							<width>245</width>
 							<height>30</height>
@@ -347,7 +347,7 @@
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
 						<control type="label">
-						  <left>163</left>
+						  <left>40</left>
 							<top>255</top>
 							<width>245</width>
 							<height>30</height>
@@ -359,7 +359,7 @@
 							<label>$INFO[ListItem.Property(HighTemperature)]</label>
 						</control>
 						<control type="label">
-						  <left>163</left>
+						  <left>40</left>
 							<top>285</top>
 							<width>245</width>
 							<height>30</height>
