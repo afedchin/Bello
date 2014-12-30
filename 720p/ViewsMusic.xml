@@ -453,7 +453,7 @@
 					<width>790</width>
 					<height>590</height>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
-					<texture>views/list/shine2.png</texture>
+					<texture colordiffuse="ThemeDiffuse">views/list/shine2.png</texture>
 					<!-- <colordiffuse>ccffffff</colordiffuse> -->
 				</control>
 				<control type="image">

@@ -183,7 +183,7 @@
 						 <width>400</width>
 						 <height>400</height>
 						 <aspectratio align="center" aligny="center">stretch</aspectratio>
-				     <texture background="true">views/list/shine.png</texture>
+				     <texture background="true" colordiffuse="ThemeDiffuse">views/list/shine.png</texture>
 				     <visible>![Control.HasFocus(81) | Control.HasFocus(82) | Control.HasFocus(83) | Window.IsActive(ShutdownMenu) | Window.IsActive(Favourites)]</visible>
 					 </control>
 					 <control type="label">
@@ -359,7 +359,7 @@
 					 <width>400</width>
 					 <height>400</height>
 					 <aspectratio align="center" aligny="center">stretch</aspectratio>
-				   <texture background="true">views/list/shine.png</texture>
+				   <texture background="true" colordiffuse="ThemeDiffuse">views/list/shine.png</texture>
 				   <visible>![Control.HasFocus(81) | Control.HasFocus(82) | Control.HasFocus(83) | Window.IsActive(ShutdownMenu) | Window.IsActive(Favourites)]</visible>
 				 </control>
 				 <control type="label">
@@ -465,7 +465,7 @@
 					 <width>650</width>
 					 <height>400</height>
 					 <aspectratio align="center" aligny="center">stretch</aspectratio>
-				   <texture background="true">views/list/shine.png</texture>
+				   <texture background="true" colordiffuse="ThemeDiffuse">views/list/shine.png</texture>
 				   <visible>![Control.HasFocus(81) | Control.HasFocus(82) | Control.HasFocus(83) | Window.IsActive(ShutdownMenu) | Window.IsActive(Favourites)]</visible>
 				 </control>
 				 <control type="label">
@@ -581,7 +581,7 @@
 						 <width>400</width>
 						 <height>400</height>
 						 <aspectratio align="center" aligny="center">stretch</aspectratio>
-				     <texture background="true">views/list/shine.png</texture>
+				     <texture background="true" colordiffuse="ThemeDiffuse">views/list/shine.png</texture>
 				     <visible>![Control.HasFocus(81) | Control.HasFocus(82) | Control.HasFocus(83) | Window.IsActive(ShutdownMenu) | Window.IsActive(Favourites)]</visible>
 					 </control>
 					 <control type="label">
