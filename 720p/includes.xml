@@ -1350,7 +1350,7 @@
 	</variable>	
 
   <variable name="ViewsDef3DFlags">
-    <value condition="ListItem.IsStereoscopic">flags/def/3d.png</value>
+    <value condition="ListItem.IsStereoscopic | SubString(ListItem.Filename,.3D.)">flags/def/3d.png</value>
     <value condition="IntegerGreaterThan(ListItem.VideoResolution,719)">flags/def/hd.png</value>
     <value condition="!IsEmpty(ListItem.VideoResolution)">flags/def/sd.png</value>
   </variable>

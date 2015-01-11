@@ -44,7 +44,7 @@
 					<font>-</font>
 					<texturefocus>osd/3d_fo.png</texturefocus>
 					<texturenofocus>osd/3d_nf.png</texturenofocus>
-					<onclick>NextStereoMode</onclick>
+					<onclick>StereoMode</onclick>
 					<visible>VideoPlayer.IsStereoscopic</visible>
 				</control>
 				<control type="button" id="107">

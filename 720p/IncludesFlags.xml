@@ -48,7 +48,7 @@
 			<description>Video Stereoscopics Image</description>
 			<include>FlagsLayout</include>
 			<texture>flags/video/3d.png</texture>
-			<visible>ListItem.IsStereoscopic</visible>
+			<visible>ListItem.IsStereoscopic | SubString(ListItem.Filename,.3D.)</visible>
 		</control>
 	</include>
 	
